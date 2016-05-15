@@ -4,6 +4,9 @@ Last modified: 23/10/2014 ArmA 1.32 by Quiksilver
 Description:
 
 	Restricts certain weapon systems to different roles
+Tweak by ben:
+
+	same but with rhs classes
 _________________________________________________*/
 
 private ["_opticsAllowed","_specialisedOptics","_optics","_basePos","_firstRun","_insideSafezone","_outsideSafezone"];
@@ -18,13 +21,16 @@ private ["_opticsAllowed","_specialisedOptics","_optics","_basePos","_firstRun",
 #define MRK_MSG "Only Marksman and Spotters may use this weapon system. Rifle removed."
 
 //===== UAV TERMINAL
-_uavOperator = ["B_soldier_UAV_F","B_officer_F"];
-_uavRestricted = ["B_UavTerminal","O_UavTerminal","I_UavTerminal"];
+//_uavOperator = ["B_soldier_UAV_F", "B_officer_F", "rhsusf_army_ocp_uav"];
+_uavOperator = ["rhsusf_army_ocp_uav"];
+_uavRestricted = ["B_UavTerminal", "O_UavTerminal", "I_UavTerminal"];
 //===== AT / MISSILE LAUNCHERS (excl RPG)
-_missileSoldiers = ["B_soldier_LAT_F","B_soldier_AA_F","B_soldier_AT_F","B_officer_F","B_recon_LAT_F"];
+//_missileSoldiers = ["B_soldier_LAT_F","B_soldier_AA_F","B_soldier_AT_F","B_officer_F","B_recon_LAT_F"];
+_missileSoldiers = ["rhsusf_army_ocp_javelin"];
 _missileSpecialised = ["launch_NLAW_F","launch_B_Titan_F","launch_O_Titan_F","launch_I_Titan_F","launch_B_Titan_short_F","launch_O_Titan_short_F","launch_I_Titan_short_F"];
 //===== SNIPER RIFLES
-_snipers = ["B_sniper_F","B_officer_F", "rhsusf_army_ocp_sniper"];
+//_snipers = ["B_sniper_F","B_officer_F"];
+_snipers = ["rhsusf_army_ocp_sniper"];
 _sniperSpecialised = ["srifle_GM6_F","srifle_GM6_LRPS_F","srifle_GM6_SOS_F","srifle_LRR_F","srifle_LRR_LRPS_F","srifle_LRR_SOS_F","srifle_GM6_camo_F","srifle_GM6_camo_LRPS_F","srifle_GM6_camo_SOS_F","srifle_LRR_camo_F","srifle_LRR_camo_LRPS_F","srifle_LRR_camo_SOS_F"];
 //===== THERMAL OPTICS
 _opticsAllowed = ["B_Soldier_SL_F"];
