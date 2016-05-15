@@ -1,8 +1,8 @@
 //------------------------- On Load
 
-author = Rarek, AhoyWorld, Quiksilver;					// Visible when loading mission
-onLoadName = "Invade & Annex 2.85C";						// Visible when loading mission
-OnLoadMission = "Welcome back to the home of Invade and Annex...";
+author = Rarek, AhoyWorld, Quiksilver, tweaked by ben;	// Visible when loading mission
+onLoadName = "TaskForceUnicorn Invade & Annex RHS";		// Visible when loading mission
+OnLoadMission = "Welcome back to TaskForceUnicorn Invade and Annex...";
 loadScreen = "media\images\loading.jpg";				// Visible when loading mission
 overviewPicture = "media\images\loading.jpg";			// Visible when selecting mission	
 
