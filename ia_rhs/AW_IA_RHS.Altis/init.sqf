@@ -27,3 +27,5 @@ for [ {_i = 0}, {_i < count(paramsArray)}, {_i = _i + 1} ] do {
 
 
 call compile preprocessFile "scripts\=BTC=_revive\=BTC=_revive_init.sqf";		// revive
+
+tf_no_auto_long_range_radio = true //so player do not spawn with longrange radio as backpacks
