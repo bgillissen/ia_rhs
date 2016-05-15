@@ -16,7 +16,9 @@ Description:
 	Benefits of doing it this way = dont need an AI vehicle sitting there at all times eating server resources, 
 	and hands over interactive control to players from server.
 
-__________________________________________________________________________*/
+Ben Tweak:
+	replaced vehicule by a rhs_m6, unlimited ammo
+_________________________________________________________________________*/
 
 private ["_loopTimeout","_activeTimer","_inactiveTimer","_airdefenseGroup","_defensePos"];
 
@@ -39,7 +41,8 @@ while { true } do {
 
 		//---------- Spawn vehicle
 		
-		defender = createVehicle ["B_APC_Tracked_01_AA_F",_defensePos,[],0,"NONE"];
+		//defender = createVehicle ["B_APC_Tracked_01_AA_F",_defensePos,[],0,"NONE"];
+		defender = createVehicle ["RHS_M6",_defensePos,[],0,"NONE"];
 		waitUntil {!isNull defender};
 		defender allowDamage false;
 		defender setDir 135; 
@@ -67,7 +70,8 @@ while { true } do {
 
 		//---------- Auto-cannon only, no rockets. Unlimited cannon ammo.
 
-		defender addEventHandler ["Fired",   {    defender setVehicleAmmo 1,    defender removeMagazineTurret ["4Rnd_Titan_long_missiles",[0]],    defender removeMagazines "4Rnd_Titan_long_missiles"   }  ];
+		//defender addEventHandler ["Fired",   {    defender setVehicleAmmo 1,    defender removeMagazineTurret ["4Rnd_Titan_long_missiles",[0]],    defender removeMagazines "4Rnd_Titan_long_missiles"   }  ];
+		defender addEventHandler ["Fired",   { defender setVehicleAmmo 1 }  ];
 
 		//---------- Active time
 
