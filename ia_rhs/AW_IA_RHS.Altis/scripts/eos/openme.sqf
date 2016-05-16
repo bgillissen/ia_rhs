@@ -1,4 +1,7 @@
-EOS_Spawn = compile preprocessfilelinenumbers "scripts\eos\core\eos_launch.sqf";Bastion_Spawn=compile preprocessfilelinenumbers "scripts\eos\core\b_launch.sqf";null=[] execVM "scripts\eos\core\spawn_fnc.sqf";onplayerConnected {[] execVM "scripts\eos\Functions\EOS_Markers.sqf";};
+EOS_Spawn = compile preprocessfilelinenumbers "scripts\eos\core\eos_launch.sqf";
+Bastion_Spawn=compile preprocessfilelinenumbers "scripts\eos\core\b_launch.sqf";
+null=[] execVM "scripts\eos\core\spawn_fnc.sqf";
+onplayerConnected {[] execVM "scripts\eos\Functions\EOS_Markers.sqf";};
 /* 
 EOS 1.98 by BangaBob 
 

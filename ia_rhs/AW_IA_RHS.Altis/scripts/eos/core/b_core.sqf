@@ -3,10 +3,18 @@ private ["_fGroup","_cargoType","_vehType","_CHside","_mkrAgl","_initialLaunch",
 
 _mkr=(_this select 0);_mPos=markerpos(_this select 0);_mkrX=getMarkerSize _mkr select 0;_mkrY=getMarkerSize _mkr select 1;_mkrAgl=markerDir _mkr;
 _infantry=(_this select 1);_PApatrols=_infantry select 0;_PAgroupSize=_infantry select 1;
-_LVeh=(_this select 2);_LVehGroups=_LVeh select 0;_LVgroupSize=_LVeh select 1;
-_AVeh=(_this select 3);_AVehGroups=_AVeh select 0;
-_SVeh=(_this select 4);_CHGroups=_SVeh select 0;_fSize=_SVeh select 1;
-_settings=(_this select 5);_faction=_settings select 0;_mA=_settings select 1;_side=_settings select 2;
+_LVeh=(_this select 2);
+_LVehGroups=_LVeh select 0;
+_LVgroupSize=_LVeh select 1;
+_AVeh=(_this select 3);
+_AVehGroups=_AVeh select 0;
+_SVeh=(_this select 4);
+_CHGroups=_SVeh select 0;
+_fSize=_SVeh select 1;
+_settings=(_this select 5);
+_faction=_settings select 0;
+_mA=_settings select 1;
+_side=_settings select 2;
 _heightLimit=if (count _settings > 4) then {_settings select 4} else {false};
 _debug=if (count _settings > 5) then {_settings select 5} else {false};
 _basSettings=(_this select 6);
@@ -57,10 +65,10 @@ waituntil {triggeractivated _basActivated};
 						_bastActive setTriggerTimeout [1, 1, 1, true];
 						_bastActive setTriggerStatements [_actCond,"",""];
 						
-							_bastClear = createTrigger ["EmptyDetector",_mPos]; 
-							_bastClear setTriggerArea [(_mkrX+(_Placement*0.3)),(_mkrY+(_Placement*0.3)),_mkrAgl,FALSE]; 
-							_bastClear setTriggerActivation [_enemyFaction,"NOT PRESENT",true]; 
-							_bastClear setTriggerStatements ["this","",""]; 
+						_bastClear = createTrigger ["EmptyDetector",_mPos]; 
+						_bastClear setTriggerArea [(_mkrX+(_Placement*0.3)),(_mkrY+(_Placement*0.3)),_mkrAgl,FALSE]; 
+						_bastClear setTriggerActivation [_enemyFaction,"NOT PRESENT",true]; 
+						_bastClear setTriggerStatements ["this","",""]; 
 
 // PAUSE IF REQUESTED							
 if (_pause > 0 and !_initialLaunch) then {
@@ -73,8 +81,8 @@ if (_pause > 0 and !_initialLaunch) then {
 	_aGroup=[];
 	for "_counter" from 1 to _PApatrols do {	
 						_pos = [_mPos, _Placement, random 360] call BIS_fnc_relPos;
-							_grp=[_pos,_PAgroupSize,_faction,_side] call EOS_fnc_spawngroup;	
-							_aGroup set [count _aGroup,_grp];
+						_grp=[_pos,_PAgroupSize,_faction,_side] call EOS_fnc_spawngroup;	
+						_aGroup set [count _aGroup,_grp];
 if (_debug) then {PLAYER SIDECHAT (format ["Spawned Patrol: %1",_counter]);0= [_mkr,_counter,"patrol",getpos (leader _grp)] call EOS_debug};
 										};	
 										
