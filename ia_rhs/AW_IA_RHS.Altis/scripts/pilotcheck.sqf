@@ -2,9 +2,9 @@
 // Since then been tweaked by many hands!
 // Notable contributors: chucky [allFPS], Quiksilver.
 
-_pilots = ["B_Helipilot_F"];
-_aircraft_nocopilot = ["RHS_UH60_M_d", 
-					   "RHS_CH47F_10", 
+_pilots = ["rhsusf_army_ocp_helipilot"];
+_aircraft_nocopilot = ["RHS_UH60M_d", 
+					   "RHS_CH_47F_10", 
 					   "rhsusf_CH53E_USMC_D", 
 					   "MELB_AH6M_H"];
 
