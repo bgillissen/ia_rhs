@@ -8,7 +8,10 @@ medium = ["rhsusf_m1025_d_m2",
 		  "rhsusf_m1025_d",
 		  "rhsusf_m1025_d_Mk19",
 		  "rhsusf_m998_d_4dn_halftop",
-		  "rhsusf_m998_d_4dn_fulltop" ];
+		  "rhsusf_m998_d_4dn_fulltop",
+		  "B_Slingload_01_Fuel_F",
+		  "B_Slingload_01_Medevac_F",
+		  "B_Slingload_01_Repair_F" ];
 light = ["B_Quadbike_01_F"];
 
 lowSpeedThreshold = 30; 				// lower than threshold = smooth drag
