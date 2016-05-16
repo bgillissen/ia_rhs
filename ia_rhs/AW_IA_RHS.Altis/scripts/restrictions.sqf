@@ -133,8 +133,9 @@ _autoSpecialised = ["MMG_02_black_F",
 				   ];
 
 //===== MARKSMAN
-_marksman = ["rhsusf_army_ocp_marksman",
-			 "rhsusf_usmc_lar_marpat_wd_marksman"
+_marksman = ["rhsusf_army_ocp_marksman",			//marksman
+			 "rhsusf_usmc_lar_marpat_wd_marksman",	//recon marksman
+			 "rhsusf_army_ocp_jfo"					//spotter
 			 ];
 _marksmanGun = ["srifle_DMR_02_ACO_F",
 				"srifle_DMR_02_ARCO_F",
