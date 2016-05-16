@@ -11,11 +11,11 @@ _________________________________________________*/
 
 private ["_opticsAllowed","_specialisedOptics","_optics","_basePos","_firstRun","_insideSafezone","_outsideSafezone"];
 
-#define AT_MSG "Only AT Soldiers may use this weapon system. Launcher removed."
+#define AT_MSG "Only AT/AA Soldiers may use this weapon system. Launcher removed."
 #define SNIPER_MSG "Only Snipers may use this weapon system. Sniper rifle removed."
 #define AUTOTUR_MSG "You are not allowed to use this weapon system, Backpack removed."
 #define UAV_MSG "Only UAV operator may use this Item, UAV terminal removed."
-#define OPTICS_MSG "Thermal optics such as TWS and Nightstalker are restricted to Squad Leaders. Optic removed."
+#define OPTICS_MSG "Thermal optics are restricted to Squad Leaders. Optic removed."
 #define MG_MSG "Only Autoriflemen may use this weapon system. LMG removed."
 #define SOPT_MSG "SOS and LRPS are designated for Snipers and Spotters only. Optic removed."
 #define MRK_MSG "Only Marksman and Spotters may use this weapon system. Rifle removed."
