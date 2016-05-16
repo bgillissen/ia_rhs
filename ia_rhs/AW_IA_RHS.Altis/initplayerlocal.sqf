@@ -59,7 +59,7 @@ tawvd_disablenone = false;
 //--------------------- Arty Computer and Squad Manager
 
 enableEngineArtillery false;
-if (player isKindOf "B_support_Mort_f") then {
+if (player isKindOf "rhsusf_army_ocp_fso") then {
 	enableEngineArtillery true;
 };
 
@@ -113,9 +113,9 @@ _email = _infoSquad select 2;
 
 
 // replace line below with your Squad xml's email
-if (_email == "arma@ahoyworld.co.uk") then {
+if (_email == "hello@taskforceunicorn.com") then {
 
-_GlobalHint = format["<t align='center' size='2.2' color='#FF0000'>%1<br/></t><t size='1.4' color='#33CCFF'>%2</t><br/>has joined the server, To get involved in the Ahoy World community, register an account at www.AhoyWorld.co.uk and get stuck in!</t><br/>",_squad,_name];
+_GlobalHint = format["<t align='center' size='2.2' color='#FF0000'>%1<br/></t><t size='1.4' color='#33CCFF'>%2</t><br/>has joined the server, To become a TFU member, apply to taskforceunicorn.com</t><br/>",_squad,_name];
 
 [_GlobalHint] remoteExec ["AW_fnc_globalHint",0,false];
 } else {};
