@@ -6,7 +6,7 @@ Description:
 	Restricts certain weapon systems to different roles
 Tweak by ben:
 
-	same but with rhs classes
+	same but with rhs player classes and added rhs weapons
 _________________________________________________*/
 
 private ["_opticsAllowed","_specialisedOptics","_optics","_basePos","_firstRun","_insideSafezone","_outsideSafezone"];
@@ -21,36 +21,162 @@ private ["_opticsAllowed","_specialisedOptics","_optics","_basePos","_firstRun",
 #define MRK_MSG "Only Marksman and Spotters may use this weapon system. Rifle removed."
 
 //===== UAV TERMINAL
-//_uavOperator = ["B_soldier_UAV_F", "B_officer_F", "rhsusf_army_ocp_uav"];
 _uavOperator = ["rhsusf_army_ocp_uav"];
-_uavRestricted = ["B_UavTerminal", "O_UavTerminal", "I_UavTerminal"];
-//===== AT / MISSILE LAUNCHERS (excl RPG)
-//_missileSoldiers = ["B_soldier_LAT_F","B_soldier_AA_F","B_soldier_AT_F","B_officer_F","B_recon_LAT_F"];
-_missileSoldiers = ["rhsusf_army_ocp_javelin"];
-_missileSpecialised = ["launch_NLAW_F","launch_B_Titan_F","launch_O_Titan_F","launch_I_Titan_F","launch_B_Titan_short_F","launch_O_Titan_short_F","launch_I_Titan_short_F"];
+_uavRestricted = ["B_UavTerminal", 
+				  "O_UavTerminal", 
+				  "I_UavTerminal"];
+//===== AT-AA / MISSILE LAUNCHERS (excl RPG)
+_missileSoldiers = ["rhsusf_army_ocp_javelin", 
+					"rhsusf_army_ocp_aa"
+					];
+_missileSpecialised = ["launch_NLAW_F",
+					   "launch_B_Titan_F",
+					   "launch_O_Titan_F",
+					   "launch_I_Titan_F",
+					   "launch_B_Titan_short_F",
+					   "launch_O_Titan_short_F",
+					   "launch_I_Titan_short_F",
+					   "rhs_weap_fim92",
+					   "rhs_weap_fgm148"
+					   ];
 //===== SNIPER RIFLES
-//_snipers = ["B_sniper_F","B_officer_F"];
 _snipers = ["rhsusf_army_ocp_sniper"];
-_sniperSpecialised = ["srifle_GM6_F","srifle_GM6_LRPS_F","srifle_GM6_SOS_F","srifle_LRR_F","srifle_LRR_LRPS_F","srifle_LRR_SOS_F","srifle_GM6_camo_F","srifle_GM6_camo_LRPS_F","srifle_GM6_camo_SOS_F","srifle_LRR_camo_F","srifle_LRR_camo_LRPS_F","srifle_LRR_camo_SOS_F"];
-//===== THERMAL OPTICS
-_opticsAllowed = ["B_Soldier_SL_F"];
-_specialisedOptics = ["optic_Nightstalker","optic_tws","optic_tws_mg"];
-//===== BACKPACKS
-_backpackRestricted = ["O_Mortar_01_support_F","I_Mortar_01_support_F","O_Mortar_01_weapon_F","I_Mortar_01_weapon_F","O_UAV_01_backpack_F","I_UAV_01_backpack_F","O_HMG_01_support_F","I_HMG_01_support_F","O_HMG_01_support_high_F","I_HMG_01_support_high_F","O_HMG_01_weapon_F","I_HMG_01_weapon_F","O_HMG_01_A_weapon_F","I_HMG_01_A_weapon_F","O_GMG_01_weapon_F","I_GMG_01_weapon_F","O_GMG_01_A_weapon_F","I_GMG_01_A_weapon_F","O_HMG_01_high_weapon_F","I_HMG_01_high_weapon_F","O_HMG_01_A_high_weapon_F","I_HMG_01_A_high_weapon_F","O_GMG_01_high_weapon_F","I_GMG_01_high_weapon_F","O_GMG_01_A_high_weapon_F","I_GMG_01_A_high_weapon_F","I_AT_01_weapon_F","O_AT_01_weapon_F","I_AA_01_weapon_F","O_AA_01_weapon_F"];
-//===== LMG
-_autoRiflemen = ["B_soldier_AR_F","B_officer_F"];
-_autoSpecialised = ["MMG_02_black_F","MMG_02_camo_F","MMG_02_sand_F","MMG_02_black_RCO_BI_F","MMG_02_sand_RCO_LP_F","MMG_01_base_F","MMG_01_hex_F","MMG_01_hex_ARCO_LP_F","MMG_01_tan_F"];
+_sniperSpecialised = ["srifle_GM6_F",
+					  "srifle_GM6_LRPS_F",
+					  "srifle_GM6_SOS_F",
+					  "srifle_LRR_F",
+					  "srifle_LRR_LRPS_F",
+					  "srifle_LRR_SOS_F",
+					  "srifle_GM6_camo_F",
+					  "srifle_GM6_camo_LRPS_F",
+					  "srifle_GM6_camo_SOS_F",
+					  "srifle_LRR_camo_F",
+					  "srifle_LRR_camo_LRPS_F",
+					  "srifle_LRR_camo_SOS_F",
+					  "rhs_weap_svdp",
+					  "rhs_weap_svdp_npz",
+					  "rhs_weap_svdp_wd",
+					  "rhs_weap_svdp_wd_npz",
+					  "rhs_weap_svds",
+					  "rhs_weap_svds_npz",
+					  "rhs_weap_XM2010",
+					  "rhs_weap_XM2010_d",
+					  "rhs_weap_XM2010_sa",
+					  "rhs_weap_XM2010_wd"
+					  ];
 //===== SNIPER OPTICS
-_sniperTeam = ["B_sniper_F","B_spotter_F"];
-_sniperOpt = ["optic_SOS","optic_LRPS"];
+_sniperTeam = ["rhsusf_army_ocp_sniper"];
+_sniperOpt = ["optic_SOS",
+			  "optic_LRPS"
+			  ];
+//===== THERMAL OPTICS
+_opticsAllowed = ["rhsusf_usmc_lar_marpat_wd_squadleader",
+				  "rhsusf_army_marpat_d_squadleader"
+				  ];
+_specialisedOptics = ["optic_Nightstalker",
+					  "optic_tws",
+					  "optic_tws_mg"
+					  ];
+//===== BACKPACKS
+_backpackRestricted = ["O_Mortar_01_support_F",
+					   "I_Mortar_01_support_F",
+					   "O_Mortar_01_weapon_F",
+					   "I_Mortar_01_weapon_F",
+					   "O_UAV_01_backpack_F",
+					   "I_UAV_01_backpack_F",
+					   "O_HMG_01_support_F",
+					   "I_HMG_01_support_F",
+					   "O_HMG_01_support_high_F",
+					   "I_HMG_01_support_high_F",
+					   "O_HMG_01_weapon_F",
+					   "I_HMG_01_weapon_F",
+					   "O_HMG_01_A_weapon_F",
+					   "I_HMG_01_A_weapon_F",
+					   "O_GMG_01_weapon_F",
+					   "I_GMG_01_weapon_F",
+					   "O_GMG_01_A_weapon_F",
+					   "I_GMG_01_A_weapon_F",
+					   "O_HMG_01_high_weapon_F",
+					   "I_HMG_01_high_weapon_F",
+					   "O_HMG_01_A_high_weapon_F",
+					   "I_HMG_01_A_high_weapon_F",
+					   "O_GMG_01_high_weapon_F",
+					   "I_GMG_01_high_weapon_F",
+					   "O_GMG_01_A_high_weapon_F",
+					   "I_GMG_01_A_high_weapon_F",
+					   "I_AT_01_weapon_F",
+					   "O_AT_01_weapon_F",
+					   "I_AA_01_weapon_F",
+					   "O_AA_01_weapon_F"];
+//===== LMG
+_autoRiflemen = ["rhsusf_army_ocp_machinegunner"];
+_autoSpecialised = ["MMG_02_black_F",
+					"MMG_02_camo_F",
+					"MMG_02_sand_F",
+					"MMG_02_black_RCO_BI_F",
+					"MMG_02_sand_RCO_LP_F",
+					"MMG_01_base_F",
+					"MMG_01_hex_F",
+					"MMG_01_hex_ARCO_LP_F",
+					"MMG_01_tan_F",
+					"rhs_weap_m240B",
+					"rhs_weap_m240B_CAP",
+					"rhs_weap_m240G",
+					"rhs_weap_m249_pip_L",
+					"rhs_weap_m249_pip_L_para",
+					"rhs_weap_m249_pip_L_vfg",
+					"rhs_weap_m249_pip_S",
+					"rhs_weap_m249_pip_S_para",
+					"rhs_weap_m249_pip_S_vfg",
+					"rhs_weap_pkm",
+					"rhs_weap_pkp"
+				   ];
+
 //===== MARKSMAN
 _marksman = ["B_soldier_M_F","B_spotter_F","B_recon_M_F"];
-_marksmanGun = ["srifle_DMR_02_ACO_F","srifle_DMR_02_ARCO_F","srifle_DMR_02_camo_AMS_LP_F","srifle_DMR_02_DMS_F","srifle_DMR_02_MRCO_F","srifle_DMR_02_sniper_AMS_LP_S_F","srifle_DMR_02_F","srifle_DMR_02_camo_F","srifle_DMR_02_sniper_F","srifle_DMR_02_SOS_F","srifle_DMR_03_ACO_F","srifle_DMR_03_AMS_F","srifle_DMR_03_ARCO_F","srifle_DMR_03_DMS_F","srifle_DMR_03_DMS_snds_F","srifle_DMR_03_MRCO_F","srifle_DMR_03_SOS_F","srifle_DMR_03_tan_AMS_LP_F","srifle_DMR_03_F","srifle_DMR_03_khaki_F","srifle_DMR_03_multicam_F","srifle_DMR_03_tan_F","srifle_DMR_03_woodland_F","srifle_DMR_04_ACO_F","srifle_DMR_04_ARCO_F","srifle_DMR_04_DMS_F","srifle_DMR_05_ACO_F","srifle_DMR_05_ARCO_F","srifle_DMR_05_DMS_F","srifle_DMR_05_DMS_snds_F","srifle_DMR_05_KHS_LP_F","srifle_DMR_05_MRCO_F","srifle_DMR_05_SOS_F","srifle_DMR_05_blk_F","srifle_DMR_05_hex_F","srifle_DMR_05_tan_f","srifle_DMR_06_camo_F","srifle_DMR_06_camo_khs_F",
-"srifle_DMR_06_olive_F"];
+_marksmanGun = ["srifle_DMR_02_ACO_F",
+				"srifle_DMR_02_ARCO_F",
+				"srifle_DMR_02_camo_AMS_LP_F",
+				"srifle_DMR_02_DMS_F",
+				"srifle_DMR_02_MRCO_F",
+				"srifle_DMR_02_sniper_AMS_LP_S_F",
+				"srifle_DMR_02_F",
+				"srifle_DMR_02_camo_F",
+				"srifle_DMR_02_sniper_F",
+				"srifle_DMR_02_SOS_F",
+				"srifle_DMR_03_ACO_F",
+				"srifle_DMR_03_AMS_F",
+				"srifle_DMR_03_ARCO_F",
+				"srifle_DMR_03_DMS_F",
+				"srifle_DMR_03_DMS_snds_F",
+				"srifle_DMR_03_MRCO_F",
+				"srifle_DMR_03_SOS_F",
+				"srifle_DMR_03_tan_AMS_LP_F",
+				"srifle_DMR_03_F",
+				"srifle_DMR_03_khaki_F",
+				"srifle_DMR_03_multicam_F",
+				"srifle_DMR_03_tan_F",
+				"srifle_DMR_03_woodland_F",
+				"srifle_DMR_04_ACO_F",
+				"srifle_DMR_04_ARCO_F",
+				"srifle_DMR_04_DMS_F",
+				"srifle_DMR_05_ACO_F",
+				"srifle_DMR_05_ARCO_F",
+				"srifle_DMR_05_DMS_F",
+				"srifle_DMR_05_DMS_snds_F",
+				"srifle_DMR_05_KHS_LP_F",
+				"srifle_DMR_05_MRCO_F",
+				"srifle_DMR_05_SOS_F",
+				"srifle_DMR_05_blk_F",
+				"srifle_DMR_05_hex_F",
+				"srifle_DMR_05_tan_f",
+				"srifle_DMR_06_camo_F",
+				"srifle_DMR_06_camo_khs_F",
+				"srifle_DMR_06_olive_F"
+				];
 
 
 _basePos = getMarkerPos "respawn_west";
-
 _szmkr = getMarkerPos "safezone_marker";
 #define SZ_RADIUS 300
 
