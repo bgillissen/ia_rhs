@@ -137,10 +137,7 @@ _box = _this select 0;
         "rhsusf_mag_6Rnd_M433_HEDP",
         "rhsusf_mag_6Rnd_M441_HE",
         "rhsusf_mag_6Rnd_M781_Practice",
-        "rhsusf_mag_6Rnd_M576_Buckshot"
-        
-        
-        
+        "rhsusf_mag_6Rnd_M576_Buckshot"      
     ],
     true
 ] call BIS_fnc_addVirtualMagazineCargo;

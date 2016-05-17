@@ -5,11 +5,12 @@ smRewards =
 	["an UH-1Y Unarmed", "RHS_UH1Y_UNARMED_d"],
 	["an UH-1Y FFAR", "RHS_UH1Y_FFAR_d"],
 	["an AH1Z Ground Support", "RHS_AH1Z_GS"],
-	["an RG33 M2", "rhsusf_rg33_m2uusmc_d"],
+	["a RG33 M2", "rhsusf_rg33_m2uusmc_d"],
 	["an Offraod (Repair)", "C_Offroad_01_repair_F"],
 	["an Offraod (Repair)", "C_Offroad_01_repair_F"],
 	["a Mobile Mortar Truck", "B_G_Offroad_01_repair_F"],
-	["a Mobile Mortar Truck", "B_G_Offroad_01_repair_F"]
+	["a Mobile Mortar Truck", "B_G_Offroad_01_repair_F"],
+	["a M1117 ASV", "rhsusf_M1117_O"]
 //	["an AMV-7 Marshall", "B_APC_Wheeled_01_cannon_F"],
 //	["an MBT-52 Kuma", "I_MBT_03_cannon_F"],
 //	["a Strider HMG", "I_MRAP_03_hmg_F"],
