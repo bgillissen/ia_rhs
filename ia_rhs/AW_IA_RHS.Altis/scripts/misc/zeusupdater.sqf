@@ -18,9 +18,9 @@ call {while {true} do {
 																							HEMTT_5, 
 																							HEMTT_6, 
 																							Quartermaster, 
-																							crossroad, 
-																							Injured1, 
+																							crossroad,
 																							Injured, 
+																							Injured1,
 																							Injured2, 
 																							Supply_Officer]); 
 publicVariable "objectsToAdd";
