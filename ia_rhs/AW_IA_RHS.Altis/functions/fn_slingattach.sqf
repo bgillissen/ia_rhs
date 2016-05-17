@@ -26,7 +26,7 @@ _nearUnits = (getPos _hType) nearEntities [["LandVehicle","Ship"],maxLiftingDist
 if (count _nearUnits < 1) exitWith {hintSilent "No sling targets";};
 _liftable = [];
 //Light
-if (_hType isKindOf "MELB_AH6M_H" || _hType isKindOf "MELB_AH6M") then {_liftable = light;};
+if (_hType isKindOf "RHS_MELB_AH6M_M" || _hType isKindOf "RHS_MELB_AH6M") then {_liftable = light;};
 //medium
 if (_hType isKindOf "RHS_UH60M_d") then {_liftable = light + medium;};
 //heavy

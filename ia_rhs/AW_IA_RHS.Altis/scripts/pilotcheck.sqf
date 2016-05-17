@@ -6,7 +6,7 @@ _pilots = ["rhsusf_army_ocp_helipilot"];
 _aircraft_nocopilot = ["RHS_UH60M_d", 
 					   "RHS_CH_47F_10", 
 					   "rhsusf_CH53E_USMC_D", 
-					   "MELB_AH6M_H"];
+					   "RHS_MELB_AH6M_M"];
 
 waitUntil {player == player};
 
