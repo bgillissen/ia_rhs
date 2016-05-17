@@ -2,22 +2,23 @@
 
 smRewards =
 [
-	["an AH-9 Pawnee GMG - 20MM", "Land_GarbageBags_F"],
-	["an FV-720 Mora", "I_APC_tracked_03_cannon_F"],
-	["an AFV-4 Gorgon", "I_APC_Wheeled_03_cannon_F"],
-	["an AMV-7 Marshall", "B_APC_Wheeled_01_cannon_F"],
-	["an MBT-52 Kuma", "I_MBT_03_cannon_F"],
+	["an UH-1Y Unarmed", "RHS_UH1Y_UNARMED_d"],
+	["an UH-1Y FFAR", "RHS_UH1Y_FFAR_d"],
+	["an AH1Z Ground Support", "RHS_AH1Z_GS"],
+	["an RG33 M2", "rhsusf_rg33_m2uusmc_d"],
 	["an Offraod (Repair)", "C_Offroad_01_repair_F"],
-	["a Strider HMG", "I_MRAP_03_hmg_F"],
 	["an Offraod (Repair)", "C_Offroad_01_repair_F"],
-	["a Strider HMG", "I_MRAP_03_hmg_F"],
-	["a Strider HMG", "I_MRAP_03_hmg_F"],
-	["a Strider HMG", "I_MRAP_03_hmg_F"],
 	["a Mobile Mortar Truck", "B_G_Offroad_01_repair_F"],
-	["a Mobile Mortar Truck", "B_G_Offroad_01_repair_F"],
-	["an Offroad (Armed GMG)", "Land_InfoStand_V1_F"],
-	["an Offroad (Armed GMG)", "Land_InfoStand_V1_F"],
-	["a CRV-6e Bobcat", "B_APC_Tracked_01_CRV_F"]
+	["a Mobile Mortar Truck", "B_G_Offroad_01_repair_F"]
+//	["an AMV-7 Marshall", "B_APC_Wheeled_01_cannon_F"],
+//	["an MBT-52 Kuma", "I_MBT_03_cannon_F"],
+//	["a Strider HMG", "I_MRAP_03_hmg_F"],
+//	["a Strider HMG", "I_MRAP_03_hmg_F"],
+//	["a Strider HMG", "I_MRAP_03_hmg_F"],
+//	["a Strider HMG", "I_MRAP_03_hmg_F"],
+//	["an Offroad (Armed GMG)", "Land_InfoStand_V1_F"],
+//	["an Offroad (Armed GMG)", "Land_InfoStand_V1_F"],
+//	["a CRV-6e Bobcat", "B_APC_Tracked_01_CRV_F"]
 ];
 
 _veh = smRewards call BIS_fnc_selectRandom;
