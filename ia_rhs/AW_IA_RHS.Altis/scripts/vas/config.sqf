@@ -3,7 +3,7 @@ vas_onRespawn = false;
 //Preload Weapon Config?
 vas_preload = true;
 //If limiting weapons its probably best to set this to true so people aren't loading custom loadouts with restricted gear.
-vas_disableLoadSave = true;
+vas_disableLoadSave = false;
 //Amount of save/load slots
 vas_customslots = 19; //9 is actually 10 slots, starts from 0 to whatever you set, so always remember when setting a number to minus by 1, i.e 12 will be 11.
 //Disable 'VAS hasn't finished loading' Check !!! ONLY RECOMMENDED FOR THOSE THAT USE ACRE AND OTHER LARGE ADDONS !!!
@@ -412,7 +412,7 @@ vas_magazines = [
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		"rhsusf_mag_15Rnd_9x19_FMJ",
 		"rhsusf_mag_15Rnd_9x19_JHP",
-
+		
         
         "rhs_mag_an_m14_th3",
         "rhs_mag_an_m8hc",
@@ -443,6 +443,8 @@ vas_magazines = [
         "rhsusf_mag_6Rnd_M441_HE",
         "rhsusf_mag_6Rnd_M781_Practice",
         "rhsusf_mag_6Rnd_M576_Buckshot",
+        "rhsusf_mag_10Rnd_STD_50BMG_M33",
+        "rhsusf_mag_10Rnd_STD_50BMG_mk211",
         
         "RH_15Rnd_9x19_M9",
       	"RH_6Rnd_357_Mag",

@@ -224,6 +224,8 @@ _box = _this select 0;
         "rhsusf_mag_6Rnd_M441_HE",
         "rhsusf_mag_6Rnd_M781_Practice",
         "rhsusf_mag_6Rnd_M576_Buckshot",
+        "rhsusf_mag_10Rnd_STD_50BMG_M33",
+        "rhsusf_mag_10Rnd_STD_50BMG_mk211",
         
       	"RH_15Rnd_9x19_M9",
       	"RH_6Rnd_357_Mag",
