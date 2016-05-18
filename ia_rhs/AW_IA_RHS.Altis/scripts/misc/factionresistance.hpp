@@ -17,20 +17,19 @@ __________________________________________________*/
 
 class ind {
 	units[] = {
-		"I_Soldier_A_F",
-		"I_Soldier_AR_F",
-		"I_medic_F",
-		"I_engineer_F",
-		"I_Soldier_exp_F",
-		"I_Soldier_GL_F",
-		"I_Soldier_M_F",
-		"I_Soldier_AA_F",
-		"I_Soldier_AT_F",
-		"I_Soldier_repair_F",
-		"I_soldier_F",
-		"I_Soldier_LAT_F",
-		"I_Soldier_lite_F",
-		"I_Soldier_SL_F",
-		"I_Soldier_TL_F"
+		"rhsgref_ins_g_specialist_aa",
+		"rhsgref_ins_g_specialist_rpg",
+		"rhsgref_ins_g_commander",
+		"rhsgref_ins_g_machinegunner",
+		"rhsgref_ins_g_medic",
+		"rhsgref_ins_g_militian_mosin",
+		"rhsgref_ins_g_squadleader",
+		"rhsgref_ins_g_rifleman",
+		"rhsgref_ins_g_rifleman_RPG26",
+		"rhsgref_ins_g_grenadier",
+		"rhsgref_ins_g_saboteur",
+		"rhsgref_ins_g_sniper",
+		"rhsgref_ins_g_spotter",
+		"rhsgref_ins_g_engineer"
 	};
 };
