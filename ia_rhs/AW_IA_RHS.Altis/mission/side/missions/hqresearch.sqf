@@ -18,8 +18,9 @@ ____________________________________*/
 private ["_flatPos","_accepted","_position","_enemiesArray","_fuzzyPos","_x","_briefing","_unitsArray","_object","_dummy","_SMveh","_SMaa","_c4Message","_vehPos"];
 
 _c4Message = ["Hard drive secured. The charge has been set! 30 seconds until detonation.","Research secured. The explosives have been set! 30 seconds until detonation.","Research intel secured. The charge is planted! 30 seconds until detonation."] call BIS_fnc_selectRandom;
-#define VEH_TYPE "O_MRAP_02_F","O_Truck_03_covered_F","O_Truck_03_transport_F","O_Heli_Light_02_unarmed_F","O_Truck_02_transport_F","O_Truck_02_covered_F","C_SUV_01_F","C_Van_01_transport_F"
 
+//#define VEH_TYPE "O_MRAP_02_F","O_Truck_03_covered_F","O_Truck_03_transport_F","O_Heli_Light_02_unarmed_F","O_Truck_02_transport_F","O_Truck_02_covered_F","C_SUV_01_F","C_Van_01_transport_F"
+#define VEH_TYPE "rhs_uaz_open_MSV_01","rhs_uaz_MSV_01","rhs_tigr_msv"
 //-------------------- FIND POSITION FOR OBJECTIVE
 
 	_flatPos = [0,0,0];
