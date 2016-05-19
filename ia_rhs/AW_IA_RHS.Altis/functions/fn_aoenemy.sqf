@@ -27,7 +27,7 @@ __________________________________________________________________*/
 #define AIR_TYPE "RHS_Mi24P_vdv","RHS_Ka52_vvsc"
 
 #define MRAP_TYPE "rhs_tigr_sts_msv","rhsgref_BRDM2_HQ_msv"
-#define VEH_TYPE "rhs_btr60_msv","rhs_btr70_msv","rhs_btr80_msv","rhs_bmp1_msv","rhs_bmp1d_msv","rhs_bmp1k_msv","rhs_bmp1p_msv","rhs_bmp3_late_msv","rhs_Ob_6871_2","rhs_t72bd_tv","rhs_t80","rhs_t90a_tv"
+#define VEH_TYPE "rhs_btr60_msv","rhs_btr70_msv","rhs_btr80_msv","rhs_bmp1_msv","rhs_bmp1d_msv","rhs_bmp1k_msv","rhs_bmp1p_msv","rhs_bmp3_late_msv","rhs_t72bd_tv","rhs_t80","rhs_t90a_tv"
 
 
 
