@@ -65,7 +65,7 @@ private ["_x","_targetTrigger","_surrenderTrigger","_aGroup","_bGroup","_cGroup"
 	sleep 0.3;
 	
 	[OBJUNIT_TYPES] call BIS_fnc_selectRandom createUnit [_flatPos1, _aGroup];
-	"O_crew_F" createUnit [_flatPos1, _aGroup];
+	"rhs_msv_emr_officer" createUnit [_flatPos1, _aGroup];
 	
 	sleep 0.3;
 	
