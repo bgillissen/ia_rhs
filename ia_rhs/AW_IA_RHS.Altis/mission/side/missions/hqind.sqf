@@ -52,8 +52,8 @@ _c4Message = ["Weapons transfer secured. The charge has been set! 30 seconds unt
 	_object = [indCrate1,indCrate2] call BIS_fnc_selectRandom;
 	_object setPos [(getPos sideObj select 0), (getPos sideObj select 1), ((getPos sideObj select 2) + 2)];
 	
-	truck1 = "O_Truck_03_ammo_F" createVehicle _flatPos1;
-	truck2 = "I_Truck_02_ammo_F" createVehicle _flatPos2;
+	truck1 = "rhs_gaz66_ammo_vdv" createVehicle _flatPos1;
+	truck2 = "rhs_gaz66_ammo_vdv" createVehicle _flatPos2;
 	
 	{ _x setDir random 360 } forEach [truck1,truck2];
 	{ _x lock 3 } forEach [truck1,truck2];
