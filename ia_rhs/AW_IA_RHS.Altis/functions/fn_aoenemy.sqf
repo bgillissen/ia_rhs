@@ -31,7 +31,7 @@ __________________________________________________________________*/
 
 
 
-#define STATIC_TYPE "RHS_AGS30_Tripod_MSV","rhs_KORD_MSV","rhs_KORD_high_MSV","RHS_NSV_Tripod_MSV","rhs_SPG9M_MSV","rhs_Igla_AA_pod_msv"
+#define STATIC_TYPE "RHS_AGS30_Tripod_MSV","rhs_KORD_MSV","RHS_NSV_Tripod_MSV","rhs_Igla_AA_pod_msv","rhs_D30_vdv","rhs_2b14_82mm_vdv"
 
 private ["_enemiesArray","_randomPos","_patrolGroup","_AOvehGroup","_AOveh","_AOmrapGroup","_AOmrap","_pos","_spawnPos","_overwatchGroup","_x","_staticGroup","_static","_aaGroup","_aa","_airGroup","_air","_sniperGroup","_staticDir"];
 _pos = getMarkerPos (_this select 0);
