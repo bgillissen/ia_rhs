@@ -40,7 +40,7 @@ RespawnDialog = 0;										// default = 1. show respawn timer and scoreboard wh
 
 //------------------------- Garbage collector
 							
-wreckLimit = 3;											// Limit before removal is triggered
+wreckLimit = 5;											// Limit before removal is triggered
 wreckRemovalMinTime = 120;								// Min time before removal
 wreckRemovalMaxTime = 360;								// Max time before removal
 corpseLimit = 5;										// Limit before removal is triggered		
