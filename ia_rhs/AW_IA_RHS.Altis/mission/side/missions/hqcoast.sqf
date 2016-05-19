@@ -93,7 +93,8 @@ private ["_flatPos","_accepted","_position","_randomDir","_x","_briefing","_enem
 	assaultBoat setDir random 360;
 	assaultBoat allowDamage false;
 	
-	{ _x lock 3 } forEach [boat,assaultBoat];
+	//{ _x lock 3 } forEach [boat,assaultBoat];
+	{ _x lock 3 } forEach [assaultBoat];
 
 //------- POS FOR SECONDARY EXPLOSIONS, create a function for this?
 	
