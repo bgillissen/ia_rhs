@@ -102,32 +102,43 @@ player createDiaryRecord ["mods",
 [
 "Serverside",
 "
-<br /> Mods currently running on server (subject to change without notice):<br /><br />
-
-<br />- None at this time. 
+<br /> Mods currently running on server :<br /><br />
+<br />- none		
 "
 ]];
 
 player createDiaryRecord ["mods",
 [
-"Mods Allowed",
+"Mods Required",
 "
-<br /> Mods currently allowed (subject to change without notice):<br /><br />
-
-<br />- CBA - 1.00 beta5 - Required to run the below mods.
+<br /> Mods currently required :<br /><br />
+<br />- CBA - 2.3.1
 		http://www.armaholic.com/page.php?id=18768<br /><br />
-		
-<br />- JSRS - 2.0 and 2.1 - Enhanced sounds and audio.
-		http://www.armaholic.com/page.php?id=22150<br /><br />
-		
-<br />- Blastcore - R3 - Enhanced visual effects.
-		http://www.armaholic.com/page.php?id=23899<br /><br />
-		
-<br />- ShackTac Fireteam HUD - v140302 - Situational awareness HUD
-		http://www.armaholic.com/page.php?id=9936<br /><br />
+<br />- RHS: USAF - 0.4.1.0
+		http://www.rhsmods.org/<br /><br />
+<br />- RHS: AFRF - 0.4.1.0
+		http://www.rhsmods.org/<br /><br />
+<br />- RHS: GREF - 0.4.1.0
+		http://www.rhsmods.org/<br /><br />
+<br />- RH Pistols -  1.11.2
+		http://www.armaholic.com/page.php?id=20881<br /><br />
+<br />- RH Accessories - 1.05
+		http://www.mediafire.com/download/xi1fokyh5mhqxjk/@RH_Acc_v1.05.7z
 
-<br />- VTS Weapon resting - v05 - Simulates 'bipod' and weapon resting.
-		http://www.armaholic.com/page.php?id=20817
+"
+]];
+
+player createDiaryRecord ["mods",
+[
+"Mods Recommended",
+"
+<br /> Recommanded Mods :<br /><br />
+<br />- ShackTac Fireteam HUD - v140302
+		http://steamcommunity.com/sharedfiles/filedetails/?id=498740884<br /><br />
+<br />- ShackTac Map Gestures - 1.01
+		http://dslyecxi.com/shacktac_wp/shacktac-mods/shacktac-map-gestures/<br /><br />
+<br />- Mag Repack - 3.1.3
+		http://www.mediafire.com/download/xi1fokyh5mhqxjk/@RH_Acc_v1.05.7z
 "
 ]];
 
@@ -144,16 +155,16 @@ player createDiaryRecord ["teamspeak",
 
 player createDiaryRecord ["teamspeak",
 [
-"AHOY WORLD",
+"TaskForceUnicorn",
 "
-<br /> Address: ts.ahoyworld.co.uk
+<br /> Address: ts.taskforceunicorn.com
 <br />
-<br /> Visitors and guests welcome!
+<br /> Members only!
 "
 ]];
 
 //-------------------------------------------------- FAQ
-
+/*
 player createDiaryRecord ["faq",
 [
 "UAVs",
@@ -182,7 +193,7 @@ player createDiaryRecord ["faq",
 <br /><font size='16'>A:</font> Sometimes the UAVs are still connected to the prior Operators Terminal. If he disconnects or dies, sometimes the Terminal does not delete properly. The only solution at this time is to destroy the UAV, and you yourself must respawn.
 "
 ]];
-
+*/
 player createDiaryRecord ["faq",
 [
 "Squads",
@@ -204,7 +215,7 @@ player createDiaryRecord ["faq",
 <br />Coming soon ...
 "
 ]];
-
+/*
 player createDiaryRecord ["faq",
 [
 "Bipod",
@@ -218,7 +229,7 @@ player createDiaryRecord ["faq",
 <br /> ArmA 3 does not have integrated bipod function, so we have to use community-created mods to simulate.
 "
 ]];
-
+*/
 player createDiaryRecord ["faq",
 [
 "Medics",
@@ -248,7 +259,7 @@ player createDiaryRecord ["faq",
 ]];
 
 //-------------------------------------------------- Change Log
-
+/*
 player createDiaryRecord ["changelog",
 [
 "2.79",
@@ -563,6 +574,7 @@ player createDiaryRecord ["changelog",
 <br />- [ADDED] Utility for zues to stop Main AO.
 "
 ]];
+*/
 //-------------------------------------------------- Credits
 
 player createDiaryRecord ["credits",
@@ -609,5 +621,8 @@ player createDiaryRecord ["credits",
 		- Bake<br />
 		DAC<br />
 		- Silola<br />
+<br />Ported to RHS by:<br /><br />
+		- Ben - TFU (taskforceunicorn.com)<br />
+		- The BadassPutin - TFU (taskforceunicorn.com)<br />
 "
 ]];
