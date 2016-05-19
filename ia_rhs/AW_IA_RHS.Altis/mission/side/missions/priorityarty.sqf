@@ -45,13 +45,13 @@ private ["_flatPos","_accepted","_position","_flatPos1","_flatPos2","_flatPos3",
 	
 	sleep 0.3;
 	
-	priorityObj1 = "O_MBT_02_arty_F" createVehicle _flatPos1;
+	priorityObj1 = "rhs_2s3_tv" createVehicle _flatPos1;
 	waitUntil {!isNull priorityObj1};
 	priorityObj1 setDir _PTdir;
 	
 	sleep 0.3;
 	
-	priorityObj2 = "O_MBT_02_arty_F" createVehicle _flatPos2;
+	priorityObj2 = "rhs_2s3_tv" createVehicle _flatPos2;
 	waitUntil {!isNull priorityObj2};
 	priorityObj2 setDir _PTdir;
 	
@@ -62,7 +62,7 @@ private ["_flatPos","_accepted","_position","_flatPos1","_flatPos2","_flatPos3",
 	
 	//----- SPAWN AMMO TRUCK (for ambiance and plausibiliy of unlimited ammo)
 	
-	ammoTruck = "O_Truck_03_ammo_F" createVehicle _flatPos3;
+	ammoTruck = "rhs_gaz66_ammo_vdv" createVehicle _flatPos3;
 	waitUntil {!isNull ammoTruck};
 	ammoTruck setDir random 360;
 		
@@ -76,10 +76,10 @@ private ["_flatPos","_accepted","_position","_flatPos1","_flatPos2","_flatPos3",
 	
 	_priorityGroup = createGroup east;
 	
-		"O_officer_F" createUnit [_flatPos, _priorityGroup];
-		"O_officer_F" createUnit [_flatPos, _priorityGroup];
-		"O_engineer_F" createUnit [_flatPos, _priorityGroup];
-		"O_engineer_F" createUnit [_flatPos, _priorityGroup];
+		"rhs_msv_emr_combatcrew" createUnit [_flatPos, _priorityGroup];
+		"rhs_msv_emr_combatcrew" createUnit [_flatPos, _priorityGroup];
+		"rhs_msv_emr_combatcrew" createUnit [_flatPos, _priorityGroup];
+		"rhs_msv_emr_combatcrew" createUnit [_flatPos, _priorityGroup];
 		
 		priorityGunner1 = ((units _priorityGroup) select 2);
 		priorityGunner2 = ((units _priorityGroup) select 3);

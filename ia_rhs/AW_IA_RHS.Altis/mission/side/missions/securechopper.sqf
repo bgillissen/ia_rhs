@@ -12,7 +12,8 @@ Description:
 	Destroy chopper
 ____________________________________*/
 
-#define CHOPPER_TYPE "O_Heli_Attack_02_black_F","O_Heli_Light_02_unarmed_F","B_Heli_Attack_01_F"
+#define CHOPPER_TYPE "RHS_Mi24P_vdv","RHS_ka52_vvsc"
+
 private ["_objPos","_flatPos","_accepted","_position","_randomDir","_hangar","_x","_enemiesArray","_briefing","_fuzzyPos","_unitsArray","_dummy","_object"];
 _c4Message = ["Chopper data secured. The charge has been set! 30 seconds until detonation.","Heli data secured. The explosives have been set! 30 seconds until detonation.","Chopper intel secured. The charge is planted! 30 seconds until detonation."] call BIS_fnc_selectRandom;
 

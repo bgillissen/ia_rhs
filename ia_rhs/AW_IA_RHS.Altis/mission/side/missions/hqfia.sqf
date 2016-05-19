@@ -65,7 +65,8 @@ _c4Message = ["Supply crate secured. The charge has been set! 30 seconds until d
 //-------------------- SPAWN FORCE PROTECTION
 
 
-	_enemiesArray = [sideObj] call QS_fnc_SMenemyFIA;
+	//_enemiesArray = [sideObj] call QS_fnc_SMenemyFIA;
+	_enemiesArray = [sideObj] call QS_fnc_SMenemyEAST;
 		
 
 //-------------------- SPAWN BRIEFING

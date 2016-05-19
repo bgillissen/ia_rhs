@@ -50,7 +50,7 @@ private ["_flatPos","_accepted","_position","_randomDir","_x","_briefing","_enem
 	_object setPos [(getPos sideObj select 0), (getPos sideObj select 1), ((getPos sideObj select 2) + 5)];
 	
 	//--------- BOAT POSITIONS
-	
+	/*
 	_boatPos = [_flatPos, 50, 150, 10, 2, 1, 0] call BIS_fnc_findSafePos;
 	_trawlerPos = [_flatPos, 200, 300, 10, 2, 1, 0] call BIS_fnc_findSafePos;
 	_assaultBoatPos = [_flatPos, 15, 25, 10, 0, 1, 0] call BIS_fnc_findSafePos;
@@ -60,17 +60,29 @@ private ["_flatPos","_accepted","_position","_randomDir","_x","_briefing","_enem
 	boat = "O_Boat_Armed_01_hmg_F" createVehicle _boatPos;	
 	waitUntil {sleep 0.3; alive boat};
 	boat setDir random 360;
-		"O_diver_TL_F" createUnit [_boatPos,_smuggleGroup]; "O_diver_F" createUnit [_boatPos,_smuggleGroup]; "O_diver_F" createUnit [_boatPos,_smuggleGroup]; "O_diver_F" createUnit [_boatPos,_smuggleGroup]; "O_diver_F" createUnit [_boatPos,_smuggleGroup];
-		((units _smuggleGroup) select 0) assignAsCommander boat; ((units _smuggleGroup) select 0) moveInCommander boat; ((units _smuggleGroup) select 1) assignAsDriver boat; ((units _smuggleGroup) select 1) moveInDriver boat; ((units _smuggleGroup) select 2) assignAsGunner boat; ((units _smuggleGroup) select 2) moveInGunner boat; ((units _smuggleGroup) select 3) assignAsCargo boat; ((units _smuggleGroup) select 3) moveInCargo boat; ((units _smuggleGroup) select 4) assignAsCargo boat; ((units _smuggleGroup) select 4) moveInCargo boat;
+		"O_diver_TL_F" createUnit [_boatPos,_smuggleGroup]; 
+		"O_diver_F" createUnit [_boatPos,_smuggleGroup]; 
+		"O_diver_F" createUnit [_boatPos,_smuggleGroup]; 
+		"O_diver_F" createUnit [_boatPos,_smuggleGroup]; 
+		"O_diver_F" createUnit [_boatPos,_smuggleGroup];
+		((units _smuggleGroup) select 0) assignAsCommander boat;
+		((units _smuggleGroup) select 0) moveInCommander boat;
+		((units _smuggleGroup) select 1) assignAsDriver boat;
+		((units _smuggleGroup) select 1) moveInDriver boat;
+		((units _smuggleGroup) select 2) assignAsGunner boat;
+		((units _smuggleGroup) select 2) moveInGunner boat; 
+		((units _smuggleGroup) select 3) assignAsCargo boat; 
+		((units _smuggleGroup) select 3) moveInCargo boat; 
+		((units _smuggleGroup) select 4) assignAsCargo boat;
+		((units _smuggleGroup) select 4) moveInCargo boat;
 	[(units _smuggleGroup)] call QS_fnc_setSkill2;
-	
 	_unitsArray = [_smuggleGroup];
 
 	{
 		_x addCuratorEditableObjects [[boat], false];
 		_x addCuratorEditableObjects [units _smuggleGroup, false];
 	} foreach adminCurators;
-	
+	*/
 	//---------- SHIPPING TRAWLER AND INFLATABLE BOAT FOR AMBIENCE
 	
 	trawler = "C_Boat_Civil_04_F" createVehicle _trawlerPos;
