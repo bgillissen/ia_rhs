@@ -304,12 +304,12 @@ if (PARAMS_EnemiesInBuildings != 0) then {
 [(units _overwatchGroup)] call QS_fnc_setSkill2;
 [(units _AOvehGroup)] call QS_fnc_setSkill2;
 if (random 1 >= 0.5) then {
-	[(units _sniperGroup)] call QS_fnc_setSkill3;
+	[(units _sniperGroup)] call QS_fnc_setSkill2;
 } else {
 	[(units _sniperGroup)] call QS_fnc_setSkill2;
 };
 [(units _staticGroup)] call QS_fnc_setSkill2;
-[(units _aaGroup)] call QS_fnc_setSkill3;
+[(units _aaGroup)] call QS_fnc_setSkill2;
 	
 //---------- GARRISON FORTIFICATIONS	
 	

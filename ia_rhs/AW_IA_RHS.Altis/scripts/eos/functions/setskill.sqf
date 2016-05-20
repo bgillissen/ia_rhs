@@ -5,7 +5,8 @@ _skillArray=(_this select 1);
 						{
 				_unit = _x;
 				{
-			_skillvalue = (_skillset select _forEachIndex) + (random 0.2) - (random 0.2);
+			//_skillvalue = (_skillset select _forEachIndex) + (random 0.1) - (random 0.1);
+			_skillvalue = (_skillset select _forEachIndex);
 			_unit setSkill [_x,_skillvalue];
 				} forEach ['aimingAccuracy','aimingShake','aimingSpeed','spotDistance','spotTime','courage','reloadSpeed','commanding','general'];
 				
