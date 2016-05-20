@@ -133,7 +133,7 @@ _backpackRestricted = ["O_Mortar_01_support_F",
                        //"RHS_SPG9_Tripod_Bag",
                        "O_AA_01_weapon_F"];
 //===== LMG
-_autoRiflemen = ["rhsusf_army_ocp_machinegunner"];
+_autoRiflemen = ["rhsusf_army_ocp_machinegunner","rhsusf_army_ocp_autorifleman"];
 _autoSpecialised = ["MMG_02_black_F",
                     "MMG_02_camo_F",
                     "MMG_02_sand_F",
