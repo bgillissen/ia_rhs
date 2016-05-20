@@ -255,14 +255,14 @@ class Params
 			title = "CAS SUPPORT";
 			values[] = {0,1,2,3,4,5};
 			texts[] = {"DISABLED","A-164 WIPEOUT (CAS)","A-143 BUZZARD (AA)","A-143 BUZZARD (CAS)","To-199 NEOPHRON (CAS)","RANDOM"};
-			default = 0;
+			default = 5;
 		};
 		
 		class CasATGM {
 			title = "CAS Air-To-Ground Missiles";
 			values[] = {0,1};
 			texts[] = {"DISABLED","ENABLED"};
-			default = 0;
+			default = 1;
 		};
 		
 		class CasOnStart {
