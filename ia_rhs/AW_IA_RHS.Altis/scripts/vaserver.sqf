@@ -8,7 +8,8 @@ private ["_box"];
 
 _box = _this select 0;
 
-["AmmoboxInit",[_box,false,{true}]] call BIS_fnc_arsenal;
+//["AmmoboxInit",[_box,false,{true}]] call BIS_fnc_arsenal;
+["AmmoboxInit",[_box,false,{true}]] call xla_fnc_arsenal;
 
 
 //----------------------------BACKPACKS----------------------------
@@ -74,8 +75,8 @@ _box = _this select 0;
         "tf_anarc210"
     ],
     true
-] call BIS_fnc_addVirtualBackpackCargo;
-
+//] call BIS_fnc_addVirtualBackpackCargo;
+] call xla_fnc_addVirtualBackpackCargo;
 //----------------------------AMMO----------------------------  
 [
     _box,
@@ -276,10 +277,10 @@ _box = _this select 0;
       	"RH_20Rnd_32cal_vz61"
     ],
     true
-] call BIS_fnc_addVirtualMagazineCargo;
+//] call BIS_fnc_addVirtualMagazineCargo;
+] call xla_fnc_addVirtualMagazineCargo;
 
 //----------------------------WEAPONS----------------------------
- call BIS_fnc_addVirtualWeaponCargo;
 [
     _box,
     [
@@ -516,8 +517,8 @@ _box = _this select 0;
         "RH_muzisd"
     ],
     true
-] call BIS_fnc_addVirtualWeaponCargo;
-    
+//] call BIS_fnc_addVirtualWeaponCargo;
+] call xla_fnc_addVirtualWeaponCargo;    
 //----------------------------ITEMS----------------------------  
 [
     _box,
@@ -890,4 +891,5 @@ _box = _this select 0;
         "optic_Yorris"
     ],
     true
-] call BIS_fnc_addVirtualItemCargo;
+//] call BIS_fnc_addVirtualItemCargo;
+] call xla_fnc_addVirtualItemCargo;
