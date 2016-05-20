@@ -203,5 +203,5 @@ __________________________________________________________________*/
 	
 	_newGrp setBehaviour "COMBAT";
 	_newGrp setCombatMode "RED";
-	[(units _newGrp)] call QS_fnc_setSkill2;
+	[(units _newGrp)] call QS_fnc_setSkill1;
 	_newGrp;

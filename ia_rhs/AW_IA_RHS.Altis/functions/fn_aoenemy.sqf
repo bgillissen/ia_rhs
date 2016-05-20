@@ -301,15 +301,15 @@ if (PARAMS_EnemiesInBuildings != 0) then {
 //---------- COMMON
 
 [(units _patrolGroup)] call QS_fnc_setSkill1;
-[(units _overwatchGroup)] call QS_fnc_setSkill2;
+[(units _overwatchGroup)] call QS_fnc_setSkill1;
 [(units _AOvehGroup)] call QS_fnc_setSkill2;
 if (random 1 >= 0.5) then {
-	[(units _sniperGroup)] call QS_fnc_setSkill2;
+	[(units _sniperGroup)] call QS_fnc_setSkill1;
 } else {
 	[(units _sniperGroup)] call QS_fnc_setSkill2;
 };
-[(units _staticGroup)] call QS_fnc_setSkill2;
-[(units _aaGroup)] call QS_fnc_setSkill2;
+[(units _staticGroup)] call QS_fnc_setSkill1;
+[(units _aaGroup)] call QS_fnc_setSkill1;
 	
 //---------- GARRISON FORTIFICATIONS	
 	
