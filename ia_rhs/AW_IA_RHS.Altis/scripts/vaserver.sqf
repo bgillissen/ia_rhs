@@ -8,8 +8,8 @@ private ["_box"];
 
 _box = _this select 0;
 
-//["AmmoboxInit",[_box,false,{true}]] call BIS_fnc_arsenal;
-["AmmoboxInit",[_box,false,{true}]] call xla_fnc_arsenal;
+["AmmoboxInit",[_box,false,{true}]] call BIS_fnc_arsenal;
+//["AmmoboxInit",[_box,false,{true}]] call xla_fnc_arsenal;
 
 
 //----------------------------BACKPACKS----------------------------
@@ -75,8 +75,8 @@ _box = _this select 0;
         "tf_anarc210"
     ],
     true
-//] call BIS_fnc_addVirtualBackpackCargo;
-] call xla_fnc_addVirtualBackpackCargo;
+] call BIS_fnc_addVirtualBackpackCargo;
+//] call xla_fnc_addVirtualBackpackCargo;
 //----------------------------AMMO----------------------------  
 [
     _box,
@@ -171,7 +171,7 @@ _box = _this select 0;
         "10Rnd_93x64_DMR_05_Mag",
         
         
-        "rhsusf_20Rnd_762x51_m118_special_Mag",
+        "rhsusf_20Rnd_762x51_m118_special_Mag",		//RHS
 		"rhsusf_20Rnd_762x51_m993_Mag",
 		"30Rnd_556x45_Stanag",
 		"30Rnd_556x45_Stanag_Tracer_Green",
@@ -179,7 +179,6 @@ _box = _this select 0;
 		"30Rnd_556x45_Stanag_Tracer_Yellow",
         "rhsusf_5Rnd_300winmag_xm2010",
 		"10Rnd_RHS_50BMG_Box",
-		"rhsusf_10Rnd_STD_50BMG_M107",
 		"rhs_200rnd_556x45_M_SAW",
 		"rhs_200rnd_556x45_T_SAW",
 		"rhs_200rnd_556x45_B_SAW",
@@ -193,6 +192,10 @@ _box = _this select 0;
 		"rhsusf_100Rnd_762x51_m80a1epr",
 		"rhsusf_50Rnd_762x51_m993",
 		"rhsusf_100Rnd_762x51_m993",
+		
+		"rhsusf_100Rnd_556x45_soft_pouch",
+		"rhsusf_100Rnd_556x45_M200_soft_pouch",
+				
 		"rhsusf_5Rnd_00Buck",
 		"rhsusf_8Rnd_00Buck",
 		"rhsusf_5Rnd_Slug",
@@ -234,7 +237,7 @@ _box = _this select 0;
         "rhs_mag_M433_HEDP",
         "rhs_mag_M441_HE",
         "rhs_mag_m576",
-        "rhs_mag_M585_white",
+    	"rhs_mag_M585_white",
         "rhs_mag_m661_green",
         "rhs_mag_m662_red",
         "rhs_mag_m713_Red",
@@ -249,7 +252,7 @@ _box = _this select 0;
         "rhsusf_mag_10Rnd_STD_50BMG_M33",
         "rhsusf_mag_10Rnd_STD_50BMG_mk211",
         
-      	"RH_15Rnd_9x19_M9",
+      	"RH_15Rnd_9x19_M9",		//RH Pistols
       	"RH_6Rnd_357_Mag",
       	"RH_16Rnd_9x19_CZ",
       	"RH_7Rnd_50_AE",
@@ -274,11 +277,13 @@ _box = _this select 0;
       	"RH_12Rnd_45cal_usp",
       	"RH_16Rnd_40cal_usp",
       	"RH_18Rnd_9x19_VP",
-      	"RH_20Rnd_32cal_vz61"
+      	"RH_20Rnd_32cal_vz61",
+      	
+      	"50Rnd_570x28_SMG_03"	//ADR-97
     ],
     true
-//] call BIS_fnc_addVirtualMagazineCargo;
-] call xla_fnc_addVirtualMagazineCargo;
+] call BIS_fnc_addVirtualMagazineCargo;
+//] call xla_fnc_addVirtualMagazineCargo;
 
 //----------------------------WEAPONS----------------------------
 [
@@ -375,7 +380,8 @@ _box = _this select 0;
         "MMG_01_hex_F",
         "MMG_01_hex_ARCO_LP_F",
         "MMG_01_tan_F",
-        "rhs_weap_m14ebrri",
+        
+        "rhs_weap_m14ebrri",			//RHS
         "rhs_weap_m16a4",
         "rhs_weap_m16a4_carryhandle",
         "rhs_weap_m16a4_carryhandle_M203",
@@ -420,6 +426,7 @@ _box = _this select 0;
         "rhs_weap_m240B_CAP",
         "rhs_weap_m240G",
         "rhs_weap_m249_pip",
+        "rhs_weap_m249_pip_elcan",
         "rhs_weap_m249_pip_L",
         "rhs_weap_m249_pip_L_para",
         "rhs_weap_m249_pip_L_vfg",
@@ -450,7 +457,7 @@ _box = _this select 0;
         "rhs_weap_mk18_KAC",
         "rhs_weap_mk18_m320",
         
-        "RH_deagle",
+        "RH_deagle",			//RH Pistols
         "RH_deagleg",
         "RH_deagles",
         "RH_deaglem",
@@ -514,16 +521,36 @@ _box = _this select 0;
         "RH_tec9", 
         "RH_tecsd", 
         "RH_muzi", 
-        "RH_muzisd"
+        "RH_muzisd",
+        
+        "SMG_03_black",		//ADR-97
+        "SMG_03_camo",
+        "SMG_03_hex",
+        "SMG_03_khaki",
+        "SMG_03C_BASE",
+        "SMG_03_TR_BASE",
+        "SMG_03_TR_black",
+        "SMG_03_TR_camo",
+        "SMG_03_TR_hex",
+        "SMG_03_TR_khaki",
+        "SMG_03C_black",
+        "SMG_03C_camo",
+        "SMG_03C_hex",
+        "SMG_03C_khaki",
+        "SMG_03C_TR_black",
+        "SMG_03C_TR_camo",
+        "SMG_03C_TR_hex",
+        "SMG_03C_TR_khaki"      
     ],
     true
-//] call BIS_fnc_addVirtualWeaponCargo;
-] call xla_fnc_addVirtualWeaponCargo;    
+] call BIS_fnc_addVirtualWeaponCargo;
+//] call xla_fnc_addVirtualWeaponCargo;    
 //----------------------------ITEMS----------------------------  
 [
     _box,
     [
         "tf_anprc152",			//TFAR NATO radios
+        "tf_anprc152_1",
         "tf_rf7800str",
         
         "MineDetector",
@@ -887,9 +914,12 @@ _box = _this select 0;
         "rhsusf_opscore_rg_cover_pelt",
         "rhsusf_opscore_ut",
         
-        "optic_MRD",
-        "optic_Yorris"
+        "optic_MRD",				//RH Pistols
+        "optic_Yorris",
+        
+        "muzzle_snds_570"			//ADR-97
     ],
     true
-//] call BIS_fnc_addVirtualItemCargo;
-] call xla_fnc_addVirtualItemCargo;
+] call BIS_fnc_addVirtualItemCargo;
+//] call xla_fnc_addVirtualItemCargo;
+

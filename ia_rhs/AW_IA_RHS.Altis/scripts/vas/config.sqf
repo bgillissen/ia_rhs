@@ -135,7 +135,8 @@ vas_weapons = [
         "MMG_01_hex_F",
         "MMG_01_hex_ARCO_LP_F",
         "MMG_01_tan_F",
-        "rhs_weap_m14ebrri",
+        
+        "rhs_weap_m14ebrri",			//RHS
         "rhs_weap_m16a4",
         "rhs_weap_m16a4_carryhandle",
         "rhs_weap_m16a4_carryhandle_M203",
@@ -180,6 +181,7 @@ vas_weapons = [
         "rhs_weap_m240B_CAP",
         "rhs_weap_m240G",
         "rhs_weap_m249_pip",
+        "rhs_weap_m249_pip_elcan",
         "rhs_weap_m249_pip_L",
         "rhs_weap_m249_pip_L_para",
         "rhs_weap_m249_pip_L_vfg",
@@ -210,7 +212,7 @@ vas_weapons = [
         "rhs_weap_mk18_KAC",
         "rhs_weap_mk18_m320",
         
-        "RH_deagle",
+        "RH_deagle",			//RH Pistols
         "RH_deagleg",
         "RH_deagles",
         "RH_deaglem",
@@ -274,7 +276,26 @@ vas_weapons = [
         "RH_tec9", 
         "RH_tecsd", 
         "RH_muzi", 
-        "RH_muzisd"
+        "RH_muzisd",
+        
+        "SMG_03_black",		//ADR-97
+        "SMG_03_camo",
+        "SMG_03_hex",
+        "SMG_03_khaki",
+        "SMG_03C_BASE",
+        "SMG_03_TR_BASE",
+        "SMG_03_TR_black",
+        "SMG_03_TR_camo",
+        "SMG_03_TR_hex",
+        "SMG_03_TR_khaki",
+        "SMG_03C_black",
+        "SMG_03C_camo",
+        "SMG_03C_hex",
+        "SMG_03C_khaki",
+        "SMG_03C_TR_black",
+        "SMG_03C_TR_camo",
+        "SMG_03C_TR_hex",
+        "SMG_03C_TR_khaki"
 ];
 //Want to limit VAS to specific magazines? Place the classnames in the array!
 vas_magazines = [
@@ -367,7 +388,8 @@ vas_magazines = [
         "10Rnd_127x54_Mag",
         "10Rnd_93x64_DMR_05_Mag",
         
-        "rhsusf_20Rnd_762x51_m118_special_Mag",
+        
+        "rhsusf_20Rnd_762x51_m118_special_Mag",		//RHS
 		"rhsusf_20Rnd_762x51_m993_Mag",
 		"30Rnd_556x45_Stanag",
 		"30Rnd_556x45_Stanag_Tracer_Green",
@@ -375,7 +397,6 @@ vas_magazines = [
 		"30Rnd_556x45_Stanag_Tracer_Yellow",
         "rhsusf_5Rnd_300winmag_xm2010",
 		"10Rnd_RHS_50BMG_Box",
-		"rhsusf_10Rnd_STD_50BMG_M107",
 		"rhs_200rnd_556x45_M_SAW",
 		"rhs_200rnd_556x45_T_SAW",
 		"rhs_200rnd_556x45_B_SAW",
@@ -389,6 +410,10 @@ vas_magazines = [
 		"rhsusf_100Rnd_762x51_m80a1epr",
 		"rhsusf_50Rnd_762x51_m993",
 		"rhsusf_100Rnd_762x51_m993",
+		
+		"rhsusf_100Rnd_556x45_soft_pouch",
+		"rhsusf_100Rnd_556x45_M200_soft_pouch",
+				
 		"rhsusf_5Rnd_00Buck",
 		"rhsusf_8Rnd_00Buck",
 		"rhsusf_5Rnd_Slug",
@@ -412,7 +437,6 @@ vas_magazines = [
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		"rhsusf_mag_15Rnd_9x19_FMJ",
 		"rhsusf_mag_15Rnd_9x19_JHP",
-		
         
         "rhs_mag_an_m14_th3",
         "rhs_mag_an_m8hc",
@@ -431,7 +455,7 @@ vas_magazines = [
         "rhs_mag_M433_HEDP",
         "rhs_mag_M441_HE",
         "rhs_mag_m576",
-        "rhs_mag_M585_white",
+    	"rhs_mag_M585_white",
         "rhs_mag_m661_green",
         "rhs_mag_m662_red",
         "rhs_mag_m713_Red",
@@ -446,7 +470,7 @@ vas_magazines = [
         "rhsusf_mag_10Rnd_STD_50BMG_M33",
         "rhsusf_mag_10Rnd_STD_50BMG_mk211",
         
-        "RH_15Rnd_9x19_M9",
+      	"RH_15Rnd_9x19_M9",		//RH Pistols
       	"RH_6Rnd_357_Mag",
       	"RH_16Rnd_9x19_CZ",
       	"RH_7Rnd_50_AE",
@@ -471,11 +495,14 @@ vas_magazines = [
       	"RH_12Rnd_45cal_usp",
       	"RH_16Rnd_40cal_usp",
       	"RH_18Rnd_9x19_VP",
-      	"RH_20Rnd_32cal_vz61"
+      	"RH_20Rnd_32cal_vz61",
+      	
+      	"50Rnd_570x28_SMG_03"	//ADR-97
 ];
 //Want to limit VAS to specific items? Place the classnames in the array!
 vas_items = [
 		"tf_anprc152",			//TFAR NATO radios
+        "tf_anprc152_1",
         "tf_rf7800str",
         
         "MineDetector",
@@ -642,6 +669,7 @@ vas_items = [
         "lerca_1200_tan",
         "rhsusf_ANPVS_15",
         "rhsusf_ANPVS_14",
+        "rhsusf_ANVIS",
         "rhsusf_acc_harris_bipod",
         "rhs_acc_at4_handler",
         "rhsusf_acc_anpeq15A",
@@ -679,6 +707,7 @@ vas_items = [
         "rhsusf_acc_rotex5_tan",
         "rhsusf_acc_SFMB556",
         "rhs_weap_optic_smaw",
+        "rhsusf_acc_SR25S",
         "rhsusf_acc_SpecterDR",
         "rhsusf_acc_SpecterDR_3d",
         "rhsusf_acc_SpecterDR_A",
@@ -691,7 +720,7 @@ vas_items = [
         "rhsusf_acc_SpecterDR_pvs27",
         "rhsusf_acc_premier",
         "rhsusf_acc_premier_anpvs27",
-                
+        
         "rhs_uniform_FROG01_d",
         "rhs_uniform_FROG01_m81",
         "rhs_uniform_FROG01_wd",
@@ -837,8 +866,10 @@ vas_items = [
         "rhsusf_opscore_rg_cover_pelt",
         "rhsusf_opscore_ut",
         
-        "optic_MRD",
-        "optic_Yorris"
+        "optic_MRD",				//RH Pistols
+        "optic_Yorris",
+        
+        "muzzle_snds_570"			//ADR-97
 ];
 //Want to limit backpacks? Place the classnames in the array!
 vas_backpacks = [
