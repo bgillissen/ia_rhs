@@ -968,12 +968,6 @@ vas_glasses = [
 */
 
 //Below are variables you can use to restrict certain items from being used.
-//backpacks to remove from VAS
-vas_r_backpacks = [
-	"rhs_assault_umbts",
-	"rhs_assault_umbts_engineer_empty"
-];
-
 
 //Weapons to remove from VAS
 vas_r_weapons = [];
