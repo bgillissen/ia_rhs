@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1920;
+		nextID=1930;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15301.601,33.191765,17363.52};
-		dir[]={-0.32814911,-0.36206579,0.87262177};
-		up[]={-0.12745926,0.93210727,0.33894569};
-		aside[]={0.93612605,1.4105171e-007,0.35202724};
+		pos[]={15291.268,28.752131,17389.004};
+		dir[]={-0.72715932,-0.35935494,0.5851056};
+		up[]={-0.28001565,0.9331547,0.22531469};
+		aside[]={0.62698221,6.5547647e-007,0.77920246};
 	};
 };
 binarizationWanted=0;
@@ -1969,7 +1969,7 @@ class Mission
 			position[]={6826.1714,183.58508,19303.402};
 			name="FOB_NW_APC";
 			type="Empty";
-			angle=127.07996;
+			angle=127.07994;
 			id=210;
 		};
 		class Item189
