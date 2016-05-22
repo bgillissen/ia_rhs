@@ -4,7 +4,7 @@
 ////////////////////////////////
 
 //zeusupdater.sqf
-
+/*
 waitUntil {time > 3};
 call {while {true} do {
 	objectsToAdd = (entities "AllVehicles" - entities "Animal" - entities "RoadCone_L_F" - [medicTruck, 
@@ -12,15 +12,10 @@ call {while {true} do {
 																							medicTruck_2, 
 																							Damaged_Ghost, 
 																							HEMTT_1, 
-																							HEMTT_2, 
-																							HEMTT_3, 
-																							HEMTT_4, 
-																							HEMTT_5, 
-																							HEMTT_6, 
+																							HEMTT_2,
 																							Quartermaster, 
 																							crossroad,
 																							Injured, 
-																							Injured1,
 																							Injured2, 
 																							Supply_Officer]); 
 publicVariable "objectsToAdd";
@@ -29,3 +24,5 @@ publicVariable "objectsToAdd";
 } foreach allCurators; sleep 180;};};
 
 //player groupChat "Zeus unit updater running";        //Can have hint that updater is running on startup remove // to activate.
+
+*/

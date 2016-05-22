@@ -36,6 +36,7 @@ _null = [] execvm "scripts\vehicle\crew\crew.sqf"; 								// vehicle HUD
 //_null = [] execVM 'scripts\group_manager.sqf';									// group manager
 _null = [] execVM "scripts\restrictions.sqf"; 									// gear restrictions and safezone
 _null = [] execVM "scripts\pilotCheck.sqf"; 									// pilots only
+_null = [] execVM "scripts\crewCheck.sqf"; 										// tank crew only
 _null = [] execVM "scripts\jump.sqf";											// jump action
 _null = [] execVM "scripts\misc\diary.sqf";										// diary tabs	
 _null = [] execVM "scripts\icons.sqf";											// blufor map tracker Quicksilver
@@ -62,45 +63,27 @@ enableEngineArtillery false;
 if (player isKindOf "rhsusf_army_ocp_fso") then {
 	enableEngineArtillery true;
 };
+if (player isKindOf "rhsusf_army_ocp_crewman") then {
+	enableEngineArtillery true;
+};
 
 ["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;
 
 //--------------------- Billboard Image Randomiser
 
-	_imageList = [1,2,3,4,5,6,7,8,9,10,11,12,13,14];
+	_imageList = [1,2,3,4];
 	_bill1 = _imageList call BIS_fnc_selectRandom;
 	if (_bill1 == 1) then {Bill_1 setObjectTexture [0,"media\images\billboard1.paa"]};
 	if (_bill1 == 2) then {Bill_1 setObjectTexture [0,"media\images\billboard2.paa"]};
 	if (_bill1 == 3) then {Bill_1 setObjectTexture [0,"media\images\billboard3.paa"]};
 	if (_bill1 == 4) then {Bill_1 setObjectTexture [0,"media\images\billboard4.paa"]};
-	if (_bill1 == 5) then {Bill_1 setObjectTexture [0,"media\images\billboard5.paa"]};
-	if (_bill1 == 6) then {Bill_1 setObjectTexture [0,"media\images\billboard6.paa"]};
-	if (_bill1 == 7) then {Bill_1 setObjectTexture [0,"media\images\billboard7.paa"]};
-	if (_bill1 == 8) then {Bill_1 setObjectTexture [0,"media\images\billboard8.paa"]};
-	if (_bill1 == 9) then {Bill_1 setObjectTexture [0,"media\images\billboard9.paa"]};
-	if (_bill1 == 10) then {Bill_1 setObjectTexture [0,"media\images\billboard10.paa"]};
-	if (_bill1 == 11) then {Bill_1 setObjectTexture [0,"media\images\billboard11.paa"]};
-	if (_bill1 == 12) then {Bill_1 setObjectTexture [0,"media\images\billboard12.paa"]};
-	if (_bill1 == 13) then {Bill_1 setObjectTexture [0,"media\images\billboard13.paa"]};
-	if (_bill1 == 14) then {Bill_1 setObjectTexture [0,"media\images\billboard14.paa"]};
 	
-	
-	_imageList2 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14];
+	_imageList2 = [1,2,3,4];
 	_bill2 = _imageList2 call BIS_fnc_selectRandom;
 	if (_bill2 == 1) then {Bill_2 setObjectTexture [0,"media\images\billboard1.paa"]};
 	if (_bill2 == 2) then {Bill_2 setObjectTexture [0,"media\images\billboard2.paa"]};
 	if (_bill2 == 3) then {Bill_2 setObjectTexture [0,"media\images\billboard3.paa"]};
 	if (_bill2 == 4) then {Bill_2 setObjectTexture [0,"media\images\billboard4.paa"]};
-	if (_bill2 == 5) then {Bill_2 setObjectTexture [0,"media\images\billboard5.paa"]};
-	if (_bill2 == 6) then {Bill_2 setObjectTexture [0,"media\images\billboard6.paa"]};
-	if (_bill2 == 7) then {Bill_2 setObjectTexture [0,"media\images\billboard7.paa"]};
-	if (_bill2 == 8) then {Bill_2 setObjectTexture [0,"media\images\billboard8.paa"]};
-	if (_bill2 == 9) then {Bill_2 setObjectTexture [0,"media\images\billboard9.paa"]};
-	if (_bill2 == 10) then {Bill_2 setObjectTexture [0,"media\images\billboard10.paa"]};
-	if (_bill2 == 11) then {Bill_2 setObjectTexture [0,"media\images\billboard11.paa"]};
-	if (_bill2 == 12) then {Bill_2 setObjectTexture [0,"media\images\billboard12.paa"]};
-	if (_bill2 == 13) then {Bill_2 setObjectTexture [0,"media\images\billboard13.paa"]};
-	if (_bill2 == 14) then {Bill_2 setObjectTexture [0,"media\images\billboard14.paa"]};
 	
 //--------------------- Squad Url Hint
 
@@ -115,7 +98,7 @@ _email = _infoSquad select 2;
 // replace line below with your Squad xml's email
 if (_email == "hello@taskforceunicorn.com") then {
 
-_GlobalHint = format["<t align='center' size='2.2' color='#FF0000'>%1<br/></t><t size='1.4' color='#33CCFF'>%2</t><br/>has joined the server, To become a TFU member, apply to taskforceunicorn.com</t><br/>",_squad,_name];
+_GlobalHint = format["<t align='center' size='2.2' color='#FAAF3A'>%1<br/></t><t size='1.4' color='#33CCFF'>%2</t><br/>has joined the server, To become a TFU member, apply to taskforceunicorn.com</t><br/>",_squad,_name];
 
 [_GlobalHint] remoteExec ["AW_fnc_globalHint",0,false];
 } else {};
