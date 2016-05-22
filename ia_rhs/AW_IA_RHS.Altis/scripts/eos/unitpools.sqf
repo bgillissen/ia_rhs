@@ -87,9 +87,9 @@ _tempArray=[];
 	_crewPool=	[];
 	_heliCrew=	[];
 };
-// RHS AFRF Insugents 	
+// RHS AFRF Insurgents 	
 	if (_faction==6) then {
-	_InfPool=	["IRG_InfSquad","IRG_InfSquad_Weapons","IRG_InfTeam","IRG_InfTeam_AT","IRG_InfTeam_MG","IRG_InfSentry","IRG_ReconSentry","IRG_SniperTeam_M"];	
+	_InfPool=	["rhsgref_ins_rifleman_RPG26", "rhsgref_ins_grenadier","rhsgref_ins_saboteur","rhsgref_ins_squadleader","rhsgrefgref_ins_specialist_aa","rhsgrefgref_ins_grenadier_RPG","rhsgrefgref_ins_machinegunner"];	
 	_ArmPool=	[];
 	_MotPool=	[];
 	_ACHPool=	[];
@@ -102,9 +102,9 @@ _tempArray=[];
 	_heliCrew=	[];
 };
 	
-//RHS AFRF EAST 	
+//RHS AFRF Russian TODO 	
 	if (_faction==7) then {
-	_InfPool=	["rhs_group_rus_msv_infantry_chq","rhs_group_rus_msv_infantry_squad","rhs_group_rus_msv_infantry_squad_2mg","rhs_group_rus_msv_infantry_squad_sniper","rhs_group_rus_msv_infantry_squad_mg_sniper","rhs_group_rus_msv_infantry_section_mg","rhs_group_rus_msv_infantry_section_marksman","rhs_group_rus_msv_infantry_section_AT","rhs_group_rus_msv_infantry_section_AA","rhs_group_rus_msv_infantry_fireteam","rhs_group_rus_msv_infantry_MANEUVER"];	
+	_InfPool=	[];	
 	_ArmPool=	[];
 	_MotPool=	[];
 	_ACHPool=	[];
