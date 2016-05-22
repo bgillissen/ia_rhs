@@ -22,7 +22,7 @@ _delay = 300 + (random 600);
 _loopTimeout = 10 + (random 10);
 
 _missionList = [	
-	"destroyUrban"
+	"destroyUrban",
 	"HQcoast",
 	"HQfia",
 	"HQind",
