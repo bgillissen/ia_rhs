@@ -129,7 +129,7 @@ while { count _targetArray > 0 } do {
 			if (alive radioTower) then {
 				while {(alive radioTower)} do {
 					[] call QS_fnc_enemyCAS;
-					sleep (480 + (random 480));
+					sleep (600 + (random 600));
 				};
 			};
 		};
