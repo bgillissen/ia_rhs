@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15212.375,40.650425,17433.684};
-		dir[]={-0.34720495,-0.79518223,0.49737659};
-		up[]={-0.45512578,0.6063382,0.65197426};
-		aside[]={0.82006866,-3.8163271e-006,0.57247573};
+		pos[]={15214.915,43.793186,17203.199};
+		dir[]={-0.95906454,-0.22207017,0.17643523};
+		up[]={-0.21850778,0.97492021,0.040197857};
+		aside[]={0.18094328,1.218963e-006,0.98360789};
 	};
 };
 binarizationWanted=0;
@@ -1276,7 +1276,7 @@ class Mission
 		class Item113
 		{
 			dataType="Marker";
-			position[]={15254.167,17.91,17258.184};
+			position[]={15597.271,19.052362,17043.027};
 			name="airbaseDefense";
 			type="Empty";
 			id=117;
@@ -9307,8 +9307,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15244.973,19.119999,17255.83};
-				angles[]={0,0.78539819,0};
+				position[]={15588.522,20.502934,17040.584};
+				angles[]={0.071875811,0.78539819,6.2392135};
 			};
 			side="Empty";
 			flags=4;
@@ -9326,8 +9326,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15250.701,19.119999,17250.021};
-				angles[]={0,0.78539819,0};
+				position[]={15594.251,20.551056,17034.775};
+				angles[]={0.035984326,0.78539819,6.2791886};
 			};
 			side="Empty";
 			flags=4;
@@ -9339,14 +9339,15 @@ class Mission
 			};
 			id=666;
 			type="Land_HBarrierBig_F";
+			atlOffset=1.9073486e-006;
 		};
 		class Item617
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15245.283,19.119999,17260.975};
-				angles[]={0,5.497787,0};
+				position[]={15588.833,20.201324,17045.729};
+				angles[]={0.031988446,5.497787,6.2791886};
 			};
 			side="Empty";
 			flags=4;
@@ -9358,14 +9359,15 @@ class Mission
 			};
 			id=667;
 			type="Land_HBarrierBig_F";
+			atlOffset=1.9073486e-006;
 		};
 		class Item618
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15251.316,19.119999,17266.881};
-				angles[]={0,5.497787,0};
+				position[]={15594.866,20.178078,17051.635};
+				angles[]={6.2738566,5.497787,0.0039967569};
 			};
 			side="Empty";
 			flags=4;
@@ -9377,14 +9379,15 @@ class Mission
 			};
 			id=668;
 			type="Land_HBarrierBig_F";
+			atlOffset=1.9073486e-006;
 		};
 		class Item619
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15256.543,19.119999,17267.271};
-				angles[]={0,0.78539819,0};
+				position[]={15600.093,20.156704,17052.025};
+				angles[]={0.0013372133,0.78539819,0.029324362};
 			};
 			side="Empty";
 			flags=4;
@@ -9402,8 +9405,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15262.339,19.119999,17261.596};
-				angles[]={0,0.78539819,0};
+				position[]={15605.889,20.345001,17046.35};
+				angles[]={0.010664274,0.78539819,0.029324362};
 			};
 			side="Empty";
 			flags=4;
@@ -9415,14 +9418,15 @@ class Mission
 			};
 			id=670;
 			type="Land_HBarrierBig_F";
+			atlOffset=1.9073486e-006;
 		};
 		class Item621
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15262.872,19.12875,17256.076};
-				angles[]={0,5.497787,0.022662206};
+				position[]={15606.422,20.423149,17040.83};
+				angles[]={0.025327841,5.497787,0.0146689};
 			};
 			side="Empty";
 			flags=4;
@@ -9434,15 +9438,14 @@ class Mission
 			};
 			id=671;
 			type="Land_HBarrierBig_F";
-			atlOffset=0.00030517578;
 		};
 		class Item622
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15256.871,19.119999,17250.189};
-				angles[]={0,5.497787,0};
+				position[]={15600.421,20.519642,17034.943};
+				angles[]={0.034652505,5.497787,6.2698536};
 			};
 			side="Empty";
 			flags=4;
@@ -13623,6 +13626,7 @@ class Mission
 			};
 			id=971;
 			type="Land_FloodLight_F";
+			atlOffset=0.056539536;
 		};
 		class Item849
 		{
@@ -13641,6 +13645,7 @@ class Mission
 			};
 			id=972;
 			type="Land_FloodLight_F";
+			atlOffset=0.075798035;
 		};
 		class Item850
 		{
@@ -25335,6 +25340,7 @@ class Mission
 					};
 					id=1512;
 					type="rhsusf_army_ocp_helipilot";
+					atlOffset=0.068468094;
 				};
 				class Item1
 				{
@@ -25528,12 +25534,14 @@ class Mission
 					};
 					id=1515;
 					type="rhsusf_army_ocp_helipilot";
+					atlOffset=0.070152283;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1340;
+			atlOffset=0.068468094;
 		};
 		class Item1040
 		{
@@ -27790,7 +27798,7 @@ class Mission
 			};
 			id=1888;
 			type="rhsusf_M1083A1P2_B_M2_d_Medical_fmtv_usarmy";
-			atlOffset=-0.012001038;
+			atlOffset=-0.012000084;
 			class CustomAttributes
 			{
 				class Attribute0
