@@ -12,33 +12,27 @@ ________________________________________*/
 zlt_rope_ropes = [];
 zlt_mutexAction = false;
 
-zlt_rope_helis = ["O_Heli_Light_02_unarmed_F","O_Heli_Light_02_F","B_Heli_Transport_01_F","B_Heli_Transport_01_camo_F","O_Heli_Attack_02_F","O_Heli_Attack_02_black_F","I_Heli_Transport_02_F","B_Heli_Light_01_F"];
+zlt_rope_helis = [
+					"RHS_UH60M_d",
+					"RHS_MELB_MH6M",
+					"RHS_CH_47F_10"
+];
 zlt_rope_helidata = 
 [
 	[
-		["O_Heli_Light_02_unarmed_F", "O_Heli_Light_02_F"],
-		[1.35,1.35,-24.95],
-		[-1.45,1.35,-24.95]
+		["RHS_UH60M_d"],
+		[1.32,2,-25.2],
+		[]
 	],
 	[
-		["B_Heli_Transport_01_F", "B_Heli_Transport_01_camo_F"],
-		[-1.11,2.5,-24.7],
-		[1.11,2.5,-24.7]
-	],
-	[
-		["O_Heli_Attack_02_F", "O_Heli_Attack_02_black_F"],
-		[1.3,1.3,-25],
-		[-1.3,1.3,-25]
-	],
-	[
-		["I_Heli_Transport_02_F"],
-		[0,-5,-26],
+		["RHS_CH_47F_10"],
+		[0,0,-25.5],
 		[]
 	],	
 	[
-		["B_Heli_Light_01_F"],
-		[0.6,0.5,-25.9],
-		[-0.8,0.5,-25.9]
+		["RHS_MELB_MH6M"],
+		[1.10,0.85,-25],
+		[-1.25,0.85,-25]
 	]
 ];
 
