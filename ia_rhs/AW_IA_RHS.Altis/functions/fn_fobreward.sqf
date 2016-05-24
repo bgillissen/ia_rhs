@@ -9,7 +9,8 @@ smRewards =
 	["a RG33 M2", "rhsusf_rg33_m2uusmc_d"],
 	["an Offraod (Repair)", "C_Offroad_01_repair_F"],
 	["a Mobile Mortar Truck", "B_G_Offroad_01_repair_F"],
-	["a M1117 ASV", "rhsusf_M1117_O"]
+	["a M1117 ASV", "rhsusf_M1117_O"],
+	["a M109 Artillery Tank", "rhsusf_m109d_usarmy"]
 ];
 
 _veh = smRewards call BIS_fnc_selectRandom;

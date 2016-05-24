@@ -9,7 +9,8 @@ smRewards =
 	["a RG33 M2", "rhsusf_rg33_m2uusmc_d"],
 	["an Offraod (Repair)", "C_Offroad_01_repair_F"],
 	["a Mobile Mortar Truck", "B_G_Offroad_01_repair_F"],
-	["a M1117 ASV", "rhsusf_M1117_O"]
+	["a M1117 ASV", "rhsusf_M1117_O"],
+	["a M109 Artillery Tank", "rhsusf_m109d_usarmy"]
 ];
 smMarkerList =
 ["smReward1","smReward2","smReward3","smReward4","smReward5","smReward6","smReward7","smReward8","smReward9","smReward10","smReward11","smReward12","smReward13","smReward14","smReward15","smReward16","smReward17","smReward18","smReward19","smReward20","smReward21","smReward22","smReward23","smReward24","smReward25","smReward26","smReward27"];

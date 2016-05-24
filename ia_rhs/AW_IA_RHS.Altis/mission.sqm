@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1965;
+		nextID=1980;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15214.915,43.793186,17203.199};
-		dir[]={-0.95906454,-0.22207017,0.17643523};
-		up[]={-0.21850778,0.97492021,0.040197857};
-		aside[]={0.18094328,1.218963e-006,0.98360789};
+		pos[]={15188.431,20.128674,17361.967};
+		dir[]={0.72393239,-0.26379216,-0.63762718};
+		up[]={0.19803151,0.96446061,-0.17442118};
+		aside[]={-0.6610263,2.2098538e-006,-0.75051695};
 	};
 };
 binarizationWanted=0;
@@ -78,14 +78,14 @@ addons[]=
 	"rhsusf_vehicles",
 	"rhsusf_c_m113",
 	"RHS_US_A2Port_Armor",
-	"rhsusf_c_m109",
 	"rhsusf_c_melb",
 	"rhsusf_c_markvsoc",
 	"A3_Boat_F_Boat_Transport_01",
 	"rhsusf_c_rg33",
 	"A3_Soft_F_Gamma_TruckHeavy",
 	"rhsusf_c_fmtv",
-	"rhsusf_c_HEMTT_A4"
+	"rhsusf_c_HEMTT_A4",
+	"A3_Structures_F_Items_Cans"
 };
 randomSeed=14468871;
 class ScenarioData
@@ -210,7 +210,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1101;
+		items=1102;
 		class Item0
 		{
 			dataType="Marker";
@@ -13626,7 +13626,6 @@ class Mission
 			};
 			id=971;
 			type="Land_FloodLight_F";
-			atlOffset=0.056539536;
 		};
 		class Item849
 		{
@@ -13645,7 +13644,6 @@ class Mission
 			};
 			id=972;
 			type="Land_FloodLight_F";
-			atlOffset=0.075798035;
 		};
 		class Item850
 		{
@@ -16833,7 +16831,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -16848,7 +16846,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_SAW";
+								typeName="rhsusf_spc_mg";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -16862,7 +16860,7 @@ class Mission
 									class Item1
 									{
 										name="rhsusf_100Rnd_762x51_m62_tracer";
-										count=2;
+										count=1;
 										ammoLeft=100;
 									};
 								};
@@ -16956,7 +16954,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -16971,7 +16969,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_SAW";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -16991,7 +16989,7 @@ class Mission
 									class Item2
 									{
 										name="rhs_mag_an_m8hc";
-										count=4;
+										count=3;
 										ammoLeft=1;
 									};
 								};
@@ -17072,7 +17070,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17087,7 +17085,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Repair";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17107,7 +17105,7 @@ class Mission
 									class Item2
 									{
 										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=6;
+										count=4;
 										ammoLeft=30;
 									};
 								};
@@ -17205,7 +17203,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17220,7 +17218,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_teamleader";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17240,7 +17238,7 @@ class Mission
 									class Item2
 									{
 										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=10;
+										count=9;
 										ammoLeft=30;
 									};
 								};
@@ -17264,7 +17262,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_M433_HEDP";
-										count=15;
+										count=14;
 										ammoLeft=1;
 									};
 									class Item1
@@ -17313,13 +17311,13 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_weap_m4_carryhandle_grip3";
+								name="rhs_weap_m4a1_blockII_KAC";
 								optics="rhsusf_acc_compm4";
 								flashlight="rhsusf_acc_anpeq15A";
 								underBarrel="rhsusf_acc_grip3";
 								class primaryMuzzleMag
 								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+									name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
 									ammoLeft=30;
 								};
 							};
@@ -17338,37 +17336,43 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="11Rnd_45ACP_Mag";
-										count=3;
-										ammoLeft=11;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_iotv_ocp_Medic";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
 									items=2;
 									class Item0
 									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-										count=10;
-										ammoLeft=30;
+										name="11Rnd_45ACP_Mag";
+										count=3;
+										ammoLeft=11;
 									};
 									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsusf_spc_rifleman";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
 									{
 										name="rhs_mag_an_m8hc";
 										count=10;
 										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=2;
+										ammoLeft=30;
 									};
 								};
 							};
@@ -17448,7 +17452,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17463,7 +17467,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Rifleman";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17567,7 +17571,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17582,7 +17586,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_SAW";
+								typeName="rhsusf_spc_mg";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17596,7 +17600,7 @@ class Mission
 									class Item1
 									{
 										name="rhsusf_100Rnd_762x51_m62_tracer";
-										count=2;
+										count=1;
 										ammoLeft=100;
 									};
 								};
@@ -17659,7 +17663,7 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_weap_m16a4_carryhandle";
+								name="rhs_weap_m4a1_blockII_KAC";
 								optics="optic_Nightstalker";
 								flashlight="rhsusf_acc_anpeq15A";
 								class primaryMuzzleMag
@@ -17683,23 +17687,39 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=1;
+									items=2;
 									class Item0
 									{
 										name="11Rnd_45ACP_Mag";
 										count=3;
 										ammoLeft=11;
 									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
 								};
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Squadleader";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=2;
+										ammoLeft=30;
+									};
+								};
 							};
 							class backpack
 							{
@@ -17707,7 +17727,7 @@ class Mission
 								isBackpack=1;
 								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -17719,12 +17739,6 @@ class Mission
 										name="rhs_mag_m67";
 										count=4;
 										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=12;
-										ammoLeft=30;
 									};
 								};
 								class ItemCargo
@@ -17805,7 +17819,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17820,7 +17834,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_SAW";
+								typeName="rhsusf_spc_mg";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17834,7 +17848,7 @@ class Mission
 									class Item1
 									{
 										name="rhsusf_100Rnd_762x51_m62_tracer";
-										count=2;
+										count=1;
 										ammoLeft=100;
 									};
 								};
@@ -17920,7 +17934,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17935,7 +17949,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Rifleman";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18016,13 +18030,13 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_weap_m4_carryhandle_grip3";
+								name="rhs_weap_m4a1_blockII_KAC";
 								optics="rhsusf_acc_compm4";
 								flashlight="rhsusf_acc_anpeq15A";
 								underBarrel="rhsusf_acc_grip3";
 								class primaryMuzzleMag
 								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+									name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
 									ammoLeft=30;
 								};
 							};
@@ -18041,37 +18055,43 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="11Rnd_45ACP_Mag";
-										count=3;
-										ammoLeft=11;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_iotv_ocp_Medic";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
 									items=2;
 									class Item0
 									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-										count=10;
-										ammoLeft=30;
+										name="11Rnd_45ACP_Mag";
+										count=3;
+										ammoLeft=11;
 									};
 									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsusf_spc_rifleman";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
 									{
 										name="rhs_mag_an_m8hc";
 										count=10;
 										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=2;
+										ammoLeft=30;
 									};
 								};
 							};
@@ -18128,7 +18148,7 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_weap_m16a4_carryhandle";
+								name="rhs_weap_m4a1_blockII_KAC";
 								optics="optic_Nightstalker";
 								flashlight="rhsusf_acc_anpeq15A";
 								class primaryMuzzleMag
@@ -18152,23 +18172,39 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=1;
+									items=2;
 									class Item0
 									{
 										name="11Rnd_45ACP_Mag";
 										count=3;
 										ammoLeft=11;
 									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
 								};
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Squadleader";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=2;
+										ammoLeft=30;
+									};
+								};
 							};
 							class backpack
 							{
@@ -18176,7 +18212,7 @@ class Mission
 								isBackpack=1;
 								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -18188,12 +18224,6 @@ class Mission
 										name="rhs_mag_m67";
 										count=4;
 										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=12;
-										ammoLeft=30;
 									};
 								};
 								class ItemCargo
@@ -18262,7 +18292,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18277,7 +18307,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_teamleader";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18297,7 +18327,7 @@ class Mission
 									class Item2
 									{
 										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=10;
+										count=9;
 										ammoLeft=30;
 									};
 								};
@@ -18321,7 +18351,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_M433_HEDP";
-										count=15;
+										count=14;
 										ammoLeft=1;
 									};
 									class Item1
@@ -18403,7 +18433,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18418,7 +18448,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_SAW";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18438,7 +18468,7 @@ class Mission
 									class Item2
 									{
 										name="rhs_mag_an_m8hc";
-										count=4;
+										count=3;
 										ammoLeft=1;
 									};
 								};
@@ -18522,7 +18552,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18537,7 +18567,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_SAW";
+								typeName="rhsusf_spc_mg";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18551,7 +18581,7 @@ class Mission
 									class Item1
 									{
 										name="rhsusf_100Rnd_762x51_m62_tracer";
-										count=2;
+										count=1;
 										ammoLeft=100;
 									};
 								};
@@ -18632,7 +18662,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18647,7 +18677,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Repair";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18667,7 +18697,7 @@ class Mission
 									class Item2
 									{
 										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=6;
+										count=4;
 										ammoLeft=30;
 									};
 								};
@@ -18774,7 +18804,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18789,7 +18819,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Repair";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18809,7 +18839,7 @@ class Mission
 									class Item2
 									{
 										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=6;
+										count=4;
 										ammoLeft=30;
 									};
 								};
@@ -18907,7 +18937,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18922,7 +18952,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_teamleader";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18942,7 +18972,7 @@ class Mission
 									class Item2
 									{
 										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=10;
+										count=9;
 										ammoLeft=30;
 									};
 								};
@@ -18966,7 +18996,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_M433_HEDP";
-										count=15;
+										count=14;
 										ammoLeft=1;
 									};
 									class Item1
@@ -19015,13 +19045,13 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_weap_m4_carryhandle_grip3";
+								name="rhs_weap_m4a1_blockII_KAC";
 								optics="rhsusf_acc_compm4";
 								flashlight="rhsusf_acc_anpeq15A";
 								underBarrel="rhsusf_acc_grip3";
 								class primaryMuzzleMag
 								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+									name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
 									ammoLeft=30;
 								};
 							};
@@ -19040,37 +19070,43 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="11Rnd_45ACP_Mag";
-										count=3;
-										ammoLeft=11;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_iotv_ocp_Medic";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
 									items=2;
 									class Item0
 									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-										count=10;
-										ammoLeft=30;
+										name="11Rnd_45ACP_Mag";
+										count=3;
+										ammoLeft=11;
 									};
 									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsusf_spc_rifleman";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
 									{
 										name="rhs_mag_an_m8hc";
 										count=10;
 										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=2;
+										ammoLeft=30;
 									};
 								};
 							};
@@ -19148,7 +19184,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19163,7 +19199,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_SAW";
+								typeName="rhsusf_spc_mg";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19177,7 +19213,7 @@ class Mission
 									class Item1
 									{
 										name="rhsusf_100Rnd_762x51_m62_tracer";
-										count=2;
+										count=1;
 										ammoLeft=100;
 									};
 								};
@@ -19263,7 +19299,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19278,7 +19314,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Rifleman";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19382,7 +19418,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19397,7 +19433,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_SAW";
+								typeName="rhsusf_spc_mg";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19411,7 +19447,7 @@ class Mission
 									class Item1
 									{
 										name="rhsusf_100Rnd_762x51_m62_tracer";
-										count=2;
+										count=1;
 										ammoLeft=100;
 									};
 								};
@@ -19505,7 +19541,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19520,7 +19556,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_SAW";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19540,7 +19576,7 @@ class Mission
 									class Item2
 									{
 										name="rhs_mag_an_m8hc";
-										count=4;
+										count=3;
 										ammoLeft=1;
 									};
 								};
@@ -19603,7 +19639,7 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_weap_m16a4_carryhandle";
+								name="rhs_weap_m4a1_blockII_KAC";
 								optics="optic_Nightstalker";
 								flashlight="rhsusf_acc_anpeq15A";
 								class primaryMuzzleMag
@@ -19627,23 +19663,39 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=1;
+									items=2;
 									class Item0
 									{
 										name="11Rnd_45ACP_Mag";
 										count=3;
 										ammoLeft=11;
 									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
 								};
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Squadleader";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=2;
+										ammoLeft=30;
+									};
+								};
 							};
 							class backpack
 							{
@@ -19651,7 +19703,7 @@ class Mission
 								isBackpack=1;
 								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -19663,12 +19715,6 @@ class Mission
 										name="rhs_mag_m67";
 										count=4;
 										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=12;
-										ammoLeft=30;
 									};
 								};
 								class ItemCargo
@@ -19751,7 +19797,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19766,7 +19812,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Rifleman";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19867,7 +19913,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19882,7 +19928,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Repair";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19902,7 +19948,7 @@ class Mission
 									class Item2
 									{
 										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=6;
+										count=4;
 										ammoLeft=30;
 									};
 								};
@@ -19999,7 +20045,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20014,7 +20060,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_SAW";
+								typeName="rhsusf_spc_mg";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20028,7 +20074,7 @@ class Mission
 									class Item1
 									{
 										name="rhsusf_100Rnd_762x51_m62_tracer";
-										count=2;
+										count=1;
 										ammoLeft=100;
 									};
 								};
@@ -20089,13 +20135,13 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_weap_m4_carryhandle_grip3";
+								name="rhs_weap_m4a1_blockII_KAC";
 								optics="rhsusf_acc_compm4";
 								flashlight="rhsusf_acc_anpeq15A";
 								underBarrel="rhsusf_acc_grip3";
 								class primaryMuzzleMag
 								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+									name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
 									ammoLeft=30;
 								};
 							};
@@ -20114,37 +20160,43 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="11Rnd_45ACP_Mag";
-										count=3;
-										ammoLeft=11;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_iotv_ocp_Medic";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
 									items=2;
 									class Item0
 									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-										count=10;
-										ammoLeft=30;
+										name="11Rnd_45ACP_Mag";
+										count=3;
+										ammoLeft=11;
 									};
 									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsusf_spc_rifleman";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
 									{
 										name="rhs_mag_an_m8hc";
 										count=10;
 										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=2;
+										ammoLeft=30;
 									};
 								};
 							};
@@ -20222,7 +20274,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20237,7 +20289,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_SAW";
+								typeName="rhsusf_spc_mg";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20251,7 +20303,7 @@ class Mission
 									class Item1
 									{
 										name="rhsusf_100Rnd_762x51_m62_tracer";
-										count=2;
+										count=1;
 										ammoLeft=100;
 									};
 								};
@@ -20336,7 +20388,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20351,7 +20403,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_teamleader";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20371,7 +20423,7 @@ class Mission
 									class Item2
 									{
 										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=10;
+										count=9;
 										ammoLeft=30;
 									};
 								};
@@ -20395,7 +20447,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_M433_HEDP";
-										count=15;
+										count=14;
 										ammoLeft=1;
 									};
 									class Item1
@@ -20477,7 +20529,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20492,7 +20544,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_SAW";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20512,7 +20564,7 @@ class Mission
 									class Item2
 									{
 										name="rhs_mag_an_m8hc";
-										count=4;
+										count=3;
 										ammoLeft=1;
 									};
 								};
@@ -20698,13 +20750,13 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_weap_m4_carryhandle_grip3";
+								name="rhs_weap_m4a1_blockII_KAC";
 								optics="rhsusf_acc_compm4";
 								flashlight="rhsusf_acc_anpeq15A";
 								underBarrel="rhsusf_acc_grip3";
 								class primaryMuzzleMag
 								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+									name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
 									ammoLeft=30;
 								};
 							};
@@ -20723,37 +20775,43 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="11Rnd_45ACP_Mag";
-										count=3;
-										ammoLeft=11;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_iotv_ocp_Medic";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
 									items=2;
 									class Item0
 									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-										count=10;
-										ammoLeft=30;
+										name="11Rnd_45ACP_Mag";
+										count=3;
+										ammoLeft=11;
 									};
 									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsusf_spc_rifleman";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
 									{
 										name="rhs_mag_an_m8hc";
 										count=10;
 										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=2;
+										ammoLeft=30;
 									};
 								};
 							};
@@ -20841,7 +20899,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20856,7 +20914,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_SAW";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20876,7 +20934,7 @@ class Mission
 									class Item2
 									{
 										name="rhs_mag_an_m8hc";
-										count=4;
+										count=3;
 										ammoLeft=1;
 									};
 								};
@@ -20960,7 +21018,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20975,7 +21033,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_SAW";
+								typeName="rhsusf_spc_mg";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20989,7 +21047,7 @@ class Mission
 									class Item1
 									{
 										name="rhsusf_100Rnd_762x51_m62_tracer";
-										count=2;
+										count=1;
 										ammoLeft=100;
 									};
 								};
@@ -21053,7 +21111,7 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_weap_m16a4_carryhandle";
+								name="rhs_weap_m4a1_blockII_KAC";
 								optics="optic_Nightstalker";
 								flashlight="rhsusf_acc_anpeq15A";
 								class primaryMuzzleMag
@@ -21077,23 +21135,39 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=1;
+									items=2;
 									class Item0
 									{
 										name="11Rnd_45ACP_Mag";
 										count=3;
 										ammoLeft=11;
 									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
 								};
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Squadleader";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=2;
+										ammoLeft=30;
+									};
+								};
 							};
 							class backpack
 							{
@@ -21101,7 +21175,7 @@ class Mission
 								isBackpack=1;
 								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -21113,12 +21187,6 @@ class Mission
 										name="rhs_mag_m67";
 										count=4;
 										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=12;
-										ammoLeft=30;
 									};
 								};
 								class ItemCargo
@@ -21187,7 +21255,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21202,7 +21270,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_teamleader";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21222,7 +21290,7 @@ class Mission
 									class Item2
 									{
 										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=10;
+										count=9;
 										ammoLeft=30;
 									};
 								};
@@ -21246,7 +21314,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_M433_HEDP";
-										count=15;
+										count=14;
 										ammoLeft=1;
 									};
 									class Item1
@@ -21315,7 +21383,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21330,7 +21398,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Repair";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21350,7 +21418,7 @@ class Mission
 									class Item2
 									{
 										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=6;
+										count=4;
 										ammoLeft=30;
 									};
 								};
@@ -21449,7 +21517,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21464,7 +21532,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Rifleman";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21568,7 +21636,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21583,7 +21651,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_SAW";
+								typeName="rhsusf_spc_mg";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21597,7 +21665,7 @@ class Mission
 									class Item1
 									{
 										name="rhsusf_100Rnd_762x51_m62_tracer";
-										count=2;
+										count=1;
 										ammoLeft=100;
 									};
 								};
@@ -22099,7 +22167,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_FROG01_wd";
+								typeName="rhs_uniform_g3_rgr";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -22173,7 +22241,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_opscore_coy_cover";
+							headgear="rhsusf_opscore_fg_pelt";
 						};
 					};
 					id=1268;
@@ -22226,7 +22294,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_FROG01_wd";
+								typeName="rhs_uniform_g3_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -22290,7 +22358,7 @@ class Mission
 							radio="tf_anprc152_1";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_opscore_coy_cover";
+							headgear="rhsusf_opscore_fg";
 						};
 					};
 					id=1555;
@@ -22352,7 +22420,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_FROG01_wd";
+								typeName="rhs_uniform_g3_rgr";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -22431,7 +22499,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_opscore_coy_cover";
+							headgear="rhsusf_opscore_fg";
 						};
 					};
 					id=1580;
@@ -22484,7 +22552,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_FROG01_wd";
+								typeName="rhs_uniform_g3_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -22548,7 +22616,7 @@ class Mission
 							radio="tf_anprc152_1";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_opscore_coy_cover";
+							headgear="rhsusf_opscore_fg";
 						};
 					};
 					id=1581;
@@ -22602,7 +22670,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_FROG01_wd";
+								typeName="rhs_uniform_g3_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -22665,7 +22733,7 @@ class Mission
 							radio="tf_anprc152_1";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_opscore_coy_cover";
+							headgear="rhsusf_opscore_fg";
 						};
 					};
 					id=1583;
@@ -22718,7 +22786,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_FROG01_wd";
+								typeName="rhs_uniform_g3_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -22790,7 +22858,7 @@ class Mission
 							radio="tf_anprc152_1";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_opscore_coy_cover";
+							headgear="rhsusf_opscore_fg";
 						};
 					};
 					id=1584;
@@ -22851,7 +22919,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_FROG01_wd";
+								typeName="rhs_uniform_g3_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -22909,7 +22977,7 @@ class Mission
 							radio="tf_anprc152_1";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_opscore_coy_cover";
+							headgear="rhsusf_opscore_fg";
 						};
 					};
 					id=1585;
@@ -22963,7 +23031,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_FROG01_wd";
+								typeName="rhs_uniform_g3_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -23033,7 +23101,7 @@ class Mission
 							radio="tf_anprc152_1";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_opscore_coy_cover_pelt";
+							headgear="rhsusf_opscore_fg_pelt";
 						};
 					};
 					id=1652;
@@ -23102,7 +23170,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -23117,7 +23185,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Teamleader";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -23218,7 +23286,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -23233,7 +23301,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Teamleader";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -23241,7 +23309,7 @@ class Mission
 									class Item0
 									{
 										name="rhsusf_5Rnd_300winmag_xm2010";
-										count=11;
+										count=10;
 										ammoLeft=5;
 									};
 								};
@@ -23348,7 +23416,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -23363,7 +23431,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Teamleader";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -23371,7 +23439,7 @@ class Mission
 									class Item0
 									{
 										name="rhsusf_5Rnd_300winmag_xm2010";
-										count=11;
+										count=10;
 										ammoLeft=5;
 									};
 								};
@@ -23465,7 +23533,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -23480,7 +23548,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Teamleader";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -24306,13 +24374,13 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_weap_m4_carryhandle_grip3";
+								name="rhs_weap_m4a1_blockII_KAC";
 								optics="rhsusf_acc_compm4";
 								flashlight="rhsusf_acc_anpeq15A";
 								underBarrel="rhsusf_acc_grip3";
 								class primaryMuzzleMag
 								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+									name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
 									ammoLeft=30;
 								};
 							};
@@ -24331,37 +24399,43 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="11Rnd_45ACP_Mag";
-										count=3;
-										ammoLeft=11;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_iotv_ocp_Medic";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
 									items=2;
 									class Item0
 									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-										count=10;
-										ammoLeft=30;
+										name="11Rnd_45ACP_Mag";
+										count=3;
+										ammoLeft=11;
 									};
 									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsusf_spc_rifleman";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
 									{
 										name="rhs_mag_an_m8hc";
 										count=10;
 										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=2;
+										ammoLeft=30;
 									};
 								};
 							};
@@ -24416,13 +24490,13 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_weap_m4_carryhandle_grip3";
+								name="rhs_weap_m4a1_blockII_KAC";
 								optics="rhsusf_acc_compm4";
 								flashlight="rhsusf_acc_anpeq15A";
 								underBarrel="rhsusf_acc_grip3";
 								class primaryMuzzleMag
 								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+									name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
 									ammoLeft=30;
 								};
 							};
@@ -24441,37 +24515,43 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="11Rnd_45ACP_Mag";
-										count=3;
-										ammoLeft=11;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_iotv_ocp_Medic";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
 									items=2;
 									class Item0
 									{
-										name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-										count=10;
-										ammoLeft=30;
+										name="11Rnd_45ACP_Mag";
+										count=3;
+										ammoLeft=11;
 									};
 									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsusf_spc_rifleman";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
 									{
 										name="rhs_mag_an_m8hc";
 										count=10;
 										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=2;
+										ammoLeft=30;
 									};
 								};
 							};
@@ -24550,7 +24630,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -24565,7 +24645,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_SAW";
+								typeName="rhsusf_spc_mg";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -24579,7 +24659,7 @@ class Mission
 									class Item1
 									{
 										name="rhsusf_100Rnd_762x51_m62_tracer";
-										count=2;
+										count=1;
 										ammoLeft=100;
 									};
 								};
@@ -24641,7 +24721,7 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_weap_m16a4_carryhandle";
+								name="rhs_weap_m4a1_blockII_KAC";
 								optics="optic_Nightstalker";
 								flashlight="rhsusf_acc_anpeq15A";
 								class primaryMuzzleMag
@@ -24665,23 +24745,39 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=1;
+									items=2;
 									class Item0
 									{
 										name="11Rnd_45ACP_Mag";
 										count=3;
 										ammoLeft=11;
 									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
 								};
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Squadleader";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=2;
+										ammoLeft=30;
+									};
+								};
 							};
 							class backpack
 							{
@@ -24689,7 +24785,7 @@ class Mission
 								isBackpack=1;
 								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -24701,12 +24797,6 @@ class Mission
 										name="rhs_mag_m67";
 										count=4;
 										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=12;
-										ammoLeft=30;
 									};
 								};
 								class ItemCargo
@@ -24945,7 +25035,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -24969,7 +25059,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Rifleman";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -25041,7 +25131,7 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_weap_m16a4_carryhandle";
+								name="rhs_weap_m4a1_blockII_KAC";
 								optics="optic_Nightstalker";
 								flashlight="rhsusf_acc_anpeq15A";
 								class primaryMuzzleMag
@@ -25065,23 +25155,39 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=1;
+									items=2;
 									class Item0
 									{
 										name="11Rnd_45ACP_Mag";
 										count=3;
 										ammoLeft=11;
 									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
 								};
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Squadleader";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=2;
+										ammoLeft=30;
+									};
+								};
 							};
 							class backpack
 							{
@@ -25089,7 +25195,7 @@ class Mission
 								isBackpack=1;
 								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -25101,12 +25207,6 @@ class Mission
 										name="rhs_mag_m67";
 										count=4;
 										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=12;
-										ammoLeft=30;
 									};
 								};
 								class ItemCargo
@@ -25175,7 +25275,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -25190,7 +25290,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Squadleader";
+								typeName="rhsusf_spc_rifleman";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -25340,7 +25440,6 @@ class Mission
 					};
 					id=1512;
 					type="rhsusf_army_ocp_helipilot";
-					atlOffset=0.068468094;
 				};
 				class Item1
 				{
@@ -25534,14 +25633,12 @@ class Mission
 					};
 					id=1515;
 					type="rhsusf_army_ocp_helipilot";
-					atlOffset=0.070152283;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1340;
-			atlOffset=0.068468094;
 		};
 		class Item1040
 		{
@@ -27021,8 +27118,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15171.234,19.49906,17314.436};
-				angles[]={0.0053232545,2.3294384,6.2805324};
+				position[]={15185.771,19.566994,17289.785};
+				angles[]={0,0.51092535,0.0012918708};
 			};
 			side="Empty";
 			flags=4;
@@ -27032,7 +27129,6 @@ class Mission
 			};
 			id=1522;
 			type="RHS_M6";
-			atlOffset=-1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27062,47 +27158,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15183.85,20.457403,17294.969};
-				angles[]={0,0.4504171,0.0012915437};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				textures="Desert";
-			};
-			id=1532;
-			type="rhsusf_m109d_usarmy";
-			atlOffset=-1.9073486e-006;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[""rhs_mag_m67"",""rhs_mag_an_m8hc""],[10,10]],[[""FirstAidKit""],[8]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item1069
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={15312.303,18.639378,17361.244};
 				angles[]={0.0013372133,5.4963608,6.2805333};
 			};
@@ -27116,7 +27171,7 @@ class Mission
 			id=1590;
 			type="Land_HBarrier_5_F";
 		};
-		class Item1070
+		class Item1069
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27134,7 +27189,7 @@ class Mission
 			id=1592;
 			type="Land_HBarrier_5_F";
 		};
-		class Item1071
+		class Item1070
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27152,7 +27207,7 @@ class Mission
 			id=1593;
 			type="Land_HBarrier_5_F";
 		};
-		class Item1072
+		class Item1071
 		{
 			dataType="Group";
 			side="West";
@@ -27203,7 +27258,7 @@ class Mission
 			};
 			id=1594;
 		};
-		class Item1073
+		class Item1072
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27268,7 +27323,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item1074
+		class Item1073
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27287,7 +27342,7 @@ class Mission
 			id=1599;
 			type="B_Quadbike_01_F";
 		};
-		class Item1075
+		class Item1074
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27347,7 +27402,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item1076
+		class Item1075
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27388,7 +27443,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item1077
+		class Item1076
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27405,7 +27460,7 @@ class Mission
 			type="B_Boat_Transport_01_F";
 			atlOffset=5.3049994;
 		};
-		class Item1078
+		class Item1077
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27422,7 +27477,7 @@ class Mission
 			type="B_Boat_Transport_01_F";
 			atlOffset=5.9103189;
 		};
-		class Item1079
+		class Item1078
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27439,7 +27494,7 @@ class Mission
 			type="B_Boat_Transport_01_F";
 			atlOffset=5.742486;
 		};
-		class Item1080
+		class Item1079
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27480,7 +27535,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item1081
+		class Item1080
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27524,7 +27579,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item1082
+		class Item1081
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27567,7 +27622,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item1083
+		class Item1082
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27609,7 +27664,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item1084
+		class Item1083
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27652,7 +27707,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item1085
+		class Item1084
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27695,7 +27750,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item1086
+		class Item1085
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27738,7 +27793,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item1087
+		class Item1086
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27780,7 +27835,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item1088
+		class Item1087
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27823,7 +27878,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item1089
+		class Item1088
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27845,7 +27900,7 @@ class Mission
 			id=1890;
 			type="C_Truck_02_fuel_F";
 		};
-		class Item1090
+		class Item1089
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27866,7 +27921,7 @@ class Mission
 			id=1891;
 			type="rhsusf_M977A4_REPAIR_BKIT_usarmy_d";
 		};
-		class Item1091
+		class Item1090
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27887,7 +27942,7 @@ class Mission
 			id=1892;
 			type="rhsusf_M1083A1P2_B_M2_d_Medical_fmtv_usarmy";
 		};
-		class Item1092
+		class Item1091
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -27999,7 +28054,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item1093
+		class Item1092
 		{
 			dataType="Object";
 			class PositionInfo
@@ -28078,7 +28133,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item1094
+		class Item1093
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -28226,7 +28281,7 @@ class Mission
 				nAttributes=7;
 			};
 		};
-		class Item1095
+		class Item1094
 		{
 			dataType="Object";
 			class PositionInfo
@@ -28243,7 +28298,7 @@ class Mission
 			id=1944;
 			type="Flag_White_F";
 		};
-		class Item1096
+		class Item1095
 		{
 			dataType="Object";
 			class PositionInfo
@@ -28260,7 +28315,7 @@ class Mission
 			id=1945;
 			type="Flag_White_F";
 		};
-		class Item1097
+		class Item1096
 		{
 			dataType="Object";
 			class PositionInfo
@@ -28277,7 +28332,7 @@ class Mission
 			id=1946;
 			type="Flag_White_F";
 		};
-		class Item1098
+		class Item1097
 		{
 			dataType="Object";
 			class PositionInfo
@@ -28293,7 +28348,7 @@ class Mission
 			type="Flag_White_F";
 			atlOffset=1.430727;
 		};
-		class Item1099
+		class Item1098
 		{
 			dataType="Object";
 			class PositionInfo
@@ -28310,7 +28365,7 @@ class Mission
 			id=1948;
 			type="Flag_White_F";
 		};
-		class Item1100
+		class Item1099
 		{
 			dataType="Object";
 			class PositionInfo
@@ -28328,16 +28383,48 @@ class Mission
 			id=1964;
 			type="FlagPole_F";
 		};
+		class Item1100
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15190.877,19.053232,17359.879};
+				angles[]={0,2.3613226,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1965;
+			type="Land_CampingTable_F";
+		};
+		class Item1101
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15190.867,19.50132,17359.896};
+				angles[]={0,0.7454195,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1966;
+			type="Land_TacticalBacon_F";
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=95;
+			nextID=94;
 		};
 		class Links
 		{
-			items=95;
+			items=94;
 			class Item0
 			{
 				linkID=0;
@@ -29161,7 +29248,7 @@ class Mission
 			class Item82
 			{
 				linkID=82;
-				item0=1532;
+				item0=1420;
 				item1=1296;
 				class CustomData
 				{
@@ -29171,7 +29258,7 @@ class Mission
 			class Item83
 			{
 				linkID=83;
-				item0=1420;
+				item0=1619;
 				item1=1296;
 				class CustomData
 				{
@@ -29181,7 +29268,7 @@ class Mission
 			class Item84
 			{
 				linkID=84;
-				item0=1619;
+				item0=1626;
 				item1=1296;
 				class CustomData
 				{
@@ -29191,7 +29278,7 @@ class Mission
 			class Item85
 			{
 				linkID=85;
-				item0=1626;
+				item0=1625;
 				item1=1296;
 				class CustomData
 				{
@@ -29201,7 +29288,7 @@ class Mission
 			class Item86
 			{
 				linkID=86;
-				item0=1625;
+				item0=1624;
 				item1=1296;
 				class CustomData
 				{
@@ -29211,7 +29298,7 @@ class Mission
 			class Item87
 			{
 				linkID=87;
-				item0=1624;
+				item0=1623;
 				item1=1296;
 				class CustomData
 				{
@@ -29221,7 +29308,7 @@ class Mission
 			class Item88
 			{
 				linkID=88;
-				item0=1623;
+				item0=1641;
 				item1=1296;
 				class CustomData
 				{
@@ -29231,7 +29318,7 @@ class Mission
 			class Item89
 			{
 				linkID=89;
-				item0=1641;
+				item0=1640;
 				item1=1296;
 				class CustomData
 				{
@@ -29241,7 +29328,7 @@ class Mission
 			class Item90
 			{
 				linkID=90;
-				item0=1640;
+				item0=1445;
 				item1=1296;
 				class CustomData
 				{
@@ -29251,7 +29338,7 @@ class Mission
 			class Item91
 			{
 				linkID=91;
-				item0=1445;
+				item0=1918;
 				item1=1296;
 				class CustomData
 				{
@@ -29261,7 +29348,7 @@ class Mission
 			class Item92
 			{
 				linkID=92;
-				item0=1918;
+				item0=1931;
 				item1=1296;
 				class CustomData
 				{
@@ -29271,16 +29358,6 @@ class Mission
 			class Item93
 			{
 				linkID=93;
-				item0=1931;
-				item1=1296;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item94
-			{
-				linkID=94;
 				item0=1595;
 				item1=1296;
 				class CustomData
