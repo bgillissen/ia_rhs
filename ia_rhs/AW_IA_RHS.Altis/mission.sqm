@@ -28712,7 +28712,7 @@ class Mission
 			};
 			id=1991;
 			type="Land_HBarrierBig_F";
-			atlOffset=3.8146973e-006;
+			atlOffset=-6.2942505e-005;
 		};
 		class Item1112
 		{
