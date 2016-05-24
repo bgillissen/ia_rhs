@@ -550,7 +550,7 @@ _box = _this select 0;
     _box,
     [
         "tf_anprc152",			//TFAR NATO radios
-        "tf_anprc152_1",
+        //"tf_anprc152_1",
         "tf_rf7800str",
         
         "MineDetector",
@@ -782,6 +782,8 @@ _box = _this select 0;
         "rhs_uniform_cu_ucp_10th",
         "rhs_uniform_cu_ucp_1stcav",
         "rhs_uniform_cu_ucp_82nd",
+        
+        "rhs_uniform_g3_mc",
         
         "rhsusf_iotv_ocp",
         "rhsusf_iotv_ocp_Grenadier",

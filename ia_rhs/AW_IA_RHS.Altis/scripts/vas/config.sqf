@@ -502,7 +502,7 @@ vas_magazines = [
 //Want to limit VAS to specific items? Place the classnames in the array!
 vas_items = [
 		"tf_anprc152",			//TFAR NATO radios
-        "tf_anprc152_1",
+        //"tf_anprc152_1",
         "tf_rf7800str",
         
         "MineDetector",
@@ -734,6 +734,8 @@ vas_items = [
         "rhs_uniform_cu_ucp_10th",
         "rhs_uniform_cu_ucp_1stcav",
         "rhs_uniform_cu_ucp_82nd",
+        
+        "rhs_uniform_g3_mc",
         
         "rhsusf_iotv_ocp",
         "rhsusf_iotv_ocp_Grenadier",

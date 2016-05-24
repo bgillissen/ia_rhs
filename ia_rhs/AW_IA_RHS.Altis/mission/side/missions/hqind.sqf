@@ -68,7 +68,7 @@ _c4Message = ["Weapons transfer secured. The charge has been set! 30 seconds unt
 	{ _x setMarkerPos _fuzzyPos; } forEach ["sideMarker", "sideCircle"];
 	sideMarkerText = "Secure Launchers";
 	"sideMarker" setMarkerText "Side Mission: Secure Launchers";
-	_briefing = "<t align='center'><t size='2.2'>New Side Mission</t><br/><t size='1.5' color='#00B2EE'>Secure Launchers</t><br/>____________________<br/>Rogue AAF are supplying OPFOR with advanced weapons and anti-air launchers.<br/><br/>We've located the transfer location. Get over there quick before they get away, and secure those launchers.</t>";
+	_briefing = "<t align='center'><t size='2.2'>New Side Mission</t><br/><t size='1.5' color='#00B2EE'>Secure Launchers</t><br/>____________________<br/>Russians are supplying Chernarus citizen with anti-air launchers.<br/><br/>We've located the transfer location. Get over there quick before they get away, and secure those launchers.</t>";
 	[_briefing] remoteExec ["AW_fnc_globalHint",0,false];
 	["NewSideMission", "Secure Launchers"] remoteExec ["AW_fnc_globalNotification",0,false];
 	sideMarkerText = "Secure Launchers";
