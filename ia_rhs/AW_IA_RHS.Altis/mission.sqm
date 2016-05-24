@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15188.431,20.128674,17361.967};
-		dir[]={0.72393239,-0.26379216,-0.63762718};
-		up[]={0.19803151,0.96446061,-0.17442118};
-		aside[]={-0.6610263,2.2098538e-006,-0.75051695};
+		pos[]={15314.569,52.597252,17361.99};
+		dir[]={-0.47654456,-0.68219042,0.55476445};
+		up[]={-0.44449851,0.73107141,0.51745772};
+		aside[]={0.75863749,-3.5835401e-006,0.65168703};
 	};
 };
 binarizationWanted=0;
@@ -184,7 +184,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Invade & Annex RHS";
+		briefingName="Invade & Annex RHS | TFAR";
 		overviewText="This is the RHS version of the famous Invade & Annex from AhoyWorld";
 		resistanceWest=0;
 		resistanceEast=1;
@@ -27129,6 +27129,7 @@ class Mission
 			};
 			id=1522;
 			type="RHS_M6";
+			atlOffset=-3.2424927e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28138,11 +28139,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={16123.133,0,15484.918};
+				position[]={16123.133,5.531311e-005,15484.918};
 			};
 			id=1938;
 			type="tfar_ModuleTaskForceRadioEnforceUsage";
-			atlOffset=30.211945;
+			atlOffset=30.212;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28198,7 +28199,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Invade & Annex";
+							value="I&A (Join A3 server for auto access)";
 						};
 					};
 				};
