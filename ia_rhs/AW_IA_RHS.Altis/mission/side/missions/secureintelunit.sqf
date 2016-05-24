@@ -65,7 +65,7 @@ private ["_x","_targetTrigger","_surrenderTrigger","_aGroup","_bGroup","_cGroup"
 	sleep 0.3;
 	
 	[OBJUNIT_TYPES] call BIS_fnc_selectRandom createUnit [_flatPos1, _aGroup];
-	"rhs_msv_emr_officer" createUnit [_flatPos1, _aGroup];
+	"rhs_msv_emr_driver" createUnit [_flatPos1, _aGroup];
 	
 	sleep 0.3;
 	
@@ -86,7 +86,7 @@ private ["_x","_targetTrigger","_surrenderTrigger","_aGroup","_bGroup","_cGroup"
 	sleep 0.3;
 	
 	[OBJUNIT_TYPES] call BIS_fnc_selectRandom createUnit [_flatPos1, _bGroup];
-	"O_crew_F" createUnit [_flatPos1, _bGroup];
+	"rhs_msv_emr_driver" createUnit [_flatPos1, _bGroup];
 	
 	sleep 0.3;
 	
@@ -105,7 +105,7 @@ private ["_x","_targetTrigger","_surrenderTrigger","_aGroup","_bGroup","_cGroup"
 	_obj3 setDir (random 360);
 	sleep 0.3;
 	[OBJUNIT_TYPES] call BIS_fnc_selectRandom createUnit [_flatPos1, _cGroup];
-	"O_crew_F" createUnit [_flatPos1, _cGroup];
+	"rhs_msv_emr_driver" createUnit [_flatPos1, _cGroup];
 	sleep 0.3;
 	
 	_decoy2 = ((units _cGroup) select 0);

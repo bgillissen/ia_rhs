@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1984;
+		nextID=2025;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15337.431,48.994884,17341.652};
-		dir[]={-0.50378388,-0.47869661,0.7192347};
-		up[]={-0.27465653,0.87783557,0.3921192};
-		aside[]={0.81913924,-7.4604759e-007,0.57377589};
+		pos[]={15295.738,29.299953,17390.543};
+		dir[]={-0.71368605,-0.58475947,0.38593376};
+		up[]={-0.5143761,0.81105387,0.27815586};
+		aside[]={0.47570053,-4.6395289e-006,0.87971979};
 	};
 };
 binarizationWanted=0;
@@ -211,7 +211,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1105;
+		items=1135;
 		class Item0
 		{
 			dataType="Marker";
@@ -9482,7 +9482,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15287.186,18.67749,17419.973};
-				angles[]={0.0053265258,3.8480244,6.2685208};
+				angles[]={0.0053232545,3.848032,6.2685246};
 			};
 			side="Empty";
 			class Attributes
@@ -28508,11 +28508,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15283.999,17.859804,17401.381};
-				angles[]={0.0039967569,0,6.2778587};
+				position[]={15284,17.8598,17401.381};
+				angles[]={0.0039968039,0,6.2778621};
 			};
 			id=1983;
 			type="tfar_ModuleTaskForceRadioFrequencies";
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28549,7 +28550,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="1";
+							value="0";
 						};
 					};
 				};
@@ -28573,6 +28574,987 @@ class Mission
 					};
 				};
 				nAttributes=3;
+			};
+		};
+		class Item1105
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14282.207,19.120003,15710.272};
+				angles[]={0,5.497787,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=1985;
+			type="Land_HBarrierBig_F";
+			atlOffset=3.8146973e-006;
+		};
+		class Item1106
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14276.174,19.120003,15704.366};
+				angles[]={0,5.497787,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=1986;
+			type="Land_HBarrierBig_F";
+			atlOffset=3.8146973e-006;
+		};
+		class Item1107
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14275.863,19.119999,15699.222};
+				angles[]={0,0.78539819,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=1987;
+			type="Land_HBarrierBig_F";
+		};
+		class Item1108
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14281.592,18.729584,15693.413};
+				angles[]={6.2152901,0.78539819,6.2126365};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=1988;
+			type="Land_HBarrierBig_F";
+			atlOffset=3.8146973e-006;
+		};
+		class Item1109
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14287.762,18.300903,15693.581};
+				angles[]={6.2166181,5.497787,6.2152901};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=1989;
+			type="Land_HBarrierBig_F";
+			atlOffset=1.9073486e-006;
+		};
+		class Item1110
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14293.763,18.2467,15699.468};
+				angles[]={6.2099833,5.497787,6.2086568};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=1990;
+			type="Land_HBarrierBig_F";
+		};
+		class Item1111
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14293.229,18.691338,15704.987};
+				angles[]={6.2099833,0.78539819,6.2086568};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=1991;
+			type="Land_HBarrierBig_F";
+			atlOffset=3.8146973e-006;
+		};
+		class Item1112
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14287.434,19.119999,15710.663};
+				angles[]={0,0.78539819,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=1992;
+			type="Land_HBarrierBig_F";
+		};
+		class Item1113
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14772.898,19.120003,16668.344};
+				angles[]={0,5.497787,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=1993;
+			type="Land_HBarrierBig_F";
+			atlOffset=3.8146973e-006;
+		};
+		class Item1114
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14766.865,19.120003,16662.438};
+				angles[]={0,5.497787,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=1994;
+			type="Land_HBarrierBig_F";
+			atlOffset=3.8146973e-006;
+		};
+		class Item1115
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14766.555,19.119999,16657.293};
+				angles[]={0,0.78539819,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=1995;
+			type="Land_HBarrierBig_F";
+		};
+		class Item1116
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14772.283,19.120003,16651.484};
+				angles[]={0,0.78539819,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=1996;
+			type="Land_HBarrierBig_F";
+			atlOffset=3.8146973e-006;
+		};
+		class Item1117
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14778.453,19.119999,16651.652};
+				angles[]={0,5.497787,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=1997;
+			type="Land_HBarrierBig_F";
+		};
+		class Item1118
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14784.454,19.119999,16657.539};
+				angles[]={0,5.497787,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=1998;
+			type="Land_HBarrierBig_F";
+		};
+		class Item1119
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14783.921,19.120003,16663.059};
+				angles[]={0,0.78539819,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=1999;
+			type="Land_HBarrierBig_F";
+			atlOffset=3.8146973e-006;
+		};
+		class Item1120
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14778.125,19.119999,16668.734};
+				angles[]={0,0.78539819,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=2000;
+			type="Land_HBarrierBig_F";
+		};
+		class Item1121
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14775.347,17.911438,16659.783};
+						angles[]={0,0.7070154,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2004;
+					type="rhsusf_army_ocp_crewman";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14775.347,17.911438,16659.783};
+						angles[]={0,0.7070154,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=1;
+					};
+					id=2005;
+					type="rhsusf_army_ocp_crewman";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14775.347,17.911438,16659.783};
+						angles[]={0,0.7070154,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=1;
+					};
+					id=2006;
+					type="rhsusf_army_ocp_crewman";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=3;
+				};
+				class Links
+				{
+					items=3;
+					class Item0
+					{
+						linkID=0;
+						item0=2004;
+						item1=2003;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=2005;
+						item1=2003;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0,0};
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=2006;
+						item1=2003;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=2002;
+		};
+		class Item1122
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14775.347,19.549328,16659.732};
+				angles[]={0,0.7070154,0};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				lock="LOCKEDPLAYER";
+				fuel=0;
+				init="this addEventHandler [""Fired"",   { defender setVehicleAmmo 1 }  ];";
+			};
+			id=2003;
+			type="RHS_M6";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableStamina";
+					expression="_this enablestamina _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item1123
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14284.289,17.664244,15701.616};
+						angles[]={6.2113123,0.7070154,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2008;
+					type="rhsusf_army_ocp_crewman";
+					atlOffset=-1.9073486e-006;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14284.289,17.664244,15701.616};
+						angles[]={6.2113123,0.7070154,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=1;
+					};
+					id=2009;
+					type="rhsusf_army_ocp_crewman";
+					atlOffset=-1.9073486e-006;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14284.289,17.664244,15701.616};
+						angles[]={6.2113123,0.7070154,0};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=1;
+					};
+					id=2010;
+					type="rhsusf_army_ocp_crewman";
+					atlOffset=-1.9073486e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=3;
+				};
+				class Links
+				{
+					items=3;
+					class Item0
+					{
+						linkID=0;
+						item0=2008;
+						item1=2011;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=2009;
+						item1=2011;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0,0};
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=2010;
+						item1=2011;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=2007;
+			atlOffset=-1.9073486e-006;
+		};
+		class Item1124
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14284.289,19.29785,15701.448};
+				angles[]={6.2113123,0.7070154,0};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				lock="LOCKEDPLAYER";
+				fuel=0;
+				init="this addEventHandler [""Fired"",   { defender setVehicleAmmo 1 }  ];";
+			};
+			id=2011;
+			type="RHS_M6";
+			atlOffset=-1.9073486e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableStamina";
+					expression="_this enablestamina _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item1125
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15380.195,19.848419,17033.1};
+				angles[]={6.2698536,5.497787,6.2818484};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=2012;
+			type="Land_HBarrierBig_F";
+			atlOffset=0.0073413849;
+		};
+		class Item1126
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15374.162,19.908859,17027.193};
+				angles[]={0.0146689,5.497787,0.042640556};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=2013;
+			type="Land_HBarrierBig_F";
+			atlOffset=0.026737213;
+		};
+		class Item1127
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15373.852,19.92857,17022.049};
+				angles[]={0.0066682254,0.78539819,0.061256282};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=2014;
+			type="Land_HBarrierBig_F";
+			atlOffset=0.029319763;
+		};
+		class Item1128
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15379.58,19.961369,17016.24};
+				angles[]={6.2818484,0.78539819,6.2711854};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=2015;
+			type="Land_HBarrierBig_F";
+			atlOffset=0.018024445;
+		};
+		class Item1129
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15385.75,19.858299,17016.408};
+				angles[]={0.0080009829,5.497787,6.2591896};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=2016;
+			type="Land_HBarrierBig_F";
+			atlOffset=0.017572403;
+		};
+		class Item1130
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15391.751,19.820286,17022.295};
+				angles[]={6.2791886,5.497787,0.033319358};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=2017;
+			type="Land_HBarrierBig_F";
+			atlOffset=0.012693405;
+		};
+		class Item1131
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15391.218,19.864155,17027.814};
+				angles[]={6.2645216,0.78539819,0.02666023};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=2018;
+			type="Land_HBarrierBig_F";
+			atlOffset=0.019067764;
+		};
+		class Item1132
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15385.422,19.882549,17033.49};
+				angles[]={6.2765174,0.78539819,0.0093286335};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowdamage false;";
+				description="Gunner - HayMaker";
+			};
+			id=2019;
+			type="Land_HBarrierBig_F";
+			atlOffset=0.018671036;
+		};
+		class Item1133
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15382.626,18.587633,17024.473};
+						angles[]={0.015998369,0.7070154,6.2591896};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2021;
+					type="rhsusf_army_ocp_crewman";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15382.626,18.587633,17024.473};
+						angles[]={0.015998369,0.7070154,6.2591896};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=1;
+					};
+					id=2022;
+					type="rhsusf_army_ocp_crewman";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15382.626,18.587633,17024.473};
+						angles[]={0.015998369,0.7070154,6.2591896};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=1;
+					};
+					id=2023;
+					type="rhsusf_army_ocp_crewman";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=3;
+				};
+				class Links
+				{
+					items=3;
+					class Item0
+					{
+						linkID=0;
+						item0=2021;
+						item1=2024;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=2022;
+						item1=2024;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0,0};
+						};
+					};
+					class Item2
+					{
+						linkID=2;
+						item0=2023;
+						item1=2024;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=2020;
+			atlOffset=-0.00063323975;
+		};
+		class Item1134
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15382.644,20.22406,17024.488};
+				angles[]={0.015998369,0.7070154,6.2591896};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				lock="LOCKEDPLAYER";
+				fuel=0;
+				init="this addEventHandler [""Fired"",   { defender setVehicleAmmo 1 }  ];";
+			};
+			id=2024;
+			type="RHS_M6";
+			atlOffset=-0.00063323975;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableStamina";
+					expression="_this enablestamina _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 	};
