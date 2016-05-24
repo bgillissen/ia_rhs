@@ -261,7 +261,7 @@ class Hint_6: RscText
 class Hint_7: RscText
 {
 	idc = 1016;
-	text = "You can apply for Task Force Unicorn membership at taskforceunicorn.com"; //--- ToDo: Localize;
+	text = "You can apply for TaskForceUnicorn membership at taskforceunicorn.com"; //--- ToDo: Localize;
 	x = -0.55;
 	y = 0.50;
 	w = 0.4875;

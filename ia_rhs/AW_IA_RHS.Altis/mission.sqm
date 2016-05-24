@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=513;
 	class ItemIDProvider
 	{
 		nextID=2027;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15701.771,111.66242,17132.188};
-		dir[]={-0.81087834,-0.44513291,-0.38022715};
-		up[]={-0.40307844,0.8953011,-0.18900391};
-		aside[]={-0.4246088,-2.2773893e-006,0.90548706};
+		pos[]={15305.227,37.693493,17400.338};
+		dir[]={-0.83818793,-0.54277194,0.055519391};
+		up[]={-0.5416109,0.83971477,0.035877168};
+		aside[]={0.066081479,-4.6480272e-006,0.99791157};
 	};
 };
 binarizationWanted=0;
@@ -21609,7 +21609,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="U_I_HeliPilotCoveralls";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21739,7 +21739,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="U_I_HeliPilotCoveralls";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21869,7 +21869,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="U_I_HeliPilotCoveralls";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -29088,7 +29088,7 @@ class Mission
 			};
 			id=2014;
 			type="Land_HBarrierBig_F";
-			atlOffset=0.029953003;
+			atlOffset=0.02995491;
 		};
 		class Item1119
 		{
@@ -29108,7 +29108,7 @@ class Mission
 			};
 			id=2015;
 			type="Land_HBarrierBig_F";
-			atlOffset=0.018655777;
+			atlOffset=0.018657684;
 		};
 		class Item1120
 		{
@@ -29188,7 +29188,7 @@ class Mission
 			};
 			id=2019;
 			type="Land_HBarrierBig_F";
-			atlOffset=0.019304276;
+			atlOffset=0.019306183;
 		};
 		class Item1124
 		{
@@ -29295,6 +29295,7 @@ class Mission
 				};
 			};
 			id=2020;
+			atlOffset=-0.00012016296;
 		};
 		class Item1125
 		{
@@ -29314,6 +29315,7 @@ class Mission
 			};
 			id=2024;
 			type="RHS_M6";
+			atlOffset=-0.00012016296;
 			class CustomAttributes
 			{
 				class Attribute0

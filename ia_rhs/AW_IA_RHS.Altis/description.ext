@@ -2,7 +2,7 @@
 
 author = Rarek, AhoyWorld, Quiksilver, tweaked by ben and Putin; // Visible when loading mission
 onLoadName = "TFU - RHS Invade & Annex";				// Visible when loading mission
-OnLoadMission = "Welcome back to TaskForceUnicorn RHS Invade and Annex";
+OnLoadMission = "Welcome back to Task Force Unicorn Invade and Annex RHS";
 loadScreen = "media\images\loading.jpg";				// Visible when loading mission
 overviewPicture = "media\images\loading.jpg";			// Visible when selecting mission	
 
