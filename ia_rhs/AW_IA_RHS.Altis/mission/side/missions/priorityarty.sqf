@@ -199,7 +199,7 @@ while { canMove priorityObj1 || canMove priorityObj2 } do {
 						(_targetPos select 1) - _radius + (2 * random _radius),
 						0
 					];
-					_x doArtilleryFire [_pos, "32Rnd_155mm_Mo_shells", 1];
+					_x doArtilleryFire [_pos, "rhs_mag_HE_2a33", 1];
 					sleep 8;															// default 8
 				};
 			};

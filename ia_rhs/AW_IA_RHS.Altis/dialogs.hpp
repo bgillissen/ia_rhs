@@ -58,7 +58,7 @@ class Rules_Header: RscText
 class Rule_1: RscText
 {
 	idc = 1001;
-	text = "1. Hacking and mission exploitation will not be tolerated.  "; //--- ToDo: Localize;
+	text = "1. Lone wolfing is not allowed, allways coordinate with other players."; //--- ToDo: Localize;
 	x = 1;
 	y = 0.1;
 	w = 0.6875;
@@ -68,7 +68,7 @@ class Rule_1: RscText
 class Rule_2: RscText
 {
 	idc = 1002;
-	text = "2. Intentional team-killing will not be tolerated.  "; //--- ToDo: Localize;
+	text = "2. Hacking and mission exploitation will not be tolerated."; //--- ToDo: Localize;
 	x = 1;
 	y = 0.18;
 	w = 0.6125;
@@ -78,7 +78,7 @@ class Rule_2: RscText
 class Rule_3: RscText
 {
 	idc = 1003;
-	text = "3. Excessive, unintentional team-killing may result in a Kick/Ban.  "; //--- ToDo: Localize;
+	text = "3. Intentional team-killing will not be tolerated."; //--- ToDo: Localize;
 	x = 1;
 	y = 0.28;
 	w = 0.6875;
@@ -88,7 +88,7 @@ class Rule_3: RscText
 class Rule_4: RscText
 {
 	idc = 1004;
-	text = "4. Unnecessary destruction of BLUFOR vehicles will not be tolerated.  "; //--- ToDo: Localize;
+	text = "4. Excessive unintentional team-killing may result in a Kick/Ban."; //--- ToDo: Localize;
 	x = 1;
 	y = 0.36;
 	w = 0.7;
@@ -98,7 +98,7 @@ class Rule_4: RscText
 class Rule_5: RscText
 {
 	idc = 1005;
-	text = "5. Verbal abuse and bullying will not be tolerated.  "; //--- ToDo: Localize;
+	text = "5. Unnecessary destruction of BLUFOR vehicles will not be tolerated."; //--- ToDo: Localize;
 	x = 1;
 	y = 0.44;
 	w = 0.6375;
@@ -108,7 +108,7 @@ class Rule_5: RscText
 class Rule_6: RscText
 {
 	idc = 1006;
-	text = "6. Firing a weapon on base may result in a Kick/Ban.  "; //--- ToDo: Localize;
+	text = "6. Verbal abuse and bullying will not be tolerated."; //--- ToDo: Localize;
 	x = 1;
 	y = 0.52;
 	w = 0.5875;
@@ -118,7 +118,7 @@ class Rule_6: RscText
 class Rule_7: RscText
 {
 	idc = 1007;
-	text = "7. Griefing and obstructive play will not be tolerated.  "; //--- ToDo: Localize;
+	text = "7. Firing a weapon on base may result in a Kick/Ban."; //--- ToDo: Localize;
 	x = 1;
 	y = 0.6;
 	w = 0.7125;
@@ -128,7 +128,7 @@ class Rule_7: RscText
 class Rule_8: RscText
 {
 	idc = 1008;
-	text = "8. Excessive mic spamming will not be tolerated.  "; //--- ToDo: Localize;
+	text = "8. Griefing and obstructive play will not be tolerated."; //--- ToDo: Localize;
 	x = 1;
 	y = 0.68;
 	w = 0.6;
@@ -138,7 +138,7 @@ class Rule_8: RscText
 class Rule_9: RscText
 {
 	idc = 1009;
-	text = "9. A server moderator or admin's word is final."; //--- ToDo: Localize;
+	text = "9. Excessive mic spamming will not be tolerated."; //--- ToDo: Localize;
 	x = 1;
 	y = 0.78;
 	w = 0.675;
@@ -148,7 +148,7 @@ class Rule_9: RscText
 class Rule_10: RscText
 {
 	idc = 1010;
-	text = "10. Landing inside of the HQ may result in a warning or kick.  "; //--- ToDo: Localize;
+	text = "10. Landing inside of the HQ may result in a warning or kick."; //--- ToDo: Localize;
 	x = 1;
 	y = 0.88;
 	w = 0.725;
@@ -167,7 +167,7 @@ class AW_Intro_and_TS_picture: RscPicture
 class Ok_button: RscButton
 {
 	idc = 1600;
-	text = "Ok, Cool. Please make this box disappear"; //--- ToDo: Localize;
+	text = "Ok, got it."; //--- ToDo: Localize;
 	x = 0;
 	y = 1;
 	w = 1;
@@ -211,7 +211,7 @@ class Genreal_hints_Header: RscText
 class Hint_1: RscText
 {
 	idc = 1012;
-	text = "Support elements should be on standby until called in."; //--- ToDo: Localize;
+	text = "Check that your AN/PRC-152 shortwave radio is set to 300 MHz (by pressing CTRL+P) for the default channel."; //--- ToDo: Localize;
 	x = -0.65;
 	y = 0.1;
 	w = 0.6375;
@@ -221,7 +221,7 @@ class Hint_1: RscText
 class Hint_2: RscText
 {
 	idc = 1013;
-	text = "Got a question? Look at our FAQ on the map."; //--- ToDo: Localize;
+	text = "Coordinate with HQ and support elements over long range radio on 50 MHz (ALT + P) by default."; //--- ToDo: Localize;
 	x = -0.625;
 	y = 0.18;
 	w = 0.575;
@@ -231,7 +231,7 @@ class Hint_2: RscText
 class Hint_3: RscText
 {
 	idc = 1014;
-	text = "Zues players may be on but that doesn't mean they killed you."; //--- ToDo: Localize;
+	text = "Support elements should stay on standby until called in."; //--- ToDo: Localize;
 	x = -0.6875;
 	y = 0.26;
 	w = 0.6625;
@@ -241,7 +241,7 @@ class Hint_3: RscText
 class Hint_5: RscText
 {
 	idc = 1015;
-	text = "Found a bug? Post it on our forums. Ahoyworld.Co.uk"; //--- ToDo: Localize;
+	text = "Zeus players may be on but that doesn’t mean they killed you."; //--- ToDo: Localize;
 	x = -0.65;
 	y = 0.34;
 	w = 0.5625;
@@ -251,7 +251,7 @@ class Hint_5: RscText
 class Hint_6: RscText
 {
 	idc = 1016;
-	text = "Looking for a squad? Join us on Teamspeak."; //--- ToDo: Localize;
+	text = "Found a bug? Mail it to ben@taskforceunicorn.com"; //--- ToDo: Localize;
 	x = -0.6125;
 	y = 0.42;
 	w = 0.4875;
@@ -261,7 +261,7 @@ class Hint_6: RscText
 class Hint_7: RscText
 {
 	idc = 1016;
-	text = "Pilots should be on Teamspeak."; //--- ToDo: Localize;
+	text = "You can apply for Task Force Unicorn membership at taskforceunicorn.com"; //--- ToDo: Localize;
 	x = -0.55;
 	y = 0.50;
 	w = 0.4875;
