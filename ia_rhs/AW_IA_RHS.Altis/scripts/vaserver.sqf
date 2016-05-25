@@ -784,6 +784,10 @@ _box = _this select 0;
         "rhs_uniform_cu_ucp_82nd",
         
         "rhs_uniform_g3_mc",
+        "rhs_uniform_g3_blk",
+        "rhs_uniform_g3_m81",
+        "rhs_uniform_g3_tan",
+        "rhs_uniform_g3_rgr",
         
         "rhsusf_iotv_ocp",
         "rhsusf_iotv_ocp_Grenadier",
