@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15127.695,21.979507,17242.531};
-		dir[]={-0.78146273,-0.37461036,0.49922642};
-		up[]={-0.31576049,0.92701036,0.20172223};
-		aside[]={0.53839469,-1.4159014e-006,0.84280747};
+		pos[]={15317.124,28.054903,17349.879};
+		dir[]={-0.80445665,-0.55086428,-0.22279753};
+		up[]={-0.53089982,0.83442545,-0.14703351};
+		aside[]={-0.26694998,-5.0344679e-006,0.9638086};
 	};
 };
 binarizationWanted=0;
@@ -8829,7 +8829,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15303.472,18.812418,17349.332};
+				position[]={15303.472,18.812422,17349.332};
 				angles[]={0,5.5140715,0};
 			};
 			side="Empty";
@@ -8837,12 +8837,11 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false;this addAction [""<t color='#ff1111'>VAS</t>"",""scripts\VAS\open.sqf"",[],10,true,true,'((vehicle player) == player) && ((player distance _target) < 5)'];  this addAction [""Quick Gear Save"",QS_fnc_saveInventory,[],7,true,true,'((vehicle player) == player) && ((player distance _target) < 5)']; 0 = [this] execVM ""scripts\VAserver.sqf"";";
+				init="this allowDamage false; this enableSimulation false;this addAction [""<t color='#ff1111'>VAS</t>"",""scripts\VAS\open.sqf"",[],10,true,true,'((vehicle player) == player) && ((player distance _target) < 5)'];  this addAction [""Quick Gear Save"",QS_fnc_saveInventory,[],7,true,true,'((vehicle player) == player) && ((player distance _target) < 5)']; 0 = [this] execVM ""scripts\VAserver.sqf"";this addAction [""<t color='#fc9c02'>Take Earplugs</t>"",""scripts\VAS\Earplugs.sqf"",[],5,true,true,'((vehicle player) == player) && ((player distance _target) < 5)'];";
 				name="myBox";
 			};
 			id=624;
 			type="B_supplyCrate_F";
-			atlOffset=-3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24133,7 +24132,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="MAJOR";
-						init="removeAllWeapons this; this allowDamage false;this addAction [""<t color='#ff1111'>VAS</t>"",""scripts\VAS\open.sqf"",[],10,true,true,'((vehicle player) == player) && ((player distance _target) < 5)']; this enablesimulation false; this addAction [""Quick Gear Save"",QS_fnc_saveInventory,[],7,true,true,'((vehicle player) == player) && ((player distance _target) < 5)']; 0 = [this] execVM ""scripts\VAserver.sqf""; this addAction [""<t color='#fc9c02'>Take Earplugs</t>"",""scripts\VAS\Earplugs.sqf"",[],5,true,true,'((vehicle player) == player) && ((player distance _target) < 5)']; this addAction [""View Distance Settings"",TAWVD_fnc_openTAWVD,[],-98,false,false,"""",''];this addAction [""<t color='#FFCF11'>Fix Cam Shake Local</t>"",enableCamShake false,[],0,true,true,""""""""];";
+						init="removeAllWeapons this; this allowDamage false;this addAction [""<t color='#ff1111'>VAS</t>"",""scripts\VAS\open.sqf"",[],10,true,true,'((vehicle player) == player) && ((player distance _target) < 5)']; this enablesimulation false; this addAction [""Quick Gear Save"",QS_fnc_saveInventory,[],7,true,true,'((vehicle player) == player) && ((player distance _target) < 5)']; 0 = [this] execVM ""scripts\VAserver.sqf""; this addAction [""<t color='#fc9c02'>Take Earplugs</t>"",""scripts\VAS\Earplugs.sqf"",[],5,true,true,'((vehicle player) == player) && ((player distance _target) < 5)']; this addAction [""View Distance Settings"",TAWVD_fnc_openTAWVD,[],-98,false,false,"""",''];";
 						name="Quartermaster";
 						class Inventory
 						{

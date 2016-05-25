@@ -22,16 +22,16 @@ _delay = 300 + (random 600);
 _loopTimeout = 10 + (random 10);
 
 _missionList = [	
-	//"destroyUrban",
-	//"HQcoast",
-	//"HQfia",
-	//"HQind",
-	//"HQresearch",
-	//"priorityAA",	
-	//"priorityARTY",
-	//"secureChopper",
-	//"secureIntelUnit",
-	//"secureIntelVehicle",
+	"destroyUrban",
+	"HQcoast",
+	"HQfia",
+	"HQind",
+	"HQresearch",
+	"priorityAA",	
+	"priorityARTY",
+	"secureChopper",
+	"secureIntelUnit",
+	"secureIntelVehicle",
 	"secureRadar"
 ];
 
