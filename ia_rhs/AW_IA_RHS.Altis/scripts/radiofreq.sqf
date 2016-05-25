@@ -46,7 +46,9 @@
 	};
 
 	player addEventHandler ["GetInMan", {
-		_veh = _this select 2; 
+		_veh = _this select 2;
+		_pos = _this select 1;		
+		if ( _pos == "cargo" ) exitWith{}; 
 		_haveVehRadio =  _veh call TFAR_fnc_hasVehicleRadio;
 		if ( _haveVehRadio ) then {
 			[(call TFAR_fnc_activeLrRadio), 1, "50"] call TFAR_fnc_SetChannelFrequency;
