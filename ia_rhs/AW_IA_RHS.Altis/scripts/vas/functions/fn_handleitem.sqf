@@ -5,7 +5,7 @@
 	@file_edit: 12/7/2013
 	@file_description: Handles the incoming requests and adds or removes it.
 */
-private["_item","_details","_bool","_ispack","_items","_isgun","_ongun","_override","_toUniform","_toVest"];
+private["_item","_details","_bool","_ispack","_items","_isgun","_ongun","_override","_toUniform","_toVest","_isradio"];
 _item = [_this,0,"",[""]] call BIS_fnc_param;
 _bool = [_this,1,false,[false]] call BIS_fnc_param;
 _ispack = [_this,2,false,[false]] call BIS_fnc_param;
@@ -17,12 +17,13 @@ _toVest = [_this,6,false,[false]] call BIS_fnc_param; //Manual override to send 
 //Some checks
 if(_item == "") exitWith {};
 _isgun = false;
+_isradio = false;
 
 //Patch by Robalo for TFAR radio's.
 if (getText (configFile >> "CfgWeapons" >> _item >> "simulation") == "ItemRadio") then {
 	if (isClass(configFile >> "CfgPatches" >> "task_force_radio_items")) then {
 		_radio = getText (configFile >> "CfgWeapons" >> _item >> "tf_parent");
-		if (typeName _radio == "STRING" && _radio != "") then {_item = _radio};
+		if (typeName _radio == "STRING" && _radio != "") then {_item = _radio;_isradio=true;};
 	};
 };
 
@@ -268,16 +269,56 @@ if(_bool) then
 						};
 					};
 					
-					case 201:
-					{
-						if(_ispack) then
-						{
+					case 201: {
+						if(_ispack) then {
 							player addItemToBackpack _item;
-						}
-							else
-						{
+						} else {
 							private["_type"];
 							_type = [_item,201] call VAS_fnc_accType;
+							if(_ongun) then
+							{
+								switch (_type) do
+								{
+									case 1: { player addPrimaryWeaponItem _item; };
+									case 2: { player addSecondaryWeaponItem _item; };
+									case 3: { player addHandgunItem _item; };
+								};
+							}
+								else
+							{
+								if(_override) then
+								{
+									player addItem _item;
+								}
+									else
+								{
+									[] call VAS_fnc_accPrompt;
+									waitUntil {!isNil {vas_prompt_choice}};
+									if(vas_prompt_choice) then
+									{
+										switch (_type) do
+										{
+											case 1: { player addPrimaryWeaponItem _item; };
+											case 2: { player addSecondaryWeaponItem _item; };
+											case 3: { player addHandgunItem _item; };
+										};
+									}
+										else
+									{
+										player addItem _item;
+									};
+									vas_prompt_choice = nil;
+								};
+							};
+						};
+					};
+					
+					case 302: {
+						if(_ispack) then {
+							player addItemToBackpack _item;
+						} else {
+							private["_type"];
+							_type = [_item,302] call VAS_fnc_accType;
 							if(_ongun) then
 							{
 								switch (_type) do
@@ -574,4 +615,21 @@ if(_bool) then
 if(!isNil "VAS_fnc_updateLoad") then
 {
 	[] call VAS_fnc_updateLoad;
+};
+
+
+if ( _isradio && _bool ) then {
+	waitUntil{
+		_haveSwRadio = call TFAR_fnc_haveSWRadio;
+		_haveSwRadio
+	};
+	[(call TFAR_fnc_activeSwRadio), 1, "300"] call TFAR_fnc_SetChannelFrequency;
+	[(call TFAR_fnc_activeSwRadio), 2, "310"] call TFAR_fnc_SetChannelFrequency;
+	[(call TFAR_fnc_activeSwRadio), 3, "320"] call TFAR_fnc_SetChannelFrequency;
+	[(call TFAR_fnc_activeSwRadio), 4, "330"] call TFAR_fnc_SetChannelFrequency;
+	[(call TFAR_fnc_activeSwRadio), 5, "340"] call TFAR_fnc_SetChannelFrequency;
+	[(call TFAR_fnc_activeSwRadio), 6, "350"] call TFAR_fnc_SetChannelFrequency;
+	[(call TFAR_fnc_activeSwRadio), 7, "360"] call TFAR_fnc_SetChannelFrequency;
+	[(call TFAR_fnc_activeSwRadio), 8, "370"] call TFAR_fnc_SetChannelFrequency;
+	systemChat "ShortWave Frequencies set";
 };
