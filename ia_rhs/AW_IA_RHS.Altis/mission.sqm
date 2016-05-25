@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15201.913,33.308624,17277.414};
-		dir[]={-0.64294457,-0.55490512,0.52815694};
-		up[]={-0.42879766,0.83174837,0.35224545};
-		aside[]={0.63480586,-5.0626695e-006,0.77279961};
+		pos[]={15127.695,21.979507,17242.531};
+		dir[]={-0.78146273,-0.37461036,0.49922642};
+		up[]={-0.31576049,0.92701036,0.20172223};
+		aside[]={0.53839469,-1.4159014e-006,0.84280747};
 	};
 };
 binarizationWanted=0;
@@ -25229,7 +25229,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="U_B_HeliPilotCoveralls";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -25325,7 +25325,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="U_B_HeliPilotCoveralls";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -25422,7 +25422,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="U_B_HeliPilotCoveralls";
+								typeName="rhs_uniform_g3_mc";
 								isBackpack=0;
 								class MagazineCargo
 								{
