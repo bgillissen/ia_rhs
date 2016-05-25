@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2027;
+		nextID=2029;
 	};
 	class MarkerIDProvider
 	{
@@ -211,7 +211,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1126;
+		items=1128;
 		class Item0
 		{
 			dataType="Marker";
@@ -23471,13 +23471,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15601.5,-0.00048828125,14799.162};
+				position[]={15758.563,0,14799.498};
 			};
 			name="ben";
 			init="[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; ben setVariable [""showNotification"", false]";
 			id=1293;
 			type="ModuleCurator_F";
-			atlOffset=87.050003;
+			atlOffset=69.426537;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23583,13 +23583,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15611.428,0,15479.332};
+				position[]={15611.428,0.00066375732,15479.332};
 			};
 			name="curatorEditable";
 			init="curatorEditable setVariable [""showNotification"", false];";
 			id=1296;
 			type="ModuleCuratorAddEditableObjects";
-			atlOffset=37.99934;
+			atlOffset=38.000004;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -25490,13 +25490,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15654.6,3.4197845,14799.197};
+				position[]={15623.111,3.4636891,14799.135};
 			};
 			name="TheBadassPutin";
 			init="[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; TheBadassPutin setVariable [""showNotification"", false]";
 			id=1353;
 			type="ModuleCurator_F";
-			atlOffset=77.327003;
+			atlOffset=84.756149;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -25602,13 +25602,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15724.869,4.5655212,14799.718};
+				position[]={15657.973,4.6652551,14799.86};
 			};
 			name="WarlordGandhi";
 			init="[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; WarlordGandhi setVariable [""showNotification"", false]";
 			id=1355;
 			type="ModuleCurator_F";
-			atlOffset=71.778;
+			atlOffset=77.997299;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29329,16 +29329,240 @@ class Mission
 				nAttributes=1;
 			};
 		};
+		class Item1126
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15801.412,0.00028991699,14799.135};
+			};
+			name="Jeffs";
+			init="[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; Jeffs setVariable [""showNotification"", false]";
+			id=2027;
+			type="ModuleCurator_F";
+			atlOffset=74.654007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="76561198039347445";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Jeffs";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item1127
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15835.631,-3.1919861,14798.243};
+			};
+			name="Adam";
+			init="[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; Adam setVariable [""showNotification"", false]";
+			id=2028;
+			type="ModuleCurator_F";
+			atlOffset=74.657997;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="76561198078550099";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Adam";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=97;
+			nextID=99;
 		};
 		class Links
 		{
-			items=97;
+			items=99;
 			class Item0
 			{
 				linkID=0;
@@ -30303,6 +30527,26 @@ class Mission
 			{
 				linkID=96;
 				item0=2003;
+				item1=1296;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item97
+			{
+				linkID=97;
+				item0=2027;
+				item1=1296;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item98
+			{
+				linkID=98;
+				item0=2028;
 				item1=1296;
 				class CustomData
 				{
