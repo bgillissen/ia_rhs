@@ -29,9 +29,6 @@
 		[(call TFAR_fnc_activeLrRadio), 9, "130"] call TFAR_fnc_SetChannelFrequency;
 		systemChat "LongRange Frequencies set";
 	};
-	if ( !_haveLrRadio ) then {
-		systemChat "No LongRange Radio";
-	};
 	
 	sleep 2;
 	_haveSwRadio = call TFAR_fnc_haveSWRadio;
@@ -47,7 +44,21 @@
 		[(call TFAR_fnc_activeSwRadio), 8, "370"] call TFAR_fnc_SetChannelFrequency;
 		systemChat "ShortWave Frequencies set";
 	};
-	if ( !_haveSwRadio ) then {
-		systemChat "No ShortWave Radio";
-	};
+
+	player addEventHandler ["GetInMan", {
+		_veh = _this select 2; 
+		_haveVehRadio =  _veh call TFAR_fnc_hasVehicleRadio;
+		if ( _haveVehRadio ) then {
+			[(call TFAR_fnc_activeLrRadio), 1, "50"] call TFAR_fnc_SetChannelFrequency;
+			[(call TFAR_fnc_activeLrRadio), 2, "60"] call TFAR_fnc_SetChannelFrequency;
+			[(call TFAR_fnc_activeLrRadio), 3, "70"] call TFAR_fnc_SetChannelFrequency;
+			[(call TFAR_fnc_activeLrRadio), 4, "80"] call TFAR_fnc_SetChannelFrequency;
+			[(call TFAR_fnc_activeLrRadio), 5, "90"] call TFAR_fnc_SetChannelFrequency;
+			[(call TFAR_fnc_activeLrRadio), 6, "100"] call TFAR_fnc_SetChannelFrequency;
+			[(call TFAR_fnc_activeLrRadio), 7, "110"] call TFAR_fnc_SetChannelFrequency;
+			[(call TFAR_fnc_activeLrRadio), 8, "120"] call TFAR_fnc_SetChannelFrequency;
+			[(call TFAR_fnc_activeLrRadio), 9, "130"] call TFAR_fnc_SetChannelFrequency;
+			systemChat "Vehicle Frequencies set";
+		}; 
+	}];
 };
