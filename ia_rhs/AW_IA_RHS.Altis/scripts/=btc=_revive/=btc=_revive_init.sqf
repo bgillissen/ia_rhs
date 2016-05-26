@@ -124,7 +124,7 @@ if (!isDedicated) then {
 						  "I_Truck_02_medical_F",
 						  "O_Truck_02_medical_F",
 						  "RHS_UH60M_MEV_d"];
-	BTC_Medical_Trucks_addActionText = "First Aid (Medical Vehicule)";		// addAction text displayed when reviving someone near medical truck
+	BTC_Medical_Trucks_addActionText = "First Aid (Medical Vehicle)";		// addAction text displayed when reviving someone near medical truck
 };	
 
 //=========== END NEW CONFIG OPTIONS

@@ -160,25 +160,23 @@ while { sideMissionUp } do {
 	//------------------------------------------------------ IF WEAPONS ARE DESTROYED [SUCCESS]
 		
 	if (SM_SUCCESS) exitWith {
-	
-		//-------------------- BOOM!
-	
+
 		hqSideChat = _c4Message;
 		[hqSideChat] remoteExec ["AW_fnc_globalSideChat",0,false];
 		sleep 30;											// ghetto bomb timer
-		"Bo_GBU12_LGB" createVehicle getPos _object; 		// default "Bo_Mk82"
-		sleep 0.1;
-		_object setPos [-10000,-10000,0];					// hide objective
-	
+		
 		//-------------------- DE-BRIEFING
-
 		sideMissionUp = false;
 		[] call QS_fnc_SMhintSUCCESS;
 		{ _x setMarkerPos [-10000,-10000,-10000]; } forEach ["sideMarker", "sideCircle"];
 		
-		//--------------------- SECONDARY EXPLOSIONS, create a function for this?
-		
-		sleep 10 + (random 10);
+		//-------------------- BOOM!
+		"Bo_GBU12_LGB" createVehicle getPos _object; 		// default "Bo_Mk82"
+		sleep 0.1;
+		_object setPos [-10000,-10000,0];					// hide objective
+	
+		//--------------------- SECONDARY EXPLOSIONS, create a function for this?	
+		sleep 5 + (random 5);
 		"SmallSecondary" createVehicle _secondary1;
 		"SmallSecondary" createVehicle _secondary2;
 		sleep 5 + (random 5);
@@ -188,7 +186,6 @@ while { sideMissionUp } do {
 		"SmallSecondary" createVehicle _secondary5;
 	
 		//--------------------- DELETE, DESPAWN, HIDE and RESET
-		
 		sleep 120;
 		{ deleteVehicle _x } forEach [sideObj,boat,trawler,assaultBoat];
 		deleteVehicle nearestObject [getPos sideObj,"Land_Cargo_HQ_V1_ruins_F"];
