@@ -15,7 +15,7 @@ ______________________________________________________*/
 
 private ["_aoPos","_spawnPos","_jetSelect","_casArray","_jetLimit","_jetPilot","_jetActual","_new"];
 
-_casArray = ["RHS_Su25SM_vvsc","RHS_Su25SM_KH29_vvsc","RHS_Su25SM_CAS_vvsc","RHS_T50_vvs_generic","RHS_T50_vvs_051","RHS_T50_vvs_052","RHS_T50_vvs_053","RHS_T50_vvs_054"];
+_casArray = ["RHS_Su25SM_vvsc","RHS_Su25SM_KH29_vvsc","RHS_Su25SM_CAS_vvsc","RHS_T50_vvs_generic","RHS_T50_vvs_051","RHS_T50_vvs_052"];
 
 _jetLimit = 1;
 	

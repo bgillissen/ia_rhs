@@ -250,7 +250,7 @@ _box = _this select 0;
         "rhsusf_mag_6Rnd_M781_Practice",
         "rhsusf_mag_6Rnd_M576_Buckshot",
         "rhsusf_mag_10Rnd_STD_50BMG_M33",
-        "rhsusf_mag_10Rnd_STD_50BMG_mk211",
+        //"rhsusf_mag_10Rnd_STD_50BMG_mk211", explosive sniper ammo
         
       	"RH_15Rnd_9x19_M9",		//RH Pistols
       	"RH_6Rnd_357_Mag",
@@ -456,6 +456,11 @@ _box = _this select 0;
         "rhs_weap_mk18_grip2_KAC",
         "rhs_weap_mk18_KAC",
         "rhs_weap_mk18_m320",
+        "rhs_weap_hk416d10",
+        "rhs_weap_hk416d10_m320",
+        "rhs_weap_hk416d10_LMT",
+        "rhs_weap_hk416d145",
+        "rhs_weap_hk416d145_m320",
         
         "RH_deagle",			//RH Pistols
         "RH_deagleg",
@@ -551,7 +556,7 @@ _box = _this select 0;
     [
         "tf_anprc152",			//TFAR NATO radios
         //"tf_anprc152_1",
-        "tf_rf7800str",
+        //"tf_rf7800str",
         
         "MineDetector",
         

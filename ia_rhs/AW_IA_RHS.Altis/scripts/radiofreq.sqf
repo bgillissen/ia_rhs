@@ -2,6 +2,7 @@
 
 	waitUntil {!isNull player};
 	waitUntil {player == player};
+	/*
 	waitUntil {
 		sleep 0.1;
 		_haveSwRadio = call TFAR_fnc_haveSWRadio;
@@ -29,7 +30,7 @@
 		[(call TFAR_fnc_activeLrRadio), 9, "130"] call TFAR_fnc_SetChannelFrequency;
 		systemChat "LongRange Frequencies set";
 	};
-	
+
 	sleep 2;
 	_haveSwRadio = call TFAR_fnc_haveSWRadio;
 	
@@ -44,7 +45,7 @@
 		[(call TFAR_fnc_activeSwRadio), 8, "370"] call TFAR_fnc_SetChannelFrequency;
 		systemChat "ShortWave Frequencies set";
 	};
-
+	*/
 	player addEventHandler ["GetInMan", {
 		_veh = _this select 2;
 		_pos = _this select 1;		
@@ -76,7 +77,7 @@
 			[(call TFAR_fnc_activeSwRadio), 6, "350"] call TFAR_fnc_SetChannelFrequency;
 			[(call TFAR_fnc_activeSwRadio), 7, "360"] call TFAR_fnc_SetChannelFrequency;
 			[(call TFAR_fnc_activeSwRadio), 8, "370"] call TFAR_fnc_SetChannelFrequency;
-			systemChat "ShortWave Frequencies set";
+			//systemChat "ShortWave Frequencies set";
 		};
 		if ( _item == "tf_rt1523g" ||
     		 _item == "tf_rt1523g_big" ||
@@ -94,7 +95,7 @@
 			 [(call TFAR_fnc_activeLrRadio), 7, "110"] call TFAR_fnc_SetChannelFrequency;
 			 [(call TFAR_fnc_activeLrRadio), 8, "120"] call TFAR_fnc_SetChannelFrequency;
 			 [(call TFAR_fnc_activeLrRadio), 9, "130"] call TFAR_fnc_SetChannelFrequency;
-			systemChat "LongRange Frequencies set";
+			//systemChat "LongRange Frequencies set";
 		};
 	}];
 
@@ -105,6 +106,7 @@
         	_this setVariable [ "VAcatch", nil ];
         	_thread = _this spawn { 
             	waitUntil { isNull ( uiNamespace getVariable [ "BIS_fnc_arsenal_cam", objNull ] )  };
+            	sleep 2;
 				_haveLrRadio = call TFAR_fnc_haveLRRadio;
 				if ( _haveLrRadio ) then {
 					[(call TFAR_fnc_activeLrRadio), 1, "50"] call TFAR_fnc_SetChannelFrequency;

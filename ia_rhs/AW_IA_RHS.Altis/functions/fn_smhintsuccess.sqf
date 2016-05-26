@@ -23,7 +23,7 @@ _vehVarname = _veh select 1;
 _completeText = format[
 "<t align='center'><t size='2.2'>Side Mission</t><br/><t size='1.5' color='#08b000'>COMPLETE</t><br/>____________________<br/>Fantastic job, lads! The OPFOR stationed on the island won't last long if you keep that up!<br/><br/>We've given you %1 to help with the fight. You'll find it at base.<br/><br/>Focus on the main objective for now; we'll relay this success to the intel team and see if there's anything else you can do for us. We'll get back to you in 10-15 minutes.</t>",_vehName];
 
-_reward = createVehicle [_vehVarname, getMarkerPos "smReward1",smMarkerList,0,"NONE"];
+_reward = createVehicle [_vehVarname, getMarkerPos "smReward1", smMarkerList,0, "CAN_COLLIDE"];
 waitUntil {!isNull _reward};
 
 _reward setDir 284;
@@ -33,7 +33,7 @@ _reward setDir 284;
 _rewardtext = format["Your team received %1!", _vehName];
 ["Reward",_rewardtext] remoteExec ["AW_fnc_globalNotification",0,false];
 
-
+/*
 if (_reward isKindOf "O_Plane_CAS_02_F") exitWith { 
 	_reward removeMagazine "120Rnd_CMFlare_Chaff_Magazine";
 	_reward addMagazine "60Rnd_CMFlare_Chaff_Magazine";
@@ -76,6 +76,7 @@ if (_reward isKindOf "Land_GarbageBags_F") exitWith {
 	_GMG addMagazine ("40Rnd_20mm_G_belt");
 	{_x addCuratorEditableObjects [[_GMG], false];} foreach adminCurators;
 };
+*/
 {
 	_x addCuratorEditableObjects [[_reward], false];
 } foreach adminCurators;

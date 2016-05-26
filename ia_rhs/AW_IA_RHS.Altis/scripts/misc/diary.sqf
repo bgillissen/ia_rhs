@@ -155,7 +155,7 @@ player createDiaryRecord ["teamspeak",
 
 player createDiaryRecord ["teamspeak",
 [
-"TaskForceUnicorn",
+"Task Force Unicorn",
 "
 <br /> Address: ts.taskforceunicorn.com
 <br />

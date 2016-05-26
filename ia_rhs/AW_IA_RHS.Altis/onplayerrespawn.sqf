@@ -13,7 +13,7 @@ Description:
 	Client scripts that should execute after respawn.
 ______________________________________________________*/
 
-private ["_iampilot"];
+private ["_iampilot", "_SWradio", "_LRradio"];
 
 //=========================== Fatigue setting
 
@@ -79,3 +79,35 @@ player addAction ["Clear vehicle inventory",QS_fnc_actionClearInventory,[],-97,F
 //======================= Add players to Zeus
 
 {_x addCuratorEditableObjects [[player],FALSE];} count allCurators;
+
+//======================= Remove SWradio and a give a new one and configure it
+
+player unlinkItem "tf_anprc152";
+player unlinkItem "tf_rf7800str";
+
+player linkItem "tf_anprc152";
+sleep 2;
+[(call TFAR_fnc_activeSwRadio), 1, "300"] call TFAR_fnc_SetChannelFrequency;
+[(call TFAR_fnc_activeSwRadio), 2, "310"] call TFAR_fnc_SetChannelFrequency;
+[(call TFAR_fnc_activeSwRadio), 3, "320"] call TFAR_fnc_SetChannelFrequency;
+[(call TFAR_fnc_activeSwRadio), 4, "330"] call TFAR_fnc_SetChannelFrequency;
+[(call TFAR_fnc_activeSwRadio), 5, "340"] call TFAR_fnc_SetChannelFrequency;
+[(call TFAR_fnc_activeSwRadio), 6, "350"] call TFAR_fnc_SetChannelFrequency;
+[(call TFAR_fnc_activeSwRadio), 7, "360"] call TFAR_fnc_SetChannelFrequency;
+[(call TFAR_fnc_activeSwRadio), 8, "370"] call TFAR_fnc_SetChannelFrequency;
+systemChat "ShortWave Frequencies set";
+
+//======================= Configure LongRange radio if player got one
+sleep 2;
+if ( call TFAR_fnc_haveLRRadio ) then {
+	[(call TFAR_fnc_activeLrRadio), 1, "50"] call TFAR_fnc_SetChannelFrequency;
+	[(call TFAR_fnc_activeLrRadio), 2, "60"] call TFAR_fnc_SetChannelFrequency;
+	[(call TFAR_fnc_activeLrRadio), 3, "70"] call TFAR_fnc_SetChannelFrequency;
+	[(call TFAR_fnc_activeLrRadio), 4, "80"] call TFAR_fnc_SetChannelFrequency;
+	[(call TFAR_fnc_activeLrRadio), 5, "90"] call TFAR_fnc_SetChannelFrequency;
+	[(call TFAR_fnc_activeLrRadio), 6, "100"] call TFAR_fnc_SetChannelFrequency;
+	[(call TFAR_fnc_activeLrRadio), 7, "110"] call TFAR_fnc_SetChannelFrequency;
+	[(call TFAR_fnc_activeLrRadio), 8, "120"] call TFAR_fnc_SetChannelFrequency;
+	[(call TFAR_fnc_activeLrRadio), 9, "130"] call TFAR_fnc_SetChannelFrequency;
+	systemChat "LongRange Frequencies set";
+};
