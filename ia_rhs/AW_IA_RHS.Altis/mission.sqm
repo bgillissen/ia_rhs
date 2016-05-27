@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2032;
+		nextID=2033;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15191.129,46.170376,17163.197};
-		dir[]={-0.72389686,-0.35430294,0.59219158};
-		up[]={-0.27431208,0.93494672,0.22440542};
-		aside[]={0.63323367,-2.7955393e-006,0.7740984};
+		pos[]={15313.114,46.170376,17339.061};
+		dir[]={-0.27562538,-0.49002272,0.8271336};
+		up[]={-0.1549329,0.87152159,0.46494463};
+		aside[]={0.94880652,-5.9950544e-006,0.31619203};
 	};
 };
 binarizationWanted=0;
@@ -23726,8 +23726,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15060.109,17.911762,17105.713};
-						angles[]={0,1.6182177,0};
+						position[]={15060.11,17.911438,17105.713};
+						angles[]={0,1.618217,0};
 					};
 					side="West";
 					flags=4;
@@ -23736,15 +23736,14 @@ class Mission
 					};
 					id=1308;
 					type="B_UAV_AI";
-					atlOffset=0.00032424927;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15060.109,17.911762,17105.713};
-						angles[]={0,1.6182177,0};
+						position[]={15060.11,17.911438,17105.713};
+						angles[]={0,1.618217,0};
 					};
 					side="West";
 					flags=6;
@@ -23753,7 +23752,6 @@ class Mission
 					};
 					id=1309;
 					type="B_UAV_AI";
-					atlOffset=0.00032424927;
 				};
 			};
 			class Attributes
@@ -23792,15 +23790,14 @@ class Mission
 				};
 			};
 			id=1306;
-			atlOffset=0.00032424927;
 		};
 		class Item1018
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15060.109,19.987465,17105.615};
-				angles[]={0,1.6182177,0};
+				position[]={15060.11,19.987141,17105.615};
+				angles[]={0,1.618217,0};
 			};
 			side="West";
 			flags=6;
@@ -23808,12 +23805,11 @@ class Mission
 			{
 				skill=0.60000002;
 				rank="CORPORAL";
-				init="0 = [this,30,FALSE,QS_fnc_vSetup02] spawn QS_fnc_vMonitor;";
+				init="0 = [this,30,FALSE,QS_fnc_vSetup02] spawn QS_fnc_vMonitor;this engineOn false";
 				description="UVG Stomper";
 			};
 			id=1307;
 			type="B_UGV_01_rcws_F";
-			atlOffset=0.00032424927;
 		};
 		class Item1019
 		{
@@ -27394,19 +27390,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15097.372,20.286428,17185};
-				angles[]={0,5.4922018,0};
+				position[]={15060.021,20.286428,17121.117};
+				angles[]={0,1.6911889,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				lock="LOCKEDPLAYER";
-				init="this allowDamage false;";
+				lock="UNLOCKED";
 				textures="orange";
 			};
 			id=1647;
 			type="C_Truck_02_fuel_F";
+			atlOffset=-0.0052757263;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27424,7 +27420,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
 						};
 					};
 				};
