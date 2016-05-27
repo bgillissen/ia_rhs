@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2053;
+		nextID=2063;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15308.67,39.110046,17337.252};
-		dir[]={-0.34154424,-0.30141374,0.8903591};
-		up[]={-0.10800552,0.9532786,0.28156462};
-		aside[]={0.93376082,-6.5745553e-007,0.35821572};
+		pos[]={15316.838,42.955723,17362.982};
+		dir[]={-0.48467287,-0.58024091,0.65472227};
+		up[]={-0.34525743,0.81421196,0.46639732};
+		aside[]={0.80381262,-7.4424024e-006,0.59506595};
 	};
 };
 binarizationWanted=0;
@@ -214,7 +214,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1147;
+		items=1155;
 		class Item0
 		{
 			dataType="Marker";
@@ -25831,7 +25831,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15297.296,18.317022,17418.471};
+				position[]={15297.184,18.320004,17418.27};
 				angles[]={0.0066592805,0.7174015,6.2685208};
 			};
 			side="Empty";
@@ -29973,6 +29973,152 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item1147
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15304.402,18.645798,17387.848};
+				angles[]={0.0080009829,0.78848535,6.2791886};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false; this enablesimulation false;";
+			};
+			id=2053;
+			type="Land_CncBarrierMedium_F";
+		};
+		class Item1148
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15305.656,18.650755,17386.602};
+				angles[]={0.0080009829,0.78848535,6.2791886};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false; this enablesimulation false;";
+			};
+			id=2054;
+			type="Land_CncBarrierMedium_F";
+		};
+		class Item1149
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15293.438,18.742418,17377.51};
+				angles[]={0.0026520467,0.78848535,6.2791886};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false; this enablesimulation false;";
+			};
+			id=2055;
+			type="Land_CncBarrierMedium_F";
+			atlOffset=3.8146973e-006;
+		};
+		class Item1150
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15294.628,18.74415,17376.287};
+				angles[]={0.0053265258,0.78848535,6.2791886};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false; this enablesimulation false;";
+			};
+			id=2056;
+			type="Land_CncBarrierMedium_F";
+		};
+		class Item1151
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15292.473,18.481337,17420.293};
+				angles[]={0.0066592805,5.4433694,6.2671871};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false; this enablesimulation false;";
+			};
+			id=2057;
+			type="Land_CncBarrierMedium_F";
+		};
+		class Item1152
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15293.615,18.456059,17421.564};
+				angles[]={0.0066592805,5.442585,6.2685208};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false; this enablesimulation false;";
+			};
+			id=2058;
+			type="Land_CncBarrierMedium_F";
+		};
+		class Item1153
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15300.576,18.395699,17414.85};
+				angles[]={0.012000273,5.442585,6.2618566};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false; this enablesimulation false;";
+			};
+			id=2059;
+			type="Land_CncBarrierMedium_F";
+		};
+		class Item1154
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15299.434,18.423971,17413.578};
+				angles[]={0.0066592805,5.4433694,6.2685208};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false; this enablesimulation false;";
+			};
+			id=2060;
+			type="Land_CncBarrierMedium_F";
+			atlOffset=-1.9073486e-006;
 		};
 	};
 	class Connections
