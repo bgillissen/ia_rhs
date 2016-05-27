@@ -13,7 +13,11 @@ Description:
 	Client scripts that should execute after respawn.
 ______________________________________________________*/
 
-private ["_iampilot", "_SWradio", "_LRradio"];
+private ["_iampilot"];
+
+waitUntil {!isNull player};
+waitUntil {player == player};
+
 
 //=========================== Fatigue setting
 
@@ -41,7 +45,6 @@ if (_iampilot) then {
 };
 
 //============================= UAV
-
 _uavop = ["rhsusf_army_ocp_uav"];
 _iamuavop = ({typeOf player == _x} count _uavop) > 0;
 
@@ -50,13 +53,11 @@ if (_iamuavop) then {
 };
 
 //============================= non-pilots units fastrope
-
 if (PARAMS_HeliRope != 0) then {
 	player addAction ["Fast Rope (Press Space)", zlt_fnc_fastrope, [], 99, false, false, '','not zlt_mutexAction and count ((vehicle player) getvariable ["zlt_ropes", []]) != 0 and player != driver vehicle player'];
 };
 
 //============================= Mobile arsenal/Mobile Vas
-
 if (PARAMS_MobileArmory != 0) then {
 	if (PARAMS_MobileArmory == 1) then {
 		player addAction ["Mobile Armory","scripts\VAS\open.sqf",[],10,FALSE,FALSE,'','[] call QS_fnc_conditionMobileArmory'];
@@ -70,22 +71,21 @@ if (PARAMS_MobileArmory != 0) then {
 };
 
 //====================== Seating and Clear vehicle inventory stuff
-
 saving_inventory = FALSE;
 inventory_cleared = FALSE;
 player setVariable ["seated",FALSE];
 player addAction ["Clear vehicle inventory",QS_fnc_actionClearInventory,[],-97,FALSE,FALSE,'','[] call QS_fnc_conditionClearInventory'];
 
 //======================= Add players to Zeus
-
 {_x addCuratorEditableObjects [[player],FALSE];} count allCurators;
 
 //======================= Remove SWradio and a give a new one and configure it
-
-player unlinkItem "tf_anprc152";
-player unlinkItem "tf_rf7800str";
-
-player linkItem "tf_anprc152";
+if ( "tf_rf7800str" in assignedItems player ) then {
+	//player unlinkItem "tf_anprc152";
+	player unlinkItem "tf_rf7800str";
+	player linkItem "tf_anprc152";
+	systemChat "Radio Replaced";
+};
 sleep 2;
 [(call TFAR_fnc_activeSwRadio), 1, "300"] call TFAR_fnc_SetChannelFrequency;
 [(call TFAR_fnc_activeSwRadio), 2, "310"] call TFAR_fnc_SetChannelFrequency;
@@ -96,7 +96,6 @@ sleep 2;
 [(call TFAR_fnc_activeSwRadio), 7, "360"] call TFAR_fnc_SetChannelFrequency;
 [(call TFAR_fnc_activeSwRadio), 8, "370"] call TFAR_fnc_SetChannelFrequency;
 systemChat "ShortWave Frequencies set";
-
 //======================= Configure LongRange radio if player got one
 sleep 2;
 if ( call TFAR_fnc_haveLRRadio ) then {

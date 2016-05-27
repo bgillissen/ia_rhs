@@ -33,7 +33,7 @@ for [ {_i = 0}, {_i < count(paramsArray)}, {_i = _i + 1} ] do {
 {_x addCuratorEditableObjects [[player],FALSE];} count allCurators;
 
 _null = [] execvm "scripts\vehicle\crew\crew.sqf"; 								// vehicle HUD
-//_null = [] execVM 'scripts\group_manager.sqf';									// group manager
+//_null = [] execVM 'scripts\group_manager.sqf';								// group manager
 _null = [] execVM "scripts\restrictions.sqf"; 									// gear restrictions and safezone
 _null = [] execVM "scripts\pilotCheck.sqf"; 									// pilots only
 _null = [] execVM "scripts\crewCheck.sqf"; 										// tank crew only
