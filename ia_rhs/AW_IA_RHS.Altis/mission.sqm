@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2050;
+		nextID=2053;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15182.832,49.566944,17159.256};
-		dir[]={0.37213239,-0.44144332,0.81663328};
-		up[]={0.18309584,0.89708471,0.40179434};
-		aside[]={0.91008091,-3.2604003e-006,-0.41469201};
+		pos[]={15356.254,49.566944,17337.828};
+		dir[]={-0.86272657,-0.39027137,0.32192647};
+		up[]={-0.36575207,0.92049056,0.13648362};
+		aside[]={0.34962147,-2.7298229e-006,0.93700939};
 	};
 };
 binarizationWanted=0;
@@ -214,7 +214,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1145;
+		items=1147;
 		class Item0
 		{
 			dataType="Marker";
@@ -21533,7 +21533,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15203.468,17.94273,17289.879};
+						position[]={15202.881,17.941948,17287.57};
 						angles[]={0,5.6222157,0.0012918708};
 					};
 					side="West";
@@ -21663,8 +21663,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15203.456,17.942715,17287.686};
-						angles[]={0,5.5043879,0.0012918708};
+						position[]={15202.869,17.941439,17285.377};
+						angles[]={0,5.5043879,0};
 					};
 					side="West";
 					flags=4;
@@ -21793,8 +21793,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15205.681,17.945681,17289.412};
-						angles[]={0,5.3783941,0.0012918708};
+						position[]={15205.094,17.944304,17287.104};
+						angles[]={6.2818484,5.3783941,0.0013372133};
 					};
 					side="West";
 					flags=4;
@@ -27392,8 +27392,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15060.021,20.286705,17121.117};
-				angles[]={0,1.6911892,0};
+				position[]={15094.445,20.088091,17188.578};
+				angles[]={0,1.6911892,0.066567369};
 			};
 			side="Empty";
 			flags=4;
@@ -27405,7 +27405,6 @@ class Mission
 			};
 			id=1647;
 			type="C_Truck_02_fuel_F";
-			atlOffset=-0.0049991608;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29505,6 +29504,7 @@ class Mission
 			};
 			id=2033;
 			type="rhsgref_cdf_b_reg_d30";
+			atlOffset=9.5367432e-006;
 		};
 		class Item1130
 		{
@@ -29521,6 +29521,7 @@ class Mission
 			};
 			id=2034;
 			type="rhsgref_cdf_b_reg_d30";
+			atlOffset=-0.00060081482;
 		};
 		class Item1131
 		{
@@ -29537,6 +29538,7 @@ class Mission
 			};
 			id=2035;
 			type="rhsgref_cdf_b_reg_d30";
+			atlOffset=-0.0011730194;
 		};
 		class Item1132
 		{
@@ -29840,16 +29842,98 @@ class Mission
 			id=2049;
 			type="Land_BagFence_Long_F";
 		};
+		class Item1145
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15206.726,18.838058,17288.67};
+				angles[]={0,5.5140715,0.0012915437};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false; this enableSimulation false;this addAction [""<t color='#ff1111'>VAS</t>"",""scripts\VAS\open.sqf"",[],10,true,true,'((vehicle player) == player) && ((player distance _target) < 5)'];  this addAction [""Quick Gear Save"",QS_fnc_saveInventory,[],7,true,true,'((vehicle player) == player) && ((player distance _target) < 5)']; 0 = [this] execVM ""scripts\VAserver.sqf"";this addAction [""<t color='#fc9c02'>Take Earplugs</t>"",""scripts\VAS\Earplugs.sqf"",[],5,true,true,'((vehicle player) == player) && ((player distance _target) < 5)'];this addAction [""View Distance Settings"",TAWVD_fnc_openTAWVD,[],-98,false,false,"""",''];";
+			};
+			id=2051;
+			type="B_supplyCrate_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""launch_NLAW_F"",""arifle_MX_F"",""arifle_MX_SW_F""],[1,2,1]],[[""30Rnd_65x39_caseless_mag"",""16Rnd_9x21_Mag"",""30Rnd_45ACP_Mag_SMG_01"",""20Rnd_762x51_Mag"",""100Rnd_65x39_caseless_mag"",""1Rnd_HE_Grenade_shell"",""3Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""Chemlight_green"",""NLAW_F"",""Laserbatteries"",""HandGrenade"",""MiniGrenade"",""SmokeShell"",""SmokeShellGreen"",""UGL_FlareWhite_F"",""UGL_FlareGreen_F""],[24,6,6,6,6,3,1,2,2,6,3,2,6,6,2,2,2,2]],[[""Laserdesignator"",""FirstAidKit"",""acc_flashlight"",""bipod_01_F_blk""],[1,10,2,1]],[[""B_Kitbag_mcamo""],[2]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1146
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15336.973,18.063854,17383.396};
+				angles[]={0.013332055,5.5140715,6.2645216};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false; this enableSimulation false;this addAction [""<t color='#ff1111'>VAS</t>"",""scripts\VAS\open.sqf"",[],10,true,true,'((vehicle player) == player) && ((player distance _target) < 5)'];  this addAction [""Quick Gear Save"",QS_fnc_saveInventory,[],7,true,true,'((vehicle player) == player) && ((player distance _target) < 5)']; 0 = [this] execVM ""scripts\VAserver.sqf"";this addAction [""<t color='#fc9c02'>Take Earplugs</t>"",""scripts\VAS\Earplugs.sqf"",[],5,true,true,'((vehicle player) == player) && ((player distance _target) < 5)'];this addAction [""View Distance Settings"",TAWVD_fnc_openTAWVD,[],-98,false,false,"""",''];";
+			};
+			id=2052;
+			type="B_supplyCrate_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""launch_NLAW_F"",""arifle_MX_F"",""arifle_MX_SW_F""],[1,2,1]],[[""30Rnd_65x39_caseless_mag"",""16Rnd_9x21_Mag"",""30Rnd_45ACP_Mag_SMG_01"",""20Rnd_762x51_Mag"",""100Rnd_65x39_caseless_mag"",""1Rnd_HE_Grenade_shell"",""3Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""Chemlight_green"",""NLAW_F"",""Laserbatteries"",""HandGrenade"",""MiniGrenade"",""SmokeShell"",""SmokeShellGreen"",""UGL_FlareWhite_F"",""UGL_FlareGreen_F""],[24,6,6,6,6,3,1,2,2,6,3,2,6,6,2,2,2,2]],[[""Laserdesignator"",""FirstAidKit"",""acc_flashlight"",""bipod_01_F_blk""],[1,10,2,1]],[[""B_Kitbag_mcamo""],[2]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=106;
+			nextID=108;
 		};
 		class Links
 		{
-			items=106;
+			items=108;
 			class Item0
 			{
 				linkID=0;
@@ -30643,7 +30727,7 @@ class Mission
 			class Item79
 			{
 				linkID=79;
-				item0=1505;
+				item0=1522;
 				item1=1296;
 				class CustomData
 				{
@@ -30653,7 +30737,7 @@ class Mission
 			class Item80
 			{
 				linkID=80;
-				item0=1522;
+				item0=1521;
 				item1=1296;
 				class CustomData
 				{
@@ -30663,7 +30747,7 @@ class Mission
 			class Item81
 			{
 				linkID=81;
-				item0=1521;
+				item0=1420;
 				item1=1296;
 				class CustomData
 				{
@@ -30673,7 +30757,7 @@ class Mission
 			class Item82
 			{
 				linkID=82;
-				item0=1420;
+				item0=1619;
 				item1=1296;
 				class CustomData
 				{
@@ -30683,7 +30767,7 @@ class Mission
 			class Item83
 			{
 				linkID=83;
-				item0=1619;
+				item0=1626;
 				item1=1296;
 				class CustomData
 				{
@@ -30693,7 +30777,7 @@ class Mission
 			class Item84
 			{
 				linkID=84;
-				item0=1626;
+				item0=1625;
 				item1=1296;
 				class CustomData
 				{
@@ -30703,7 +30787,7 @@ class Mission
 			class Item85
 			{
 				linkID=85;
-				item0=1625;
+				item0=1624;
 				item1=1296;
 				class CustomData
 				{
@@ -30713,7 +30797,7 @@ class Mission
 			class Item86
 			{
 				linkID=86;
-				item0=1624;
+				item0=1623;
 				item1=1296;
 				class CustomData
 				{
@@ -30723,7 +30807,7 @@ class Mission
 			class Item87
 			{
 				linkID=87;
-				item0=1623;
+				item0=1641;
 				item1=1296;
 				class CustomData
 				{
@@ -30733,7 +30817,7 @@ class Mission
 			class Item88
 			{
 				linkID=88;
-				item0=1641;
+				item0=1640;
 				item1=1296;
 				class CustomData
 				{
@@ -30743,7 +30827,7 @@ class Mission
 			class Item89
 			{
 				linkID=89;
-				item0=1640;
+				item0=1445;
 				item1=1296;
 				class CustomData
 				{
@@ -30753,7 +30837,7 @@ class Mission
 			class Item90
 			{
 				linkID=90;
-				item0=1445;
+				item0=1918;
 				item1=1296;
 				class CustomData
 				{
@@ -30763,7 +30847,7 @@ class Mission
 			class Item91
 			{
 				linkID=91;
-				item0=1918;
+				item0=1931;
 				item1=1296;
 				class CustomData
 				{
@@ -30773,7 +30857,7 @@ class Mission
 			class Item92
 			{
 				linkID=92;
-				item0=1931;
+				item0=1595;
 				item1=1296;
 				class CustomData
 				{
@@ -30783,7 +30867,7 @@ class Mission
 			class Item93
 			{
 				linkID=93;
-				item0=1595;
+				item0=2024;
 				item1=1296;
 				class CustomData
 				{
@@ -30793,7 +30877,7 @@ class Mission
 			class Item94
 			{
 				linkID=94;
-				item0=2024;
+				item0=2011;
 				item1=1296;
 				class CustomData
 				{
@@ -30803,7 +30887,7 @@ class Mission
 			class Item95
 			{
 				linkID=95;
-				item0=2011;
+				item0=2003;
 				item1=1296;
 				class CustomData
 				{
@@ -30813,7 +30897,7 @@ class Mission
 			class Item96
 			{
 				linkID=96;
-				item0=2003;
+				item0=2027;
 				item1=1296;
 				class CustomData
 				{
@@ -30823,7 +30907,7 @@ class Mission
 			class Item97
 			{
 				linkID=97;
-				item0=2027;
+				item0=2028;
 				item1=1296;
 				class CustomData
 				{
@@ -30833,7 +30917,7 @@ class Mission
 			class Item98
 			{
 				linkID=98;
-				item0=2028;
+				item0=1512;
 				item1=1296;
 				class CustomData
 				{
@@ -30843,7 +30927,7 @@ class Mission
 			class Item99
 			{
 				linkID=99;
-				item0=1512;
+				item0=1514;
 				item1=1296;
 				class CustomData
 				{
@@ -30853,7 +30937,7 @@ class Mission
 			class Item100
 			{
 				linkID=100;
-				item0=1514;
+				item0=1515;
 				item1=1296;
 				class CustomData
 				{
@@ -30863,7 +30947,7 @@ class Mission
 			class Item101
 			{
 				linkID=101;
-				item0=1515;
+				item0=1491;
 				item1=1296;
 				class CustomData
 				{
@@ -30873,7 +30957,7 @@ class Mission
 			class Item102
 			{
 				linkID=102;
-				item0=1491;
+				item0=1490;
 				item1=1296;
 				class CustomData
 				{
@@ -30883,7 +30967,7 @@ class Mission
 			class Item103
 			{
 				linkID=103;
-				item0=1490;
+				item0=1576;
 				item1=1296;
 				class CustomData
 				{
@@ -30893,7 +30977,7 @@ class Mission
 			class Item104
 			{
 				linkID=104;
-				item0=1576;
+				item0=1647;
 				item1=1296;
 				class CustomData
 				{
@@ -30903,7 +30987,27 @@ class Mission
 			class Item105
 			{
 				linkID=105;
-				item0=1647;
+				item0=2035;
+				item1=1296;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item106
+			{
+				linkID=106;
+				item0=2034;
+				item1=1296;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item107
+			{
+				linkID=107;
+				item0=2033;
 				item1=1296;
 				class CustomData
 				{
