@@ -15,8 +15,8 @@ class AW_INTRO
 {
 	idd=-1;
 	movingenable=false;
-	
-	class controls 
+
+	class controls
 	{
 ////////////////////////////////////////////////////////
 // GUI EDITOR OUTPUT START (by BACONMOP, v1.063, #Murapy)
@@ -211,20 +211,20 @@ class Genreal_hints_Header: RscText
 class Hint_1: RscText
 {
 	idc = 1012;
-	text = "Check that your AN/PRC-152 shortwave radio is set to 300 MHz (by pressing CTRL+P) for the default channel."; //--- ToDo: Localize;
-	x = -0.65;
+	text = "Make sure to have at least one long range radio for each squad."; //--- ToDo: Localize;
+	x = -0.6875;
 	y = 0.1;
-	w = 0.6375;
+	w = 0.6125;
 	h = 0.08;
 	SizeEx = 0.03700;
 };
 class Hint_2: RscText
 {
 	idc = 1013;
-	text = "Coordinate with HQ and support elements over long range radio on 50 MHz (ALT + P) by default."; //--- ToDo: Localize;
-	x = -0.625;
+	text = "Coordinate with HQ and support elements over LR radio on 50 MHz."; //--- ToDo: Localize;
+	x = -0.6875;
 	y = 0.18;
-	w = 0.575;
+	w = 0.6125;
 	h = 0.08;
 	SizeEx = 0.03700;
 };
@@ -234,17 +234,17 @@ class Hint_3: RscText
 	text = "Support elements should stay on standby until called in."; //--- ToDo: Localize;
 	x = -0.6875;
 	y = 0.26;
-	w = 0.6625;
+	w = 0.6125;
 	h = 0.06;
 	SizeEx = 0.03700;
 };
 class Hint_5: RscText
 {
 	idc = 1015;
-	text = "Zeus players may be on but that doesn’t mean they killed you."; //--- ToDo: Localize;
-	x = -0.65;
+	text = "Zeus players may be on but that doesnï¿½t mean they killed you."; //--- ToDo: Localize;
+	x = -0.6875;
 	y = 0.34;
-	w = 0.5625;
+	w = 0.6125;
 	h = 0.08;
 	SizeEx = 0.03700;
 };
@@ -252,19 +252,19 @@ class Hint_6: RscText
 {
 	idc = 1016;
 	text = "Found a bug? Mail it to ben@taskforceunicorn.com"; //--- ToDo: Localize;
-	x = -0.6125;
+	x = -0.6875;
 	y = 0.42;
-	w = 0.4875;
+	w = 0.6125;
 	h = 0.06;
 	SizeEx = 0.03700;
 };
 class Hint_7: RscText
 {
 	idc = 1016;
-	text = "You can apply for Task Force Unicorn membership at taskforceunicorn.com"; //--- ToDo: Localize;
-	x = -0.55;
+	text = "Apply for TFU membership at taskforceunicorn.com"; //--- ToDo: Localize;
+	x = -0.6875;
 	y = 0.50;
-	w = 0.4875;
+	w = 0.6125;
 	h = 0.06;
 	SizeEx = 0.03700;
 };
@@ -273,7 +273,6 @@ class Hint_7: RscText
 // GUI EDITOR OUTPUT END
 ////////////////////////////////////////////////////////
 
-	
-};
-};
 
+};
+};
