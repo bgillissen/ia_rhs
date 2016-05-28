@@ -91,7 +91,7 @@ player addAction ["Clear vehicle inventory",QS_fnc_actionClearInventory,[],-97,F
 		};
 	};
 	//======================= Configure ShortWave radio if player got one
-	sleep 1;
+	sleep 3;
 	if ( call TFAR_fnc_haveSWRadio ) then {
 		[(call TFAR_fnc_activeSwRadio), 1, "300"] call TFAR_fnc_SetChannelFrequency;
 		[(call TFAR_fnc_activeSwRadio), 2, "310"] call TFAR_fnc_SetChannelFrequency;

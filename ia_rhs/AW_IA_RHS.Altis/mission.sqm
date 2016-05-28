@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2063;
+		nextID=2064;
 	};
 	class MarkerIDProvider
 	{
@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={15316.838,42.955723,17362.982};
-		dir[]={-0.48467287,-0.58024091,0.65472227};
-		up[]={-0.34525743,0.81421196,0.46639732};
-		aside[]={0.80381262,-7.4424024e-006,0.59506595};
+		dir[]={-0.58724451,-0.50466073,0.63301432};
+		up[]={-0.3432734,0.86308074,0.37003216};
+		aside[]={0.73317903,-5.6038843e-006,0.68019623};
 	};
 };
 binarizationWanted=0;
@@ -214,7 +214,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1155;
+		items=1156;
 		class Item0
 		{
 			dataType="Marker";
@@ -30120,16 +30120,128 @@ class Mission
 			type="Land_CncBarrierMedium_F";
 			atlOffset=-1.9073486e-006;
 		};
+		class Item1155
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15563.808,0.7261734,14799.854};
+			};
+			name="BobtheWarrior";
+			init="[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; BobtheWarrior setVariable [""showNotification"", false]";
+			id=2063;
+			type="ModuleCurator_F";
+			atlOffset=84.696999;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="76561198213956757";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BobtheWarrior";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=111;
+			nextID=112;
 		};
 		class Links
 		{
-			items=111;
+			items=112;
 			class Item0
 			{
 				linkID=0;
@@ -31234,6 +31346,16 @@ class Mission
 			{
 				linkID=110;
 				item0=1307;
+				item1=1296;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item111
+			{
+				linkID=111;
+				item0=2063;
 				item1=1296;
 				class CustomData
 				{
