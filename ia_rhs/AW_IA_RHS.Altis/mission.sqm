@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15316.838,42.955723,17362.982};
-		dir[]={-0.58724451,-0.50466073,0.63301432};
-		up[]={-0.3432734,0.86308074,0.37003216};
-		aside[]={0.73317903,-5.6038843e-006,0.68019623};
+		pos[]={15196.155,27.571045,17298.24};
+		dir[]={0.53057003,-0.39201307,-0.75171238};
+		up[]={0.22612347,0.91972572,-0.3203772};
+		aside[]={-0.8170743,-3.6132406e-006,-0.57672787};
 	};
 };
 binarizationWanted=0;
@@ -17577,6 +17577,29 @@ class Mission
 			{
 			};
 			id=1215;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Alpha";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item1004
 		{
@@ -17591,7 +17614,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={15269.74,17.88961,17409.18};
-						angles[]={0.0013372133,1.6799666,6.2818484};
+						angles[]={0.0013439035,1.6799666,6.2818413};
 					};
 					side="West";
 					flags=4;
@@ -17704,7 +17727,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={15270.435,17.887127,17409.912};
-						angles[]={0.0013372133,1.6799666,6.2805333};
+						angles[]={0.0013439035,1.6799666,6.2805324};
 					};
 					side="West";
 					flags=4;
@@ -17825,7 +17848,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={15269.026,17.891598,17408.402};
-						angles[]={0.0013372133,1.6799666,6.2818484};
+						angles[]={0.0013439035,1.6799666,6.2818413};
 					};
 					side="West";
 					flags=4;
@@ -18195,7 +18218,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={15268.25,17.893621,17407.662};
-						angles[]={0.0013372133,1.5555595,6.2818484};
+						angles[]={0.0013439035,1.5555595,6.2818413};
 					};
 					side="West";
 					flags=4;
@@ -18565,6 +18588,29 @@ class Mission
 			{
 			};
 			id=1224;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Bravo";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item1005
 		{
@@ -19553,6 +19599,29 @@ class Mission
 			{
 			};
 			id=1233;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Charlie";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item1006
 		{
@@ -20531,6 +20600,29 @@ class Mission
 			{
 			};
 			id=1242;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Delta";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item1007
 		{
@@ -21520,6 +21612,29 @@ class Mission
 			{
 			};
 			id=1251;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Echo";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item1008
 		{
@@ -21923,6 +22038,29 @@ class Mission
 			{
 			};
 			id=1260;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Tank Crew";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item1009
 		{
@@ -22923,6 +23061,29 @@ class Mission
 			};
 			id=1265;
 			atlOffset=-1.9073486e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Recon Team";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item1010
 		{
@@ -23170,6 +23331,29 @@ class Mission
 			{
 			};
 			id=1274;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Sniper Alpha";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item1011
 		{
@@ -23417,6 +23601,29 @@ class Mission
 			{
 			};
 			id=1277;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Sniper Beta";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item1012
 		{
@@ -24680,6 +24887,29 @@ class Mission
 			{
 			};
 			id=1326;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Combat Live Saver";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item1025
 		{
@@ -25188,6 +25418,29 @@ class Mission
 			{
 			};
 			id=1336;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Fire Support";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item1029
 		{
@@ -25493,6 +25746,29 @@ class Mission
 			{
 			};
 			id=1340;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Vortex";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item1030
 		{
