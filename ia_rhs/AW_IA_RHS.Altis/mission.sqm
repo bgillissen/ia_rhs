@@ -23640,13 +23640,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15758.563,0,14799.498};
+				position[]={15758.563,0.00046539307,14799.498};
 			};
 			name="ben";
 			init="[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; ben setVariable [""showNotification"", false]";
 			id=1293;
 			type="ModuleCurator_F";
-			atlOffset=69.426537;
+			atlOffset=69.427002;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23740,7 +23740,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=3;
+							value=1;
 						};
 					};
 				};
@@ -25773,13 +25773,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15623.111,3.4636891,14799.135};
+				position[]={15623.111,3.4635391,14799.135};
 			};
 			name="TheBadassPutin";
 			init="[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; TheBadassPutin setVariable [""showNotification"", false]";
 			id=1353;
 			type="ModuleCurator_F";
-			atlOffset=84.756149;
+			atlOffset=84.755997;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -25873,7 +25873,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=3;
+							value=1;
 						};
 					};
 				};
@@ -25885,13 +25885,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={15657.973,4.6652551,14799.86};
+				position[]={15657.973,4.6649475,14799.86};
 			};
 			name="WarlordGandhi";
 			init="[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; WarlordGandhi setVariable [""showNotification"", false]";
 			id=1355;
 			type="ModuleCurator_F";
-			atlOffset=77.997299;
+			atlOffset=77.996994;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -25985,7 +25985,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=3;
+							value=1;
 						};
 					};
 				};
@@ -28082,7 +28082,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=3;
+							value=1;
 						};
 					};
 				};
@@ -29585,7 +29585,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=3;
+							value=1;
 						};
 					};
 				};
@@ -29697,7 +29697,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=3;
+							value=1;
 						};
 					};
 				};
@@ -30407,7 +30407,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=3;
+							value=1;
 						};
 					};
 				};
