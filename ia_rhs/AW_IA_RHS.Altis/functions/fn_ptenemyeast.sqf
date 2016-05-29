@@ -33,7 +33,6 @@ _SMvehPatrol = createGroup east;
 _SMaaPatrol = createGroup east;
 
 //---------- INFANTRY RANDOM
-	
 for "_x" from 0 to (3 + (random 4)) do {
 	_randomPos = [[[getPos priorityObj1, 300],[]],["water","out"]] call BIS_fnc_randomPos;
 	//_infteamPatrol = [_randomPos, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> [INF_TEAMS] call BIS_fnc_selectRandom)] call BIS_fnc_spawnGroup;
@@ -41,7 +40,11 @@ for "_x" from 0 to (3 + (random 4)) do {
 	[_infteamPatrol, getPos priorityObj1, 100] call BIS_fnc_taskPatrol;
 				
 	_enemiesArray = _enemiesArray + [_infteamPatrol];
+	
 };
+{
+	_x addCuratorEditableObjects [units _infteamPatrol, false];
+} foreach adminCurators;
 
 //---------- SNIPER
 
@@ -53,6 +56,9 @@ for "_x" from 0 to 1 do {
 		
 	_enemiesArray = _enemiesArray + [_smSniperTeam];
 };
+{
+	_x addCuratorEditableObjects [units _smSniperTeam, false];
+} foreach adminCurators;
 	
 //---------- VEHICLE RANDOM
 	
@@ -64,9 +70,14 @@ waitUntil {sleep 0.5; !isNull _SMveh1};
 _SMveh1 lock 3;
 [_SMvehPatrol, getPos priorityObj1, 75] call BIS_fnc_taskPatrol;
 sleep 0.1;
-	
+
 _enemiesArray = _enemiesArray + [_SMveh1];
-	
+
+{
+	_x addCuratorEditableObjects [[_SMveh1], false];
+	_x addCuratorEditableObjects [units _SMvehPatrol, false];
+} foreach adminCurators;
+
 //---------- VEHICLE RANDOM	
 	
 _randomPos = [[[getPos priorityObj1, 300],[]],["water","out"]] call BIS_fnc_randomPos;
@@ -81,6 +92,12 @@ sleep 0.1;
 _enemiesArray = _enemiesArray + [_SMveh2];
 sleep 0.1;
 _enemiesArray = _enemiesArray + [_SMvehPatrol];
+//_enemiesArray = _enemiesArray + [_SMveh1];
+
+{
+	_x addCuratorEditableObjects [[_SMveh2], false];
+	_x addCuratorEditableObjects [units _SMvehPatrol, false];
+} foreach adminCurators;
 
 //---------- VEHICLE AA
 	
@@ -95,6 +112,10 @@ _SMaa lock 3;
 _enemiesArray = _enemiesArray + [_SMaaPatrol];
 sleep 0.1;
 _enemiesArray = _enemiesArray + [_SMaa];
+{
+	_x addCuratorEditableObjects [[_SMaa], false];
+	_x addCuratorEditableObjects [units _SMaaPatrol, false];
+} foreach adminCurators;
 
 //---------- COMMON
 
@@ -105,15 +126,13 @@ _enemiesArray = _enemiesArray + [_SMaa];
 	
 //---------- GARRISON FORTIFICATIONS
 	
-	{
-		_newGrp = [_x] call QS_fnc_garrisonFortEAST;
-		if (!isNull _newGrp) then { 
-		_enemiesArray = _enemiesArray + [_newGrp]; };
-	} forEach (getPos priorityObj1 nearObjects ["House", 150]);
-
-//----------- ADD TO ZEUS
 {
-	_x addCuratorEditableObjects [_enemiesArray, true];
-} foreach adminCurators;
+	_newGrp = [_x] call QS_fnc_garrisonFortEAST;
+	if (!isNull _newGrp) then { 
+	_enemiesArray = _enemiesArray + [_newGrp]; };
+	{
+		_x addCuratorEditableObjects [units _newGrp, false];
+	} foreach adminCurators;
+} forEach (getPos priorityObj1 nearObjects ["House", 150]);
 
 _enemiesArray
