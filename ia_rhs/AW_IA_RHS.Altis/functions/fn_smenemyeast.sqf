@@ -34,7 +34,7 @@ _SMaaPatrol = createGroup east;
 
 //---------- INFANTRY RANDOM
 	
-for "_x" from 0 to (3 + (random 4)) do {
+for "_x" from 1 to (3 + (random 4)) do {
 	_randomPos = [[[getPos sideObj, 300],[]],["water","out"]] call BIS_fnc_randomPos;
 	//_infteamPatrol = [_randomPos, EAST, (configfile >> "CfgGroups" >> "East" >> "OPF_F" >> "Infantry" >> [INF_TEAMS] call BIS_fnc_selectRandom)] call BIS_fnc_spawnGroup;
 	_infteamPatrol = [_randomPos, EAST, (configfile >> "CfgGroups" >> "East" >> "rhs_faction_msv" >> "rhs_group_rus_msv_infantry" >> [INF_TEAMS] call BIS_fnc_selectRandom)] call BIS_fnc_spawnGroup;
@@ -139,11 +139,11 @@ _enemiesArray = _enemiesArray + [_SMaa];
 	{
 		_newGrp = [_x] call QS_fnc_garrisonFortEAST;
 		if (!isNull _newGrp) then { 
-		_enemiesArray = _enemiesArray + [_newGrp]; };
-		{
-			_x addCuratorEditableObjects [units _newGrp, false];
-		} foreach adminCurators;
-
+			_enemiesArray = _enemiesArray + [_newGrp];
+			{
+				_x addCuratorEditableObjects [units _newGrp, false];
+			} foreach adminCurators; 
+		};
 	} forEach (getPos sideObj nearObjects ["House", 150]);
 	
 _enemiesArray
