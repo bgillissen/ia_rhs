@@ -19,14 +19,11 @@ if (_uid in _whitelist) exitWith {};
 */
 
 while { true } do {
-	_oldvehicle = vehicle player;
-	waitUntil {vehicle player != _oldvehicle};
 
 	if(vehicle player != player) then {
 		_veh = vehicle player;
 
 		//------------------------------ tanks and IFV are reserved to crew only
-		//player groupChat _veh kindOf;
 		if ( (_veh isKindOf "Tank") || (_veh isKindOf "IFV")  ) then {
 			if(!_iamcrew) then {
 				_forbidden = [driver _veh];
@@ -47,5 +44,6 @@ while { true } do {
 			};
 		};
 	};
+	sleep 2;
 };
 
