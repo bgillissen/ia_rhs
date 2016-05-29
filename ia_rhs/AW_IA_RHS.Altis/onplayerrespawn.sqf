@@ -77,7 +77,8 @@ player setVariable ["seated",FALSE];
 player addAction ["Clear vehicle inventory",QS_fnc_actionClearInventory,[],-97,FALSE,FALSE,'','[] call QS_fnc_conditionClearInventory'];
 
 //======================= Add players to Zeus
-{_x addCuratorEditableObjects [[player],FALSE];} count allCurators;
+//{_x addCuratorEditableObjects [[player],FALSE];} count allCurators;
+ { _x addCuratorEditableObjects [[player],TRUE]; } foreach adminCurators;
 
 //======================= Remove any rf7800str radio and give a anprc152 instead
 	for "_i" from 1 to 999 do {
@@ -102,7 +103,7 @@ player addAction ["Clear vehicle inventory",QS_fnc_actionClearInventory,[],-97,F
 		[(call TFAR_fnc_activeSwRadio), 7, "360"] call TFAR_fnc_SetChannelFrequency;
 		[(call TFAR_fnc_activeSwRadio), 8, "370"] call TFAR_fnc_SetChannelFrequency;
 		systemChat "ShortWave Frequencies set";
-	};	
+	};
 	//======================= Configure LongRange radio if player got one
 	if ( call TFAR_fnc_haveLRRadio ) then {
 		[(call TFAR_fnc_activeLrRadio), 1, "50"] call TFAR_fnc_SetChannelFrequency;

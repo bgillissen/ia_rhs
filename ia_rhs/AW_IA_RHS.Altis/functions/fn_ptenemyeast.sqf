@@ -110,5 +110,10 @@ _enemiesArray = _enemiesArray + [_SMaa];
 		if (!isNull _newGrp) then { 
 		_enemiesArray = _enemiesArray + [_newGrp]; };
 	} forEach (getPos priorityObj1 nearObjects ["House", 150]);
-	
+
+//----------- ADD TO ZEUS
+{
+	_x addCuratorEditableObjects [_enemiesArray, true];
+} foreach adminCurators;
+
 _enemiesArray
