@@ -35,7 +35,7 @@ _noAmmoCargo = ["B_APC_Tracked_01_CRV_F","B_Truck_01_ammo_F"];					// Bobcat CRV
 _slingHeli = ["RHS_MELB_AH6M_M", "RHS_MELB_AH6M", "RHS_UH60M_d", "RHS_CH_47F_10", "rhsusf_CH53E_USMC_D"]; // sling capable
 _slingable = ["RHS_MELB_AH6M_M", "RHS_MELB_AH6M"];								// slingable
 _notSlingable = ["RHS_UH60M_d", "RHS_CH_47F_10", "rhsusf_CH53E_USMC_D"];		// not slingable
-_dropHeli = ["RHS_UH60M_d", "RHS_CH_47F_10"]; 									// drop capable
+_dropHeli = ["RHS_UH60M_d", "RHS_CH_47F_10", "rhsusf_CH53E_USMC_D"];			// drop capable
 _uav = ["B_UAV_02_CAS_F","B_UAV_02_F","B_UGV_01_F","B_UGV_01_rcws_F"];			// UAVs
 
 //============================================= SORT

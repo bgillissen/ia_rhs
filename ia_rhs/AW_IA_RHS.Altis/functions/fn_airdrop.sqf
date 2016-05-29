@@ -51,6 +51,7 @@ clearMagazineCargoGlobal ammoDropCrate;
 ammoDropCrate addWeaponCargoGlobal ["rhs_weap_M136", 5];
 ammoDropCrate addWeaponCargoGlobal ["rhs_weap_M136_hedp", 5];
 ammoDropCrate addWeaponCargoGlobal ["rhs_weap_M136_hp", 5];
+ammoDropCrate addWeaponCargoGlobal ["rhs_weap_m4a1_blockII", 3];
 
 ammoDropCrate addItemCargoGlobal ["Laserdesignator", 5];
 ammoDropCrate addItemCargoGlobal ["Laserbatteries", 5];
@@ -60,6 +61,8 @@ ammoDropCrate addItemCargoGlobal ["FirstAidKit", 40];
 ammoDropCrate addItemCargoGlobal ["Medikit", 3];
 ammoDropCrate addItemCargoGlobal ["ToolKit", 3];
 
+ammoDropCrate addMagazineCargoGlobal ["SatchelCharge_Remote_Mag", 5];
+ammoDropCrate addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 10];
 ammoDropCrate addMagazineCargoGlobal ["30Rnd_556x45_Stanag_Tracer_Red", 40];
 ammoDropCrate addMagazineCargoGlobal ["rhsusf_100Rnd_762x51_m62_tracer", 15];
 ammoDropCrate addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_M200_soft_pouch", 15];
