@@ -129,10 +129,11 @@ _enemiesArray = _enemiesArray + [_SMaa];
 {
 	_newGrp = [_x] call QS_fnc_garrisonFortEAST;
 	if (!isNull _newGrp) then { 
-	_enemiesArray = _enemiesArray + [_newGrp]; };
-	{
-		_x addCuratorEditableObjects [units _newGrp, false];
-	} foreach adminCurators;
+		_enemiesArray = _enemiesArray + [_newGrp];
+		{
+			_x addCuratorEditableObjects [units _newGrp, false];
+		} foreach adminCurators; 
+	};
 } forEach (getPos priorityObj1 nearObjects ["House", 150]);
 
 _enemiesArray
