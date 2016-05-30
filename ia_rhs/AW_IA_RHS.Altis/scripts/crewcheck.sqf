@@ -8,15 +8,11 @@ waitUntil {player == player};
 
 _iamcrew = ({typeOf player == _x} count _crews) > 0;
 
-/* Remove comments and insert UIDs into the whitelist to exempt individuals from this script
 _uid = getPlayerUID player;
-
 _whitelist = [
 				//"76561198030235789" //ben
 			 ];
-
 if (_uid in _whitelist) exitWith {};
-*/
 
 while { true } do {
 

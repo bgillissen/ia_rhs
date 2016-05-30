@@ -37,6 +37,7 @@ class QS
 		class garrisonFortFIA {};
 		class loadInventory {};
 		class respawnPilot {};
+		class respawnCrew {};
 		class rewardPlusHintJet {};
 		class removeAction {};
 		class removeAction0 {};

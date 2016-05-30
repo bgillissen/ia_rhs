@@ -278,6 +278,13 @@ class Params
 			texts[] = {"DISABLED","ENABLED"};
 			default = 1;
 		};
+		
+		class CrewRespawn {
+			title = "Crew Respawn";
+			values[] = {0,1};
+			texts[] = {"DISABLED","ENABLED"};
+			default = 1;
+		};
 
 	class Fatigue {
 		title = "Player Fatigue";

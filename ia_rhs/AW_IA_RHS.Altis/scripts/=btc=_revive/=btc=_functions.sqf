@@ -1361,6 +1361,7 @@ BTC_player_respawn = {
 			player switchMove "";//amovpercmstpsraswrfldnon
 			
 			[] call QS_fnc_respawnPilot;
+			[] call QS_fnc_respawnCrew;
 			
 			if (PARAMS_Fatigue == 0) then {player enableFatigue FALSE;};
 			

@@ -12,22 +12,16 @@ waitUntil {player == player};
 
 _iampilot = ({typeOf player == _x} count _pilots) > 0;
 
-/* Remove comments and insert UIDs into the whitelist to exempt individuals from this script
 _uid = getPlayerUID player;
 _whitelist = [
-				"76561198030235789" //ben
+				//"76561198030235789" //ben
 			 ];
-
 if (_uid in _whitelist) exitWith {};
-*/
 
 while { true } do {
-	_oldvehicle = vehicle player;
-	waitUntil {vehicle player != _oldvehicle};
 
 	if(vehicle player != player) then {
 		_veh = vehicle player;
-
 		//------------------------------ pilot can be pilot seat only
 		
 		if((_veh isKindOf "Helicopter" || _veh isKindOf "Plane") && !(_veh isKindOf "ParachuteBase")) then {
@@ -48,6 +42,7 @@ while { true } do {
 				};
 			};
 		};
+		sleep 2;
 	};
 };
 

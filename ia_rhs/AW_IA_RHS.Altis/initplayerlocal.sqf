@@ -46,6 +46,7 @@ _null = [] execVM "scripts\voice_control\voiceControl.sqf";						// Voice Contro
 if (PARAMS_HeliRope != 0) then {call compile preprocessFileLineNumbers "scripts\vehicle\fastrope\zlt_fastrope.sqf";};
 
 [] call QS_fnc_respawnPilot;
+[] call QS_fnc_respawnCrew;
 
 
 //-------------------- PVEHs
