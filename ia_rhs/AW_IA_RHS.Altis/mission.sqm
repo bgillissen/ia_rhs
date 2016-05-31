@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2074;
+		nextID=2079;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15285.517,25.720058,17388.033};
-		dir[]={0.79248536,-0.43584237,0.42683083};
-		up[]={0.38380322,0.89997959,0.20671317};
-		aside[]={0.47423184,3.4163531e-007,-0.8805024};
+		pos[]={15291.843,20.607872,17393.598};
+		dir[]={0.90900952,-0.23514043,0.344394};
+		up[]={0.22000094,0.97193283,0.083348669};
+		aside[]={0.35432515,-5.4048724e-007,-0.93523085};
 	};
 };
 binarizationWanted=0;
@@ -94,7 +94,8 @@ addons[]=
 	"A3_Structures_F_Civ_Dead",
 	"rhsgref_c_vehicles_ret",
 	"A3_Structures_F_Mil_BagFence",
-	"A3_Air_F_Gamma_Plane_Fighter_03"
+	"A3_Air_F_Gamma_Plane_Fighter_03",
+	"A3_Signs_F_Signs_Ad"
 };
 class AddonsMetaData
 {
@@ -30677,92 +30678,266 @@ class Mission
 		};
 		class Item1151
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15297.261,18.56778,17396.059};
-				angles[]={0.013332055,1.1052366,6.2671871};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=2068;
-			type="Land_Noticeboard_F";
+			dataType="Marker";
+			position[]={15201.39,17.940001,17287.939};
+			name="respawn_crew";
+			type="Empty";
+			id=2073;
 		};
 		class Item1152
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15297.796,18.574532,17394.91};
-				angles[]={0.013332055,1.1298546,6.2671871};
+				position[]={15296.588,18.01206,17397.299};
+				angles[]={0.013334315,1.1052297,6.2671809};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="this setObjectTexture [0,""media\images\shame_genericnord.paa""];";
 			};
-			id=2069;
-			type="Land_Noticeboard_F";
+			id=2074;
+			type="SignAd_SponsorS_ARMEX_F";
+			atlOffset=-0.89999771;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1153
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15298.28,18.578501,17393.846};
-				angles[]={0.0066682254,1.167757,6.2738566};
+				position[]={15297.168,18.018448,17396.123};
+				angles[]={0.013334315,1.1052297,6.2671809};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="this setObjectTexture [0,""media\images\shame_big.paa""];";
 			};
-			id=2070;
-			type="Land_Noticeboard_F";
+			id=2075;
+			type="SignAd_SponsorS_ARMEX_F";
+			atlOffset=-0.89999771;
 		};
 		class Item1154
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15296.771,18.561323,17397.131};
-				angles[]={0.013332055,1.1052366,6.2671871};
+				position[]={15297.72,18.025303,17394.947};
+				angles[]={0.013334315,1.1298563,6.2671809};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 			};
-			id=2071;
-			type="Land_Noticeboard_F";
-			atlOffset=1.5258789e-005;
+			id=2076;
+			type="SignAd_SponsorS_ARMEX_F";
+			atlOffset=-0.89999771;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1155
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15298.776,18.580816,17392.803};
-				angles[]={0.0066682254,1.1052366,6.2738566};
+				position[]={15298.272,18.029026,17393.783};
+				angles[]={0.0066671576,1.1076907,6.2738476};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 			};
-			id=2072;
-			type="Land_Noticeboard_F";
+			id=2077;
+			type="SignAd_SponsorS_ARMEX_F";
+			atlOffset=-0.89999962;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1156
 		{
-			dataType="Marker";
-			position[]={15201.39,17.940001,17287.939};
-			name="respawn_crew";
-			type="Empty";
-			id=2073;
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15298.833,18.03161,17392.611};
+				angles[]={0.0066671576,1.1052297,6.2738476};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2078;
+			type="SignAd_SponsorS_ARMEX_F";
+			atlOffset=-0.89999962;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 	class Connections
