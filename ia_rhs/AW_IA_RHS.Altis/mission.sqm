@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={15285.517,25.720058,17388.033};
-		dir[]={0.73379517,-0.52319187,0.43357641};
-		up[]={0.45050117,0.85216767,0.26618484};
-		aside[]={0.50874436,6.0799357e-007,-0.86101878};
+		dir[]={0.79248536,-0.43584237,0.42683083};
+		up[]={0.38380322,0.89997959,0.20671317};
+		aside[]={0.47423184,3.4163531e-007,-0.8805024};
 	};
 };
 binarizationWanted=0;
@@ -15924,7 +15924,7 @@ class Mission
 			};
 			id=1096;
 			type="Land_MetalBarrel_F";
-			atlOffset=0.20018959;
+			atlOffset=0.20000076;
 		};
 		class Item952
 		{
@@ -15943,7 +15943,7 @@ class Mission
 			};
 			id=1097;
 			type="Land_MetalBarrel_F";
-			atlOffset=0.0017356873;
+			atlOffset=0.0020923615;
 		};
 		class Item953
 		{
@@ -27378,7 +27378,6 @@ class Mission
 			};
 			id=1521;
 			type="rhsusf_m113d_usarmy";
-			atlOffset=7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0

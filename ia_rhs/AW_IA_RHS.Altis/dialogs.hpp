@@ -70,7 +70,7 @@ class Rule_2: RscText
 	idc = 1002;
 	text = "2. Hacking and mission exploitation will not be tolerated."; //--- ToDo: Localize;
 	x = 1;
-	y = 0.18;
+	y = 0.15;
 	w = 0.6125;
 	h = 0.1;
 	SizeEx = 0.03700;
@@ -80,7 +80,7 @@ class Rule_3: RscText
 	idc = 1003;
 	text = "3. Intentional team-killing will not be tolerated."; //--- ToDo: Localize;
 	x = 1;
-	y = 0.28;
+	y = 0.20;
 	w = 0.6875;
 	h = 0.08;
 	SizeEx = 0.03700;
@@ -90,7 +90,7 @@ class Rule_4: RscText
 	idc = 1004;
 	text = "4. Excessive unintentional team-killing may result in a Kick/Ban."; //--- ToDo: Localize;
 	x = 1;
-	y = 0.36;
+	y = 0.25;
 	w = 0.7;
 	h = 0.08;
 	SizeEx = 0.03700;
@@ -100,7 +100,7 @@ class Rule_5: RscText
 	idc = 1005;
 	text = "5. Unnecessary destruction of BLUFOR vehicles will not be tolerated."; //--- ToDo: Localize;
 	x = 1;
-	y = 0.44;
+	y = 0.30;
 	w = 0.6375;
 	h = 0.1;
 	SizeEx = 0.03700;
@@ -110,7 +110,7 @@ class Rule_6: RscText
 	idc = 1006;
 	text = "6. Verbal abuse and bullying will not be tolerated."; //--- ToDo: Localize;
 	x = 1;
-	y = 0.52;
+	y = 0.35;
 	w = 0.5875;
 	h = 0.1;
 	SizeEx = 0.03700;
@@ -120,7 +120,7 @@ class Rule_7: RscText
 	idc = 1007;
 	text = "7. Firing a weapon on base may result in a Kick/Ban."; //--- ToDo: Localize;
 	x = 1;
-	y = 0.6;
+	y = 0.40;
 	w = 0.7125;
 	h = 0.1;
 	SizeEx = 0.03700;
@@ -130,7 +130,7 @@ class Rule_8: RscText
 	idc = 1008;
 	text = "8. Griefing and obstructive play will not be tolerated."; //--- ToDo: Localize;
 	x = 1;
-	y = 0.68;
+	y = 0.45;
 	w = 0.6;
 	h = 0.1;
 	SizeEx = 0.03700;
@@ -140,7 +140,7 @@ class Rule_9: RscText
 	idc = 1009;
 	text = "9. Excessive mic spamming will not be tolerated."; //--- ToDo: Localize;
 	x = 1;
-	y = 0.78;
+	y = 0.50;
 	w = 0.675;
 	h = 0.1;
 	SizeEx = 0.03700;
@@ -150,7 +150,17 @@ class Rule_10: RscText
 	idc = 1010;
 	text = "10. Landing inside of the HQ may result in a warning or kick."; //--- ToDo: Localize;
 	x = 1;
-	y = 0.88;
+	y = 0.55;
+	w = 0.725;
+	h = 0.08;
+	SizeEx = 0.03700;
+};
+class Rule_11: RscText
+{
+	idc = 1018;
+	text = "11. Spamming map with markers will not be tolerated."; //--- ToDo: Localize;
+	x = 1;
+	y = 0.60;
 	w = 0.725;
 	h = 0.08;
 	SizeEx = 0.03700;
@@ -241,7 +251,7 @@ class Hint_3: RscText
 class Hint_5: RscText
 {
 	idc = 1015;
-	text = "Zeus players may be on but that doesn�t mean they killed you."; //--- ToDo: Localize;
+	text = "Zeus players may be on but that doesn't mean they killed you."; //--- ToDo: Localize;
 	x = -0.6875;
 	y = 0.34;
 	w = 0.6125;
@@ -260,7 +270,7 @@ class Hint_6: RscText
 };
 class Hint_7: RscText
 {
-	idc = 1016;
+	idc = 1017;
 	text = "Apply for TFU membership at taskforceunicorn.com"; //--- ToDo: Localize;
 	x = -0.6875;
 	y = 0.50;
