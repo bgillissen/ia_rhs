@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2084;
+		nextID=2086;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15123.845,21.01156,17243.904};
-		dir[]={-0.72934711,-0.3593339,0.58238566};
-		up[]={-0.28090084,0.9331094,0.22430265};
-		aside[]={0.62407029,-7.9485471e-007,0.78153551};
+		pos[]={15119.589,22.330835,17245.346};
+		dir[]={-0.45189494,-0.68585116,0.57064766};
+		up[]={-0.42580745,0.72764331,0.53770709};
+		aside[]={0.78406239,2.5985064e-006,0.62088686};
 	};
 };
 binarizationWanted=0;
@@ -25722,14 +25722,14 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=3;
+				items=4;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15117.438,17.979906,17247.818};
-						angles[]={0,2.326288,6.2822089};
+						position[]={15117.438,17.979439,17247.818};
+						angles[]={0,2.3262794,6.282208};
 					};
 					side="West";
 					flags=6;
@@ -25822,6 +25822,30 @@ class Mission
 					};
 					id=1512;
 					type="rhsusf_army_ocp_helipilot";
+					atlOffset=0.068000793;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
@@ -25836,6 +25860,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
+						init="(group this) setGroupId [""VORTEX""];";
 						name="s4";
 						description="Vortex Pilot";
 						isPlayable=1;
@@ -25919,6 +25944,29 @@ class Mission
 					};
 					id=1514;
 					type="rhsusf_army_ocp_helipilot";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item2
 				{
@@ -25934,6 +25982,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
+						init="(group this) setGroupId [""VORTEX""];";
 						name="s3";
 						description="Jet Pilot";
 						isPlayable=1;
@@ -26013,11 +26062,106 @@ class Mission
 						nAttributes=1;
 					};
 				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15114.619,17.982437,17248.443};
+						angles[]={0,2.4419773,6.282208};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="(group this) setGroupId [""VORTEX""];";
+						name="s3_1";
+						description="Jet Pilot";
+						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhsusf_weap_MP7A1_base_f";
+								optics="rhs_acc_rakursPM";
+								class primaryMuzzleMag
+								{
+									name="rhsusf_mag_40Rnd_46x30_FMJ";
+									ammoLeft=40;
+								};
+							};
+							class handgun
+							{
+								name="hgun_Pistol_heavy_01_F";
+								class primaryMuzzleMag
+								{
+									name="11Rnd_45ACP_Mag";
+									ammoLeft=11;
+								};
+							};
+							class uniform
+							{
+								typeName="rhs_uniform_g3_rgr";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="11Rnd_45ACP_Mag";
+										count=3;
+										ammoLeft=11;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="B_Parachute";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="tf_anprc152";
+							hmd="rhsusf_ANPVS_15";
+							headgear="RHS_jetpilot_usaf";
+						};
+					};
+					id=2085;
+					type="rhsusf_airforce_jetpilot";
+					atlOffset=0.070999146;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
 			};
 			class Attributes
 			{
 			};
 			id=1340;
+			atlOffset=0.068000793;
 			class CustomAttributes
 			{
 				class Attribute0
