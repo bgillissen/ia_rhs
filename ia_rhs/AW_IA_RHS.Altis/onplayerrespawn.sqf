@@ -78,7 +78,7 @@ player addAction ["Clear vehicle inventory",QS_fnc_actionClearInventory,[],-97,F
 
 //======================= Add players to Zeus
 //{_x addCuratorEditableObjects [[player],FALSE];} count allCurators;
- { _x addCuratorEditableObjects [[player],TRUE]; } foreach adminCurators;
+ { _x addCuratorEditableObjects [[player],FALSE]; } foreach adminCurators;
 
 //======================= Remove any rf7800str radio and give a anprc152 instead
 	for "_i" from 1 to 999 do {
