@@ -13,7 +13,7 @@ Description:
 	Client scripts that should execute after respawn.
 ______________________________________________________*/
 
-private ["_iampilot"];
+private ["_iamhelipilot"];
 
 waitUntil {!isNull player};
 waitUntil {player == player};
@@ -25,9 +25,9 @@ if (PARAMS_Fatigue == 0) then {player enableFatigue FALSE;};
 
 //=========================== PILOTS ONLY
 
-_pilots = ["rhsusf_army_ocp_helipilot"];
-_iampilot = ({typeOf player == _x} count _pilots) > 0;
-if (_iampilot) then {
+_helipilots = ["rhsusf_army_ocp_helipilot"];
+_iamhelipilot = ({typeOf player == _x} count _helipilots) > 0;
+if (_iamhelipilot) then {
 	//===== FAST ROPE
 	if (PARAMS_HeliRope != 0) then {
 		player addAction ["Toss Ropes",zlt_fnc_createropes, [], -1, false, false, '','[] call zlt_fnc_ropes_cond'];

@@ -2,7 +2,9 @@
 // Since then been tweaked by many hands!
 // Notable contributors: chucky [allFPS], Quiksilver.
 
-_pilots = ["rhsusf_army_ocp_helipilot"];
+_helipilots = ["rhsusf_army_ocp_helipilot"];
+_jetpilots = ["rhsusf_airforce_jetpilot"];
+
 _aircraft_nocopilot = ["RHS_UH60M_d", 
 					   "RHS_CH_47F_10", 
 					   "rhsusf_CH53E_USMC_D", 
@@ -10,7 +12,8 @@ _aircraft_nocopilot = ["RHS_UH60M_d",
 
 waitUntil {player == player};
 
-_iampilot = ({typeOf player == _x} count _pilots) > 0;
+_iamhelipilot = ({typeOf player == _x} count _helipilots) > 0;
+_iamjetpilot = ({typeOf player == _x} count _jetpilots) > 0;
 
 _uid = getPlayerUID player;
 _whitelist = [
@@ -22,27 +25,36 @@ while { true } do {
 
 	if(vehicle player != player) then {
 		_veh = vehicle player;
-		//------------------------------ pilot can be pilot seat only
-		
-		if((_veh isKindOf "Helicopter" || _veh isKindOf "Plane") && !(_veh isKindOf "ParachuteBase")) then {
+		//------------------------------ only helipilot
+		if((_veh isKindOf "Helicopter") && !(_veh isKindOf "ParachuteBase")) then {
 			if(({typeOf _veh == _x} count _aircraft_nocopilot) > 0) then {
 				_forbidden = [_veh turretUnit [0]];
 				if(player in _forbidden) then {
-					if (!_iampilot) then {
-						systemChat "Co-pilot is disabled on this vehicle";
+					if (!_iamhelipilot) then {
+						systemChat "Co-pilot is disabled on this choppah";
 						player action ["getOut",_veh];
 					};
 				};
 			};
-			if(!_iampilot) then {
+			if(!_iamhelipilot) then {
 				_forbidden = [driver _veh];
 				if (player in _forbidden) then {
-					systemChat "You must be a pilot to fly this aircraft";
+					systemChat "You must be a helicopter pilot to fly this choppah";
+					player action ["getOut", _veh];
+				};
+			};
+		};
+		//------------------------------ only jetpilot
+		if((_veh isKindOf "Plane") && !(_veh isKindOf "ParachuteBase")) then {
+			if(!_iamjetpilot) then {
+				_forbidden = [driver _veh];
+				if (player in _forbidden) then {
+					systemChat "You must be a jet pilot to fly this aircraft";
 					player action ["getOut", _veh];
 				};
 			};
 		};
 		sleep 2;
-	};
+	};	
 };
 

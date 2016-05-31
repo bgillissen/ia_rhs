@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15322.258,42.50568,17335.285};
-		dir[]={-0.075205877,-0.45602173,0.88692069};
-		up[]={-0.038536653,0.88986343,0.45449826};
-		aside[]={0.99655491,5.7771103e-008,0.084493555};
+		pos[]={15123.845,21.01156,17243.904};
+		dir[]={-0.72934711,-0.3593339,0.58238566};
+		up[]={-0.28090084,0.9331094,0.22430265};
+		aside[]={0.62407029,-7.9485471e-007,0.78153551};
 	};
 };
 binarizationWanted=0;
@@ -25935,7 +25935,7 @@ class Mission
 						skill=0.60000002;
 						rank="SERGEANT";
 						name="s3";
-						description="Vortex Pilot";
+						description="Jet Pilot";
 						isPlayable=1;
 						class Inventory
 						{
@@ -30921,6 +30921,7 @@ class Mission
 			};
 			id=2083;
 			type="rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d";
+			atlOffset=-0.0019512177;
 			class CustomAttributes
 			{
 				class Attribute0
