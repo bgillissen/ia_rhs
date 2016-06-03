@@ -219,6 +219,9 @@ _box = _this select 0;
 		"rhsusf_mag_17Rnd_9x19_JHP",
 		"rhsusf_mag_15Rnd_9x19_FMJ",
 		"rhsusf_mag_15Rnd_9x19_JHP",
+		"rhsusf_mag_40Rnd_46x30_JHP",
+		"rhsusf_mag_40Rnd_46x30_FMJ",
+		"rhsusf_mag_40Rnd_46x30_AP",
         
         "rhs_mag_an_m14_th3",
         "rhs_mag_an_m8hc",
