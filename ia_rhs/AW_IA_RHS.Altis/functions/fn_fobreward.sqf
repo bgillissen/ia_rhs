@@ -9,7 +9,7 @@ smRewards =
 	["a RG33 M2", "rhsusf_rg33_m2uusmc_d"],
 	["an Offraod (Repair)", "C_Offroad_01_repair_F"],
 	["a Mobile Mortar Truck", "B_G_Offroad_01_repair_F"],
-	["a M1117 ASV", "rhsusf_M1117_O"],
+	["a M113 M2", "rhsusf_m113d_usarmy"],
 	["a M109 Artillery Tank", "rhsusf_m109d_usarmy"],
 	["a BM-21 Atillery Truck", "rhsgref_cdf_b_reg_BM21"],
 	["a T-90", "rhst90a_tv"] 
