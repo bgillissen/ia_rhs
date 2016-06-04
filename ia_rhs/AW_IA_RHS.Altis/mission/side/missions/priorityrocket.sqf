@@ -21,7 +21,7 @@ private ["_flatPos","_accepted","_position","_flatPos1","_flatPos2","_flatPos3",
 	_flatPos = [0,0,0];
 	_accepted = false;
 	while {!_accepted} do {
-		_position = [[[getMarkerPos currentAO,2500]],["water","out"]] call BIS_fnc_randomPos;
+		_position = [[[getMarkerPos currentAO,3000]],["water","out"]] call BIS_fnc_randomPos;
 		_flatPos = _position isFlatEmpty [5, 0, 0.2, 5, 0, false];
 
 		while {(count _flatPos) < 2} do {
