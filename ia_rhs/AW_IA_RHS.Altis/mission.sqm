@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15130.866,26.677271,17231.74};
-		dir[]={-0.60611957,-0.40479419,0.68482947};
-		up[]={-0.26836076,0.91429639,0.30321342};
-		aside[]={0.74892795,2.2421591e-007,0.6628409};
+		pos[]={15310.644,37.455215,17369.559};
+		dir[]={-0.63541621,-0.41799325,0.64942902};
+		up[]={-0.29240441,0.90833437,0.29885611};
+		aside[]={0.7148729,1.0229705e-006,0.6994369};
 	};
 };
 binarizationWanted=0;
@@ -17445,8 +17445,8 @@ class Mission
 									};
 									class Item1
 									{
-										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
-										count=2;
+										name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+										count=12;
 										ammoLeft=30;
 									};
 								};
@@ -18187,8 +18187,8 @@ class Mission
 									};
 									class Item1
 									{
-										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
-										count=2;
+										name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+										count=12;
 										ammoLeft=30;
 									};
 								};
@@ -19225,8 +19225,8 @@ class Mission
 									};
 									class Item1
 									{
-										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
-										count=2;
+										name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+										count=12;
 										ammoLeft=30;
 									};
 								};
@@ -20338,8 +20338,8 @@ class Mission
 									};
 									class Item1
 									{
-										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
-										count=2;
+										name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+										count=12;
 										ammoLeft=30;
 									};
 								};
@@ -20976,8 +20976,8 @@ class Mission
 									};
 									class Item1
 									{
-										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
-										count=2;
+										name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+										count=12;
 										ammoLeft=30;
 									};
 								};
@@ -23035,7 +23035,7 @@ class Mission
 									items=1;
 									class Item0
 									{
-										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 										count=10;
 										ammoLeft=30;
 									};
@@ -24759,7 +24759,7 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=2;
+									items=3;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -24770,6 +24770,12 @@ class Mission
 									{
 										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
 										count=2;
+										ammoLeft=30;
+									};
+									class Item2
+									{
+										name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+										count=10;
 										ammoLeft=30;
 									};
 								};
@@ -24884,8 +24890,8 @@ class Mission
 									};
 									class Item1
 									{
-										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
-										count=2;
+										name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+										count=12;
 										ammoLeft=30;
 									};
 								};
@@ -25805,9 +25811,18 @@ class Mission
 									};
 									class Item3
 									{
-										name="11Rnd_45ACP_Mag";
-										count=4;
-										ammoLeft=11;
+										name="rhsusf_mag_40Rnd_46x30_FMJ";
+										count=6;
+										ammoLeft=40;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=3;
 									};
 								};
 							};
@@ -25927,9 +25942,18 @@ class Mission
 									};
 									class Item3
 									{
-										name="11Rnd_45ACP_Mag";
-										count=4;
-										ammoLeft=11;
+										name="rhsusf_mag_40Rnd_46x30_FMJ";
+										count=6;
+										ammoLeft=40;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=3;
 									};
 								};
 							};
