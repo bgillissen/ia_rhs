@@ -6,6 +6,7 @@ _helipilots = ["rhsusf_army_ocp_helipilot"];
 _jetpilots = ["rhsusf_airforce_jetpilot"];
 
 _aircraft_nocopilot = ["RHS_UH60M_d", 
+					   "RHS_UH60M_MEV2_d",
 					   "RHS_CH_47F_10", 
 					   "rhsusf_CH53E_USMC_D", 
 					   "RHS_MELB_AH6M_M"];
