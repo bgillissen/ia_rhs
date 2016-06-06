@@ -169,8 +169,7 @@ _box = _this select 0;
         "130Rnd_338_Mag",
         "10Rnd_127x54_Mag",
         "10Rnd_93x64_DMR_05_Mag",
-        
-        
+             
         "rhsusf_20Rnd_762x51_m118_special_Mag",		//RHS
 		"rhsusf_20Rnd_762x51_m993_Mag",
 		"30Rnd_556x45_Stanag",
@@ -181,7 +180,7 @@ _box = _this select 0;
 		"rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",
 		"rhs_mag_30Rnd_556x45_Mk262_Stanag",
 		"rhs_mag_30Rnd_556x45_Mk318_Stanag",
-		"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"
+		"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
         "rhsusf_5Rnd_300winmag_xm2010",
 		"10Rnd_RHS_50BMG_Box",
 		"rhs_200rnd_556x45_M_SAW",

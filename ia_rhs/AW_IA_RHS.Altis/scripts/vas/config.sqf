@@ -404,7 +404,7 @@ vas_magazines = [
 		"rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",
 		"rhs_mag_30Rnd_556x45_Mk262_Stanag",
 		"rhs_mag_30Rnd_556x45_Mk318_Stanag",
-		"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"
+		"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
         "rhsusf_5Rnd_300winmag_xm2010",
 		"10Rnd_RHS_50BMG_Box",
 		"rhs_200rnd_556x45_M_SAW",

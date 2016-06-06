@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15398.15,25.154922,17308.959};
-		dir[]={-0.54744875,-0.42242241,0.72256088};
-		up[]={-0.25516808,0.90627795,0.33679244};
-		aside[]={0.79717302,9.4174175e-007,0.60396856};
+		pos[]={15302.914,30.846128,17366.289};
+		dir[]={-0.28622064,-0.36528963,0.88593537};
+		up[]={-0.11233842,0.9307754,0.34772685};
+		aside[]={0.9517023,5.8347359e-007,0.30745897};
 	};
 };
 binarizationWanted=0;
@@ -102,7 +102,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=41;
+		items=40;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -175,8 +175,10 @@ class AddonsMetaData
 		};
 		class Item10
 		{
-			className="cba_xeh";
-			name="cba_xeh";
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
 		};
 		class Item11
 		{
@@ -242,113 +244,106 @@ class AddonsMetaData
 		};
 		class Item21
 		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="http://www.arma3.com";
-		};
-		class Item22
-		{
 			className="rhs_c_troops";
 			name="rhs_c_troops";
 		};
-		class Item23
+		class Item22
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item24
+		class Item23
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted features";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item25
+		class Item24
 		{
 			className="A3_Drones_F";
 			name="Arma 3 Beta - Drones";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item26
+		class Item25
 		{
 			className="rhs_c_weapons";
 			name="rhs_c_weapons";
 			author="RHS";
 		};
-		class Item27
+		class Item26
 		{
 			className="RHS_US_A2_AirImport";
 			name="RHS_US_A2_AirImport";
 		};
-		class Item28
+		class Item27
 		{
 			className="rhsusf_c_ch53";
 			name="rhsusf_c_ch53";
 		};
-		class Item29
+		class Item28
 		{
 			className="rhsusf_c_m1a2";
 			name="rhsusf_c_m1a2";
 		};
-		class Item30
+		class Item29
 		{
 			className="rhsusf_vehicles";
 			name="rhsusf_vehicles";
 		};
-		class Item31
+		class Item30
 		{
 			className="RHS_US_A2Port_Armor";
 			name="RHS_US_A2Port_Armor";
 		};
-		class Item32
+		class Item31
 		{
 			className="rhsusf_c_melb";
 			name="rhsusf_c_melb";
 		};
-		class Item33
+		class Item32
 		{
 			className="rhsusf_c_markvsoc";
 			name="rhsusf_c_markvsoc";
 		};
-		class Item34
+		class Item33
 		{
 			className="A3_Boat_F";
 			name="Arma 3 Alpha - Boats and submersibles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item35
+		class Item34
 		{
 			className="rhsusf_c_rg33";
 			name="rhsusf_c_rg33";
 		};
-		class Item36
+		class Item35
 		{
 			className="rhsusf_c_fmtv";
 			name="rhsusf_c_fmtv";
 		};
-		class Item37
+		class Item36
 		{
 			className="rhsusf_c_HEMTT_A4";
 			name="rhsusf_c_HEMTT_A4";
 		};
-		class Item38
+		class Item37
 		{
 			className="rhsgref_c_vehicles_ret";
 			name="rhsgref_c_vehicles_ret";
 		};
-		class Item39
+		class Item38
 		{
 			className="A3_Air_F_Gamma";
 			name="Arma 3 - Aircrafts";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item40
+		class Item39
 		{
 			className="rhsusf_c_m1117";
 			name="rhsusf_c_m1117";
@@ -469,10 +464,10 @@ class Mission
 		lightningsForced=1;
 		wavesForced=1;
 		windForced=1;
-		year=2035;
+		year=2016;
 		month=7;
-		hour=8;
-		minute=45;
+		hour=5;
+		minute=-15;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
