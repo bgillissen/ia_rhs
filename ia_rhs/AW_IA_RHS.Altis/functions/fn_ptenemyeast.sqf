@@ -20,7 +20,7 @@ ___________________________________________*/
 //#define VEH_TYPES "O_MBT_02_cannon_F","O_APC_Tracked_02_cannon_F","O_APC_Wheeled_02_rcws_F","O_MRAP_02_gmg_F","O_MRAP_02_hmg_F","O_APC_Tracked_02_AA_F"
 
 #define INF_TEAMS "rhs_group_rus_msv_infantry_chq","rhs_group_rus_msv_infantry_fireteam","rhs_group_rus_msv_infantry_MANEUVER","rhs_group_rus_msv_infantry_section_AA","rhs_group_rus_msv_infantry_section_AT","rhs_group_rus_msv_infantry_section_marksman","rhs_group_rus_msv_infantry_section_mg","rhs_group_rus_msv_infantry_squad","rhs_group_rus_msv_infantry_squad_2mg"
-#define VEH_TYPES "rhs_btr60_msv","rhs_btr70_msv","rhs_btr80_msv","rhs_bmp1_msv","rhs_bmp1d_msv","rhs_bmp1k_msv","rhs_bmp1p_msv","rhs_bmp3_late_msv","rhs_t72bd_tv","rhs_t80","rhs_t90a_tv"
+#define VEH_TYPES "rhs_btr60_msv","rhs_btr70_msv","rhs_btr80_msv","rhs_bmp1_msv","rhs_bmp1d_msv","rhs_bmp1k_msv","rhs_bmp1p_msv","rhs_bmp3_late_msv","rhs_t72bd_tv","rhs_t80","rhs_t90_tv"
 private ["_x","_pos","_flatPos","_randomPos","_enemiesArray","_infteamPatrol","_SMvehPatrol","_SMveh1","_SMveh2","_SMaaPatrol","_SMaa","_smSniperTeam"];
 _enemiesArray = [grpNull];
 _x = 0;

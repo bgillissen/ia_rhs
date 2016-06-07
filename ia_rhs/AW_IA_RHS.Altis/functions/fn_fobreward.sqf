@@ -12,7 +12,7 @@ smRewards =
 	["a M113 M2", "rhsusf_m113d_usarmy"],
 	["a M109 Artillery Tank", "rhsusf_m109d_usarmy"],
 	["a BM-21 Atillery Truck", "rhsgref_cdf_b_reg_BM21"],
-	["a T-90", "rhst90a_tv"] 
+	["a T-90", "rhst90_tv"] 
 ];
 
 _veh = smRewards call BIS_fnc_selectRandom;

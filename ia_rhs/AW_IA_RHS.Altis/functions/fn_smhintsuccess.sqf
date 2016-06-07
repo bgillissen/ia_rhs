@@ -12,7 +12,7 @@ smRewards =
 	["a M113 M2", "rhsusf_m113d_usarmy"],
 	["a M109 Artillery Tank", "rhsusf_m109d_usarmy"],
 	["a BM-21 Atillery Truck", "rhsgref_cdf_b_reg_BM21"],
-	["a T-90", "rhst90a_tv"]
+	["a T-90", "rhst90_tv"]
 ];
 smMarkerList =
 ["smReward1","smReward2","smReward3","smReward4","smReward5","smReward6","smReward7","smReward8","smReward9","smReward10","smReward11","smReward12","smReward13","smReward14","smReward15","smReward16","smReward17","smReward18","smReward19","smReward20","smReward21","smReward22","smReward23","smReward24","smReward25","smReward26","smReward27"];
