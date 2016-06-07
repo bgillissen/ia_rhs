@@ -31,7 +31,7 @@ for [ {_i = 0}, {_i < count(paramsArray)}, {_i = _i + 1} ] do {
 //------------------- client executions
 
 //{_x addCuratorEditableObjects [[player],FALSE];} count allCurators;
-{ _x addCuratorEditableObjects [[player],FALSE]; } foreach adminCurators;
+//{_x addCuratorEditableObjects [[player],FALSE];} foreach adminCurators;
 
 _null = [] execvm "scripts\vehicle\crew\crew.sqf"; 								// vehicle HUD
 //_null = [] execVM 'scripts\group_manager.sqf';								// group manager
