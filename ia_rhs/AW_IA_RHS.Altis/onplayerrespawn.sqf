@@ -78,7 +78,7 @@ player addAction ["Clear vehicle inventory",QS_fnc_actionClearInventory,[],-97,F
 
 //======================= Add players to Zeus
 //{_x addCuratorEditableObjects [[player],FALSE];} count allCurators;
- { _x addCuratorEditableObjects [[player],FALSE]; } foreach adminCurators;
+//{_x addCuratorEditableObjects [[player],FALSE];} foreach adminCurators;
 
 //======================= Remove any rf7800str radio and give a anprc152 instead
 	for "_i" from 1 to 999 do {
@@ -117,5 +117,5 @@ player addAction ["Clear vehicle inventory",QS_fnc_actionClearInventory,[],-97,F
 		[(call TFAR_fnc_activeLrRadio), 9, "130"] call TFAR_fnc_SetChannelFrequency;
 		systemChat "LongRange Frequencies set";
 	};
-	//======================= Auto Earplugs
-	_null = [] execVM "scripts\vas\earplugs.sqf";
+//======================= Auto Earplugs
+_null = [] execVM "scripts\vas\earplugs.sqf";
