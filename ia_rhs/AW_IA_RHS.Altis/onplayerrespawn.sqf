@@ -117,3 +117,5 @@ player addAction ["Clear vehicle inventory",QS_fnc_actionClearInventory,[],-97,F
 		[(call TFAR_fnc_activeLrRadio), 9, "130"] call TFAR_fnc_SetChannelFrequency;
 		systemChat "LongRange Frequencies set";
 	};
+	//======================= Auto Earplugs
+	_null = [] execVM "scripts\vas\earplugs.sqf";
