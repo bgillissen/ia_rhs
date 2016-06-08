@@ -72,22 +72,16 @@ if (player isKindOf "rhsusf_army_ocp_crewman") then {
 ["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;
 
 //--------------------- Billboard Image Randomiser
-	/*
-	_imageList = [1,2,3,4];
-	_bill1 = _imageList call BIS_fnc_selectRandom;
-	if (_bill1 == 1) then {Bill_1 setObjectTexture [0,"media\images\billboard1.paa"]};
-	if (_bill1 == 2) then {Bill_1 setObjectTexture [0,"media\images\billboard2.paa"]};
-	if (_bill1 == 3) then {Bill_1 setObjectTexture [0,"media\images\billboard3.paa"]};
-	if (_bill1 == 4) then {Bill_1 setObjectTexture [0,"media\images\billboard4.paa"]};
-	*/
 	Bill_1 setObjectTexture [0,"media\images\billboard2.paa"];
 	
-	_imageList2 = [1,3,4];
+	_imageList2 = [1,3,4,5,6,7];
 	_bill2 = _imageList2 call BIS_fnc_selectRandom;
 	if (_bill2 == 1) then {Bill_2 setObjectTexture [0,"media\images\billboard1.paa"]};
-	//if (_bill2 == 2) then {Bill_2 setObjectTexture [0,"media\images\billboard2.paa"]};
 	if (_bill2 == 3) then {Bill_2 setObjectTexture [0,"media\images\billboard3.paa"]};
 	if (_bill2 == 4) then {Bill_2 setObjectTexture [0,"media\images\billboard4.paa"]};
+	if (_bill2 == 5) then {Bill_2 setObjectTexture [0,"media\images\billboard5.paa"]};
+	if (_bill2 == 6) then {Bill_2 setObjectTexture [0,"media\images\billboard6.paa"]};
+	if (_bill2 == 7) then {Bill_2 setObjectTexture [0,"media\images\billboard7.paa"]};
 	
 //--------------------- Squad Url Hint
 
