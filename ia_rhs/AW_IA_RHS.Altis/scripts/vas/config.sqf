@@ -733,6 +733,10 @@ vas_items = [
         "rhsusf_acc_SpecterDR_pvs27",
         "rhsusf_acc_premier",
         "rhsusf_acc_premier_anpvs27",
+        "rhsusf_acc_anpeq15_bk",
+        "rhsusf_acc_anpeq15_bk_light",
+        "rhsusf_acc_anpeq15_bk_top",
+        "rhsusf_acc_ACOG_anpvs27",
         
         "rhs_uniform_FROG01_d",
         "rhs_uniform_FROG01_m81",
