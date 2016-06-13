@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15377.277,35.54866,17379.02};
-		dir[]={0.69768417,-0.68719429,0.20309089};
-		up[]={0.65983862,0.72635883,0.19207273};
-		aside[]={0.27952302,3.7630234e-006,-0.96028167};
+		pos[]={15202.215,36.918037,17255.15};
+		dir[]={-0.90522814,-0.3368572,-0.25948843};
+		up[]={-0.32395455,0.94144046,-0.092862643};
+		aside[]={-0.27559021,2.9956573e-007,0.96142119};
 	};
 };
 binarizationWanted=0;
@@ -13696,7 +13696,6 @@ class Mission
 			};
 			id=971;
 			type="Land_FloodLight_F";
-			atlOffset=0.056539536;
 		};
 		class Item839
 		{
@@ -13715,7 +13714,6 @@ class Mission
 			};
 			id=972;
 			type="Land_FloodLight_F";
-			atlOffset=0.075798035;
 		};
 		class Item840
 		{
@@ -27609,7 +27607,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15330.546,19.751717,17358.188};
+				position[]={15330.546,19.751493,17358.188};
 				angles[]={6.2538638,5.4922018,0.0039968039};
 			};
 			side="Empty";
@@ -27617,13 +27615,12 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKEDPLAYER";
-				init="this allowDamage false;";
+				init="this allowDamage false;this enableRopeAttach false;";
 				name="heliFuelTruck";
-				textures="orange";
 			};
 			id=1640;
 			type="C_Truck_02_fuel_F";
-			atlOffset=-0.016777039;
+			atlOffset=-0.017000198;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27641,7 +27638,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -30796,17 +30793,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15390.835,16.526518,17380.609};
+				position[]={15390.835,16.527517,17380.609};
 				angles[]={6.2645278,3.8930964,0.016004669};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="this enableRopeAttach false;";
 			};
 			id=2091;
 			type="RHS_M119_D";
-			atlOffset=-0.00099945068;
 		};
 		class Item1153
 		{
@@ -30820,6 +30817,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="this enableRopeAttach false;";
 			};
 			id=2092;
 			type="RHS_M119_D";
@@ -30836,6 +30834,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="this enableRopeAttach false;";
 			};
 			id=2093;
 			type="RHS_M119_D";
