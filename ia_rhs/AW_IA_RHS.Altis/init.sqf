@@ -33,11 +33,19 @@ call compile preprocessFile "scripts\radiofreq.sqf";							// TFAR RadioFreqs
 tf_no_auto_long_range_radio = true; 	//so player do not spawn with longrange radio as backpacks
 TF_give_microdagr_to_soldier = false; 	//so player do not have Dagr in theyr inventory
 
+//Advanced Sling Loading
 missionNamespace setVariable ["SA_ASL_HEAVY_LIFTING_ENABLED", false, true];
-missionNamespace setVariable ["ASL_SUPPORTED_VEHICLES_OVERRIDE", ["Air"], true]; 
+missionNamespace setVariable ["ASL_SUPPORTED_VEHICLES_OVERRIDE", ["Helicopter"], true]; 
 missionNamespace setVariable ["ASL_SLING_RULES_OVERRIDE",[	["Helicopter", "CAN_SLING", "All"],
 															["Helicopter", "CANT_SLING", "Air"],
 															["Helicopter", "CANT_SLING", "Tank"],
 															["Helicopter", "CANT_SLING", "IFV"],
 															["Helicopter", "CANT_SLING", "Truck"]
 														 ], true]; 
+//Advanced Towing														 
+missionNamespace setVariable ["SA_TOW_SUPPORTED_VEHICLES_OVERRIDE", ["Car", "Truck", "Ship"], true ];														 
+missionNamespace setVariable ["SA_TOW_RULES_OVERRIDE", [	["Car", 	"CAN_TOW", "Car"], 
+															["Truck", 	"CAN_TOW", "Truck"], 
+															["Truck", 	"CAN_TOW", "Car"], 
+															["Ship", 	"CAN_TOW", "Ship"] 
+													   ], true];
