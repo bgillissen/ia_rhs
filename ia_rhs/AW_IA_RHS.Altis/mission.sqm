@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15202.215,36.918037,17255.15};
-		dir[]={-0.90522814,-0.3368572,-0.25948843};
-		up[]={-0.32395455,0.94144046,-0.092862643};
-		aside[]={-0.27559021,2.9956573e-007,0.96142119};
+		pos[]={15265.18,20.33127,17390.459};
+		dir[]={0.5592351,-0.49938646,-0.66178834};
+		up[]={0.32247564,0.86623245,-0.38161173};
+		aside[]={-0.76383466,-4.5623165e-007,-0.64547062};
 	};
 };
 binarizationWanted=0;
@@ -65,10 +65,10 @@ addons[]=
 	"rhsusf_c_weapons",
 	"A3_Weapons_F_Acc",
 	"A3_Weapons_F_Pistols_Pistol_Heavy_01",
+	"A3_Characters_F",
 	"A3_Weapons_F_Items",
 	"rhsusf_sounds",
 	"A3_Weapons_F_Mark_Acc",
-	"A3_Characters_F",
 	"rhs_c_troops",
 	"A3_Weapons_F_Explosives",
 	"A3_Modules_F",
@@ -353,7 +353,7 @@ class AddonsMetaData
 randomSeed=14468871;
 class ScenarioData
 {
-	author="Rarek, AhoyWorld, Quiksilver. Tweaked by ben, putin, rainman";
+	author="Rarek, AhoyWorld, Quiksilver. Tweaked by ben, putin, Rainman";
 };
 class CustomAttributes
 {
@@ -16901,7 +16901,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -16916,7 +16916,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_mg";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -16946,7 +16946,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -16965,7 +16965,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1546;
@@ -17024,7 +17024,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17039,7 +17039,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17075,7 +17075,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="B_Carryall_cbr";
+								typeName="B_Carryall_oli";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -17094,7 +17094,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1547;
@@ -17120,7 +17120,7 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_m4_compm4";
+								name="rhs_weap_m4_carryhandle";
 								optics="rhsusf_acc_compm4";
 								flashlight="rhsusf_acc_anpeq15A";
 								class primaryMuzzleMag
@@ -17140,7 +17140,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17155,7 +17155,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17191,7 +17191,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -17223,7 +17223,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhsusf_ach_helmet_ESS_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1549;
@@ -17273,7 +17273,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17288,7 +17288,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17324,7 +17324,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -17355,7 +17355,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1550;
@@ -17406,7 +17406,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17427,7 +17427,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17448,7 +17448,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class ItemCargo
 								{
@@ -17471,7 +17471,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1551;
@@ -17499,7 +17499,7 @@ class Mission
 							{
 								name="rhs_weap_sr25_ec";
 								optics="optic_AMS";
-								flashlight="rhsusf_acc_anpeq15A";
+								flashlight="rhsusf_acc_anpeq15_bk";
 								underBarrel="rhsusf_acc_harris_bipod";
 								class primaryMuzzleMag
 								{
@@ -17522,7 +17522,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17537,7 +17537,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17557,7 +17557,7 @@ class Mission
 									class Item2
 									{
 										name="rhsusf_20Rnd_762x51_m118_special_Mag";
-										count=5;
+										count=3;
 										ammoLeft=20;
 									};
 								};
@@ -17573,18 +17573,8 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhsusf_20Rnd_762x51_m118_special_Mag";
-										count=13;
-										ammoLeft=20;
-									};
-								};
 							};
 							map="ItemMap";
 							compass="ItemCompass";
@@ -17592,7 +17582,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhs_Booniehat_m81";
 						};
 					};
 					id=1552;
@@ -17641,7 +17631,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17656,7 +17646,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_mg";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17686,7 +17676,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -17705,7 +17695,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1589;
@@ -17757,7 +17747,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17778,7 +17768,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_squadleader";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17793,7 +17783,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_rt1523g_big_rhs";
+								typeName="tf_rt1523g_big_bwmod";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -17912,7 +17902,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17927,7 +17917,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_mg";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -17957,7 +17947,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -17976,7 +17966,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1556;
@@ -18004,7 +17994,7 @@ class Mission
 							{
 								name="rhs_weap_sr25_ec";
 								optics="optic_AMS";
-								flashlight="rhsusf_acc_anpeq15A";
+								flashlight="rhsusf_acc_anpeq15_bk";
 								underBarrel="rhsusf_acc_harris_bipod";
 								class primaryMuzzleMag
 								{
@@ -18027,7 +18017,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18042,7 +18032,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18062,7 +18052,7 @@ class Mission
 									class Item2
 									{
 										name="rhsusf_20Rnd_762x51_m118_special_Mag";
-										count=5;
+										count=3;
 										ammoLeft=20;
 									};
 								};
@@ -18078,18 +18068,8 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhsusf_20Rnd_762x51_m118_special_Mag";
-										count=13;
-										ammoLeft=20;
-									};
-								};
 							};
 							map="ItemMap";
 							compass="ItemCompass";
@@ -18097,7 +18077,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhs_Booniehat_m81";
 						};
 					};
 					id=1557;
@@ -18148,7 +18128,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18169,7 +18149,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18190,7 +18170,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class ItemCargo
 								{
@@ -18213,7 +18193,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1558;
@@ -18265,7 +18245,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18286,7 +18266,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_squadleader";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18301,7 +18281,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_rt1523g_big_rhs";
+								typeName="tf_rt1523g_big_bwmod";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -18385,7 +18365,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18400,7 +18380,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18436,7 +18416,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -18467,7 +18447,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1560;
@@ -18526,7 +18506,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18541,7 +18521,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18577,7 +18557,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="B_Carryall_cbr";
+								typeName="B_Carryall_oli";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -18596,7 +18576,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1561;
@@ -18645,7 +18625,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18660,7 +18640,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_mg";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18690,7 +18670,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -18709,7 +18689,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1562;
@@ -18735,7 +18715,7 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_m4_compm4";
+								name="rhs_weap_m4_carryhandle";
 								optics="rhsusf_acc_compm4";
 								flashlight="rhsusf_acc_anpeq15A";
 								class primaryMuzzleMag
@@ -18755,7 +18735,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18770,7 +18750,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18806,7 +18786,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -18838,7 +18818,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhsusf_ach_helmet_ESS_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1563;
@@ -18900,7 +18880,7 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_m4_compm4";
+								name="rhs_weap_m4_carryhandle";
 								optics="rhsusf_acc_compm4";
 								flashlight="rhsusf_acc_anpeq15A";
 								class primaryMuzzleMag
@@ -18920,7 +18900,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18935,7 +18915,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -18971,7 +18951,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -19003,7 +18983,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhsusf_ach_helmet_ESS_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1564;
@@ -19053,7 +19033,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19068,7 +19048,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19104,7 +19084,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -19135,7 +19115,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1565;
@@ -19186,7 +19166,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19207,7 +19187,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19228,7 +19208,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class ItemCargo
 								{
@@ -19251,7 +19231,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1566;
@@ -19300,7 +19280,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19315,7 +19295,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_mg";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19345,7 +19325,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -19364,7 +19344,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1568;
@@ -19392,7 +19372,7 @@ class Mission
 							{
 								name="rhs_weap_sr25_ec";
 								optics="optic_AMS";
-								flashlight="rhsusf_acc_anpeq15A";
+								flashlight="rhsusf_acc_anpeq15_bk";
 								underBarrel="rhsusf_acc_harris_bipod";
 								class primaryMuzzleMag
 								{
@@ -19415,7 +19395,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19430,7 +19410,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19450,7 +19430,7 @@ class Mission
 									class Item2
 									{
 										name="rhsusf_20Rnd_762x51_m118_special_Mag";
-										count=5;
+										count=3;
 										ammoLeft=20;
 									};
 								};
@@ -19466,18 +19446,8 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhsusf_20Rnd_762x51_m118_special_Mag";
-										count=13;
-										ammoLeft=20;
-									};
-								};
 							};
 							map="ItemMap";
 							compass="ItemCompass";
@@ -19485,7 +19455,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhs_Booniehat_m81";
 						};
 					};
 					id=1569;
@@ -19534,7 +19504,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19549,7 +19519,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_mg";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19579,7 +19549,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -19598,7 +19568,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1570;
@@ -19657,7 +19627,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19672,7 +19642,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19708,7 +19678,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="B_Carryall_cbr";
+								typeName="B_Carryall_oli";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -19727,7 +19697,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1571;
@@ -19779,7 +19749,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19800,7 +19770,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_squadleader";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19815,7 +19785,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_rt1523g_big_rhs";
+								typeName="tf_rt1523g_big_bwmod";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -19913,7 +19883,7 @@ class Mission
 							{
 								name="rhs_weap_sr25_ec";
 								optics="optic_AMS";
-								flashlight="rhsusf_acc_anpeq15A";
+								flashlight="rhsusf_acc_anpeq15_bk";
 								underBarrel="rhsusf_acc_harris_bipod";
 								class primaryMuzzleMag
 								{
@@ -19936,7 +19906,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19951,7 +19921,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -19971,7 +19941,7 @@ class Mission
 									class Item2
 									{
 										name="rhsusf_20Rnd_762x51_m118_special_Mag";
-										count=5;
+										count=3;
 										ammoLeft=20;
 									};
 								};
@@ -19987,18 +19957,8 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhsusf_20Rnd_762x51_m118_special_Mag";
-										count=13;
-										ammoLeft=20;
-									};
-								};
 							};
 							map="ItemMap";
 							compass="ItemCompass";
@@ -20006,7 +19966,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhs_Booniehat_m81";
 						};
 					};
 					id=1492;
@@ -20032,7 +19992,7 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_m4_compm4";
+								name="rhs_weap_m4_carryhandle";
 								optics="rhsusf_acc_compm4";
 								flashlight="rhsusf_acc_anpeq15A";
 								class primaryMuzzleMag
@@ -20052,7 +20012,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20067,7 +20027,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20103,7 +20063,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -20135,7 +20095,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhsusf_ach_helmet_ESS_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1572;
@@ -20184,7 +20144,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20199,7 +20159,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_mg";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20229,7 +20189,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -20248,7 +20208,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1573;
@@ -20299,7 +20259,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20320,7 +20280,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20341,7 +20301,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class ItemCargo
 								{
@@ -20364,7 +20324,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1574;
@@ -20413,7 +20373,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20428,7 +20388,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_mg";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20458,7 +20418,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -20477,7 +20437,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1576;
@@ -20527,7 +20487,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20542,7 +20502,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20578,7 +20538,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -20609,7 +20569,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1577;
@@ -20668,7 +20628,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20683,7 +20643,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20719,7 +20679,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="B_Carryall_cbr";
+								typeName="B_Carryall_oli";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -20738,7 +20698,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1578;
@@ -20766,7 +20726,7 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_weap_m16a4_carryhandle";
+								name="rhs_weap_m4a1_blockII_KAC";
 								optics="optic_Nightstalker";
 								flashlight="rhsusf_acc_anpeq15A";
 								class primaryMuzzleMag
@@ -20790,31 +20750,47 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=1;
+									items=2;
 									class Item0
 									{
 										name="11Rnd_45ACP_Mag";
 										count=3;
 										ammoLeft=11;
 									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=1;
+										ammoLeft=30;
+									};
 								};
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_squadleader";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+										count=2;
+										ammoLeft=30;
+									};
+								};
 							};
 							class backpack
 							{
-								typeName="tf_rt1523g_big_rhs";
+								typeName="tf_rt1523g_big_bwmod";
 								isBackpack=1;
 								class MagazineCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -20826,12 +20802,6 @@ class Mission
 										name="rhs_mag_m67";
 										count=4;
 										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="30Rnd_556x45_Stanag_Tracer_Red";
-										count=12;
-										ammoLeft=30;
 									};
 								};
 								class ItemCargo
@@ -20937,7 +20907,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20958,7 +20928,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -20979,7 +20949,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class ItemCargo
 								{
@@ -21002,7 +20972,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1533;
@@ -21061,7 +21031,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21076,7 +21046,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21112,7 +21082,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="B_Carryall_cbr";
+								typeName="B_Carryall_oli";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -21131,7 +21101,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1534;
@@ -21180,7 +21150,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21195,7 +21165,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_mg";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21225,7 +21195,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -21244,7 +21214,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1535;
@@ -21297,7 +21267,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21318,7 +21288,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_squadleader";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21333,7 +21303,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_rt1523g_big_rhs";
+								typeName="tf_rt1523g_big_bwmod";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -21417,7 +21387,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21432,7 +21402,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21468,7 +21438,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -21499,7 +21469,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1537;
@@ -21525,7 +21495,7 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_m4_compm4";
+								name="rhs_weap_m4_carryhandle";
 								optics="rhsusf_acc_compm4";
 								flashlight="rhsusf_acc_anpeq15A";
 								class primaryMuzzleMag
@@ -21545,7 +21515,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21560,7 +21530,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21596,7 +21566,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -21628,7 +21598,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhsusf_ach_helmet_ESS_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1539;
@@ -21656,7 +21626,7 @@ class Mission
 							{
 								name="rhs_weap_sr25_ec";
 								optics="optic_AMS";
-								flashlight="rhsusf_acc_anpeq15A";
+								flashlight="rhsusf_acc_anpeq15_bk";
 								underBarrel="rhsusf_acc_harris_bipod";
 								class primaryMuzzleMag
 								{
@@ -21679,7 +21649,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21694,7 +21664,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21714,7 +21684,7 @@ class Mission
 									class Item2
 									{
 										name="rhsusf_20Rnd_762x51_m118_special_Mag";
-										count=5;
+										count=3;
 										ammoLeft=20;
 									};
 								};
@@ -21730,18 +21700,8 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhsusf_20Rnd_762x51_m118_special_Mag";
-										count=13;
-										ammoLeft=20;
-									};
-								};
 							};
 							map="ItemMap";
 							compass="ItemCompass";
@@ -21749,7 +21709,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhs_Booniehat_m81";
 						};
 					};
 					id=1586;
@@ -21798,7 +21758,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21813,7 +21773,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_mg";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -21843,7 +21803,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -21862,7 +21822,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1587;
@@ -21957,14 +21917,14 @@ class Mission
 									class Item0
 									{
 										name="11Rnd_45ACP_Mag";
-										count=2;
+										count=3;
 										ammoLeft=11;
 									};
 								};
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Squadleader";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -22000,7 +21960,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_falconii_mc";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -22027,6 +21987,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
+							goggles="rhs_ess_black";
 							hmd="rhsusf_ANPVS_15";
 							headgear="rhsusf_cvc_helmet";
 						};
@@ -22094,7 +22055,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Squadleader";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -22130,7 +22091,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_falconii_mc";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -22157,6 +22118,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
+							goggles="rhs_ess_black";
 							hmd="rhsusf_ANPVS_15";
 							headgear="rhsusf_cvc_helmet";
 						};
@@ -22224,7 +22186,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_iotv_ocp_Squadleader";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -22260,7 +22222,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_falconii_mc";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -22287,6 +22249,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
+							goggles="rhs_ess_black";
 							hmd="rhsusf_ANPVS_15";
 							headgear="rhsusf_cvc_helmet";
 						};
@@ -22394,7 +22357,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_marksman";
+								typeName="V_PlateCarrier1_blk";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -22415,7 +22378,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_rt1523g_big_bwmod";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -22450,7 +22413,7 @@ class Mission
 							gps="ItemGPS";
 							goggles="rhs_balaclava";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_opscore_rg_cover_pelt";
+							headgear="rhsusf_opscore_bk_pelt";
 						};
 					};
 					id=1268;
@@ -22518,7 +22481,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_marksman";
+								typeName="V_PlateCarrier1_blk";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -22548,7 +22511,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -22568,7 +22531,7 @@ class Mission
 							gps="ItemGPS";
 							goggles="rhs_balaclava";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_opscore_rg_cover";
+							headgear="rhsusf_opscore_bk_pelt";
 						};
 					};
 					id=1555;
@@ -22654,7 +22617,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_crewman";
+								typeName="V_PlateCarrier1_blk";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -22710,7 +22673,7 @@ class Mission
 							gps="ItemGPS";
 							goggles="rhs_balaclava";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_opscore_rg_cover";
+							headgear="rhsusf_opscore_bk_pelt";
 						};
 					};
 					id=1580;
@@ -22778,7 +22741,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_marksman";
+								typeName="V_PlateCarrier1_blk";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -22808,7 +22771,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -22828,7 +22791,7 @@ class Mission
 							gps="ItemGPS";
 							goggles="rhs_balaclava";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_opscore_rg_cover";
+							headgear="rhsusf_opscore_bk_pelt";
 						};
 					};
 					id=1581;
@@ -22897,7 +22860,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_marksman";
+								typeName="V_PlateCarrier1_blk";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -22912,7 +22875,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -22946,7 +22909,7 @@ class Mission
 							gps="ItemGPS";
 							goggles="rhs_balaclava";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_opscore_rg_cover";
+							headgear="rhsusf_opscore_bk_pelt";
 						};
 					};
 					id=1583;
@@ -23023,7 +22986,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_marksman";
+								typeName="V_PlateCarrier1_blk";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -23038,7 +23001,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -23072,7 +23035,7 @@ class Mission
 							gps="ItemGPS";
 							goggles="rhs_balaclava";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_opscore_rg_cover";
+							headgear="rhsusf_opscore_bk_pelt";
 						};
 					};
 					id=1584;
@@ -23148,7 +23111,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_crewman";
+								typeName="V_PlateCarrier1_blk";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -23192,7 +23155,7 @@ class Mission
 							gps="ItemGPS";
 							goggles="rhs_balaclava";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_opscore_rg_cover";
+							headgear="rhsusf_opscore_bk_pelt";
 						};
 					};
 					id=1585;
@@ -23261,7 +23224,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_marksman";
+								typeName="V_PlateCarrier1_blk";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -23317,7 +23280,7 @@ class Mission
 							gps="ItemGPS";
 							goggles="rhs_balaclava";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_opscore_rg_cover_pelt";
+							headgear="rhsusf_opscore_bk_pelt";
 						};
 					};
 					id=1652;
@@ -23383,7 +23346,7 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_weap_XM2010_d_leu";
+								name="rhs_weap_XM2010_d";
 								optics="rhsusf_acc_LEUPOLDMK4_2";
 								muzzle="rhsusf_acc_M2010S";
 								underBarrel="rhsusf_acc_harris_bipod";
@@ -23408,7 +23371,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -23423,7 +23386,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -23438,7 +23401,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="B_AssaultPack_mcamo";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -23472,7 +23435,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="H_Booniehat_mcamo";
+							headgear="rhs_Booniehat_m81";
 						};
 					};
 					id=1487;
@@ -23525,7 +23488,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -23540,7 +23503,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -23570,7 +23533,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_rt1523g_big";
+								typeName="tf_rt1523g_big_bwmod";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -23589,7 +23552,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="H_Booniehat_mcamo";
+							headgear="rhs_Booniehat_m81";
 						};
 					};
 					id=1488;
@@ -24199,7 +24162,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -24225,8 +24188,7 @@ class Mission
 							compass="ItemCompass";
 							watch="ItemWatch";
 							radio="ItemRadio";
-							goggles="rhs_googles_clear";
-							headgear="H_Beret_blk";
+							headgear="rhsusf_bowman_cap";
 						};
 					};
 					id=1531;
@@ -24263,7 +24225,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp_101st";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -24297,7 +24259,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spcs_ocp_rifleman";
+								typeName="V_PlateCarrier1_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -24315,7 +24277,7 @@ class Mission
 							watch="ItemWatch";
 							radio="ItemRadio";
 							goggles="rhs_ess_black";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1499;
@@ -24367,7 +24329,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -24393,7 +24355,7 @@ class Mission
 							compass="ItemCompass";
 							watch="ItemWatch";
 							radio="ItemRadio";
-							headgear="H_Beret_blk";
+							headgear="H_Watchcap_khk";
 						};
 					};
 					id=1500;
@@ -24459,7 +24421,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -24480,7 +24442,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -24507,7 +24469,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class ItemCargo
 								{
@@ -24530,7 +24492,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1480;
@@ -24581,7 +24543,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -24602,7 +24564,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -24623,7 +24585,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class ItemCargo
 								{
@@ -24646,7 +24608,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1482;
@@ -24696,7 +24658,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -24711,7 +24673,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_mg";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -24741,7 +24703,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhsusf_assault_eagleaiii_coy";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -24760,7 +24722,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="ItemGPS";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1484;
@@ -24811,7 +24773,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -24832,7 +24794,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -24847,7 +24809,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_rt1523g_big_bwmod_tropen";
+								typeName="tf_rt1523g_big_bwmod";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -24942,7 +24904,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -25021,7 +24983,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_cu_ocp";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -25124,7 +25086,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -25148,7 +25110,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -25184,7 +25146,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="B_rhsusf_B_BACKPACK";
+								typeName="B_Kitbag_rgr";
 								isBackpack=1;
 							};
 							map="ItemMap";
@@ -25193,7 +25155,7 @@ class Mission
 							radio="tf_anprc152";
 							gps="B_UavTerminal";
 							hmd="rhsusf_ANPVS_15";
-							headgear="rhsusf_ach_helmet_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1489;
@@ -25244,7 +25206,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -25265,7 +25227,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -25280,7 +25242,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="tf_rt1523g_big_bwmod_tropen";
+								typeName="tf_rt1523g_big_bwmod";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -25364,7 +25326,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -25379,7 +25341,7 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="V_PlateCarrier2_rgr";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -25412,7 +25374,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhsusf_ach_helmet_headset_ocp";
+							headgear="rhsusf_ach_helmet_M81";
 						};
 					};
 					id=1491;
@@ -27278,18 +27240,24 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="rhs_uniform_g3_mc";
+								typeName="rhs_uniform_g3_m81";
+								isBackpack=0;
+							};
+							class vest
+							{
+								typeName="V_Rangemaster_belt";
 								isBackpack=0;
 							};
 							class backpack
 							{
-								typeName="tf_rt1523g_rhs";
+								typeName="tf_rt1523g_big_bwmod";
 								isBackpack=1;
 							};
 							map="ItemMap";
 							compass="ItemCompass";
 							radio="tf_anprc152";
 							gps="ItemGPS";
+							goggles="rhs_googles_black";
 							headgear="H_Beret_Colonel";
 						};
 					};
